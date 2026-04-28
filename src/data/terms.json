@@ -1,0 +1,19 @@
+[
+  {
+    "id": "growth-system",
+    "term": {
+      "zh": "养成系统占位术语",
+      "en": "Growth System Placeholder"
+    },
+    "genshinEquivalent": {
+      "zh": "近似：角色养成 / 圣遗物 / 天赋等",
+      "en": ""
+    },
+    "category": "养成",
+    "explanation": {
+      "zh": "这里解释 NTE 内部专有名词，并说明它和原神概念只是近似对应，不一定完全等同。",
+      "en": ""
+    },
+    "tags": ["养成", "术语"]
+  }
+]

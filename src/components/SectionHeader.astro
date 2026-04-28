@@ -1,0 +1,15 @@
+---
+interface Props {
+  title: string;
+  titleEn?: string;
+  description?: string;
+  descriptionEn?: string;
+}
+
+const { title, titleEn, description, descriptionEn } = Astro.props;
+---
+
+<div class="section-header">
+  <h2 data-i18n-zh={title} data-i18n-en={titleEn}>{title}</h2>
+  {description && <p data-i18n-zh={description} data-i18n-en={descriptionEn}>{description}</p>}
+</div>

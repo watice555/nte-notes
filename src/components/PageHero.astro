@@ -1,0 +1,45 @@
+---
+interface Props {
+  eyebrow?: string;
+  eyebrowEn?: string;
+  title: string;
+  titleEn?: string;
+  description: string;
+  descriptionEn?: string;
+  quips?: string[];
+}
+
+const { eyebrow, eyebrowEn, title, titleEn, description, descriptionEn, quips = [] } = Astro.props;
+---
+
+<section class="page-hero">
+  <div class="hero-copy">
+    {eyebrow && <p class="eyebrow" data-i18n-zh={eyebrow} data-i18n-en={eyebrowEn}>{eyebrow}</p>}
+    <h1 data-i18n-zh={title} data-i18n-en={titleEn}>{title}</h1>
+    <p data-i18n-zh={description} data-i18n-en={descriptionEn}>{description}</p>
+  </div>
+  {
+    quips.length > 0 && (
+      <div class="hero-quips" aria-label="栏目吐槽" data-random-quip={JSON.stringify(quips)}>
+        <span class="hero-quip">“{quips[0]}”</span>
+      </div>
+    )
+  }
+</section>
+
+<script>
+  document.querySelectorAll("[data-random-quip]").forEach((container) => {
+    const raw = container.getAttribute("data-random-quip");
+    const target = container.querySelector(".hero-quip");
+    if (!raw || !target) return;
+
+    try {
+      const quips = JSON.parse(raw);
+      if (!Array.isArray(quips) || quips.length === 0) return;
+      const selected = quips[Math.floor(Math.random() * quips.length)];
+      target.textContent = `“${selected}”`;
+    } catch {
+      // Keep the server-rendered fallback if the data attribute is malformed.
+    }
+  });
+</script>

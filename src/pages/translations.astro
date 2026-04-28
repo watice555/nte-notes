@@ -1,0 +1,59 @@
+---
+import BaseLayout from "@/components/BaseLayout.astro";
+import PageHero from "@/components/PageHero.astro";
+import SectionHeader from "@/components/SectionHeader.astro";
+import translations from "@/data/translations.json";
+---
+
+<BaseLayout title="中英对照" active="/translations/">
+  <PageHero
+    eyebrow="CN / EN Reference"
+    title="中英对照"
+    titleEn="Chinese / English Reference"
+    description="用于查询角色名、地点、道具、系统名词等中英对照。这个页面支持本地快速筛选。"
+    descriptionEn="A searchable Chinese and English reference for names, places, items, and systems."
+  />
+
+  <SectionHeader title="对照表" titleEn="Reference Table" />
+  <div class="tool-row">
+    <input class="filter-input" type="search" data-table-filter placeholder="搜索中文、英文、别名、分类..." />
+  </div>
+  <table class="data-table" data-filter-table>
+    <thead>
+      <tr>
+        <th>中文</th>
+        <th>English</th>
+        <th>分类</th>
+        <th>别名</th>
+        <th>备注</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        translations.map((item) => (
+          <tr data-filter-text={`${item.zh} ${item.en} ${item.category} ${item.aliases.join(" ")} ${item.note.zh} ${item.note.en}`}>
+            <td>{item.zh}</td>
+            <td lang="en">{item.en}</td>
+            <td>{item.category}</td>
+            <td>{item.aliases.join(" / ")}</td>
+            <td data-i18n-zh={item.note.zh} data-i18n-en={item.note.en}>{item.note.zh}</td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</BaseLayout>
+
+<script>
+  // @ts-nocheck
+  const tableFilter = document.querySelector("[data-table-filter]");
+  const rows = Array.from(document.querySelectorAll("[data-filter-text]"));
+
+  tableFilter?.addEventListener("input", () => {
+    const query = tableFilter.value.trim().toLowerCase();
+    rows.forEach((row) => {
+      const text = row.getAttribute("data-filter-text")?.toLowerCase() || "";
+      row.hidden = query.length > 0 && !text.includes(query);
+    });
+  });
+</script>

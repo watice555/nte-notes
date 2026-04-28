@@ -1,0 +1,24 @@
+[
+  {
+    "id": "neverness-to-everness",
+    "zh": "异环",
+    "en": "Neverness to Everness",
+    "category": "游戏名",
+    "aliases": ["NTE"],
+    "note": {
+      "zh": "官方英文名常缩写为 NTE。",
+      "en": ""
+    }
+  },
+  {
+    "id": "hethereau",
+    "zh": "海特洛市",
+    "en": "Hethereau",
+    "category": "地点",
+    "aliases": ["海市"],
+    "note": {
+      "zh": "站内“海市事务”中的海市即海特洛市。",
+      "en": ""
+    }
+  }
+]

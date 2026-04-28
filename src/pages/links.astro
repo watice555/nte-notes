@@ -1,0 +1,63 @@
+---
+import BaseLayout from "@/components/BaseLayout.astro";
+import PageHero from "@/components/PageHero.astro";
+import SectionHeader from "@/components/SectionHeader.astro";
+import links from "@/data/links.json";
+
+const groups = [
+  {
+    key: "Wiki",
+    title: "Wiki 类",
+    description: "资料站、Wiki 和攻略索引。",
+  },
+  {
+    key: "社区",
+    title: "社区",
+    description: "玩家讨论、视频和社区内容入口。",
+  },
+  {
+    key: "官方",
+    title: "官方",
+    description: "不同地区的官方网站入口，亦是下载入口。",
+  },
+];
+---
+
+<BaseLayout title="外部链接" active="/links/">
+  <PageHero
+    eyebrow="External Links"
+    title="外部链接"
+    titleEn="External Links"
+    description="整理官网、下载、Wiki、社区、工具站等入口。链接会尽量标注来源和用途。"
+    descriptionEn="Official, download, wiki, community, and tool links."
+  />
+
+  {
+    groups.map((group) => {
+      const items = links.filter((link) => link.category === group.key);
+      if (items.length === 0) return null;
+
+      return (
+        <section>
+          <SectionHeader title={group.title} description={group.description} />
+          <div class="grid two">
+            {items.map((link) => (
+              <article class="data-card">
+                <div class="meta-row">
+                  <span class="pill">{link.category}</span>
+                </div>
+                <h3 data-i18n-zh={link.title.zh} data-i18n-en={link.title.en}>{link.title.zh}</h3>
+                <p data-i18n-zh={link.summary.zh} data-i18n-en={link.summary.en}>{link.summary.zh}</p>
+                <p>
+                  <a class="external-link" href={link.url} target="_blank" rel="noreferrer">
+                    {link.url}
+                  </a>
+                </p>
+              </article>
+            ))}
+          </div>
+        </section>
+      );
+    })
+  }
+</BaseLayout>

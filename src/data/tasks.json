@@ -1,0 +1,410 @@
+[
+  {
+    "id": "daily-activity",
+    "title": {
+      "zh": "探索指南-每日活跃",
+      "en": ""
+    },
+    "category": "daily",
+    "refresh": {
+      "zh": "每日刷新",
+      "en": "Daily reset"
+    },
+    "summary": {
+      "zh": "每日活跃 100 点。",
+      "en": ""
+    },
+    "tags": ["日常", "探索指南"]
+  },
+  {
+    "id": "daily-pass-missions",
+    "title": {
+      "zh": "环期赏令-每日任务",
+      "en": ""
+    },
+    "category": "daily",
+    "refresh": {
+      "zh": "每日刷新",
+      "en": "Daily reset"
+    },
+    "summary": {
+      "zh": "完成环期赏令中的每日任务。",
+      "en": ""
+    },
+    "tags": ["日常", "环期赏令"]
+  },
+  {
+    "id": "instinct-pixel",
+    "title": {
+      "zh": "本性像素",
+      "en": ""
+    },
+    "category": "daily",
+    "refresh": {
+      "zh": "持续恢复",
+      "en": ""
+    },
+    "summary": {
+      "zh": "养成体力，持续恢复，10 点/小时。",
+      "en": ""
+    },
+    "tags": ["日常", "体力", "养成"]
+  },
+  {
+    "id": "bond-gifts",
+    "title": {
+      "zh": "羁遇-赠礼",
+      "en": ""
+    },
+    "category": "daily",
+    "refresh": {
+      "zh": "每日限制",
+      "en": ""
+    },
+    "summary": {
+      "zh": "送礼物增加好感度。每日总限 10 次，单角色限 3 次。",
+      "en": ""
+    },
+    "tags": ["日常", "好感度"]
+  },
+  {
+    "id": "fountain-wish",
+    "title": {
+      "zh": "喷泉池",
+      "en": ""
+    },
+    "category": "daily",
+    "refresh": {
+      "zh": "每日可做",
+      "en": ""
+    },
+    "summary": {
+      "zh": "许愿获得 buff 和 5~10 枚“嗯！硬币”。100 币可兑换弧盘“千金难买你开心”。",
+      "en": ""
+    },
+    "tags": ["日常", "许愿", "弧盘"]
+  },
+  {
+    "id": "wishwood-slope",
+    "title": {
+      "zh": "愿木坡",
+      "en": ""
+    },
+    "category": "daily",
+    "refresh": {
+      "zh": "每日可做",
+      "en": ""
+    },
+    "summary": {
+      "zh": "祈福，为随机角色增加 50 好感度。",
+      "en": ""
+    },
+    "tags": ["日常", "好感度"]
+  },
+  {
+    "id": "witch-house-fortune",
+    "title": {
+      "zh": "魔女之家",
+      "en": ""
+    },
+    "category": "daily",
+    "refresh": {
+      "zh": "每日可做",
+      "en": ""
+    },
+    "summary": {
+      "zh": "卜运，可分别获得彩蛋线索、buff 和宝石线索。",
+      "en": ""
+    },
+    "tags": ["日常", "线索", "buff"]
+  },
+  {
+    "id": "vina-apartment-clouds",
+    "title": {
+      "zh": "维纳公寓：压缩嘭嘭朵",
+      "en": ""
+    },
+    "category": "daily",
+    "refresh": {
+      "zh": "每日可收取",
+      "en": ""
+    },
+    "summary": {
+      "zh": "收取压缩嘭嘭朵，可作为好感度礼物。",
+      "en": ""
+    },
+    "tags": ["日常", "好感度", "礼物"]
+  },
+  {
+    "id": "cafe-income",
+    "title": {
+      "zh": "一咖舍",
+      "en": ""
+    },
+    "category": "daily",
+    "refresh": {
+      "zh": "每日经营",
+      "en": ""
+    },
+    "summary": {
+      "zh": "提取收益并补货。",
+      "en": ""
+    },
+    "tags": ["日常", "经营"]
+  },
+  {
+    "id": "city-vitality",
+    "title": {
+      "zh": "都市活力",
+      "en": ""
+    },
+    "category": "weekly",
+    "refresh": {
+      "zh": "每周一刷新",
+      "en": ""
+    },
+    "summary": {
+      "zh": "每周一刷新至上限，通过任意都市闲趣可将都市活力转化为方斯。",
+      "en": ""
+    },
+    "tags": ["周常", "都市闲趣", "方斯"]
+  },
+  {
+    "id": "weekly-boss",
+    "title": {
+      "zh": "周本",
+      "en": ""
+    },
+    "category": "weekly",
+    "refresh": {
+      "zh": "每周 3 次",
+      "en": ""
+    },
+    "summary": {
+      "zh": "探索指南-异象巡礼，每周 3 次。",
+      "en": ""
+    },
+    "tags": ["周常", "探索指南", "异象巡礼"]
+  },
+  {
+    "id": "weekly-pass-missions",
+    "title": {
+      "zh": "环期赏令-每周任务",
+      "en": ""
+    },
+    "category": "weekly",
+    "refresh": {
+      "zh": "每周刷新",
+      "en": ""
+    },
+    "summary": {
+      "zh": "完成环期赏令中的每周任务。",
+      "en": ""
+    },
+    "tags": ["周常", "环期赏令"]
+  },
+  {
+    "id": "auction-house",
+    "title": {
+      "zh": "拍卖行",
+      "en": ""
+    },
+    "category": "weekly",
+    "refresh": {
+      "zh": "每周刷新",
+      "en": ""
+    },
+    "summary": {
+      "zh": "用方斯竞拍，拍品每周刷新。",
+      "en": ""
+    },
+    "tags": ["周常", "方斯"]
+  },
+  {
+    "id": "mammon",
+    "title": {
+      "zh": "维纳公寓：玛门",
+      "en": ""
+    },
+    "category": "weekly",
+    "refresh": {
+      "zh": "每周刷新",
+      "en": ""
+    },
+    "summary": {
+      "zh": "挑战副本获得方斯。",
+      "en": ""
+    },
+    "tags": ["周常", "挑战", "方斯"]
+  },
+  {
+    "id": "outer-realm",
+    "title": {
+      "zh": "深渊（轨外之境）",
+      "en": ""
+    },
+    "category": "biweekly",
+    "refresh": {
+      "zh": "双周刷新",
+      "en": ""
+    },
+    "summary": {
+      "zh": "注意：开服阶段持续一个版本。",
+      "en": ""
+    },
+    "tags": ["双周常", "深渊"]
+  },
+  {
+    "id": "pink-paw-heist",
+    "title": {
+      "zh": "粉爪大劫",
+      "en": ""
+    },
+    "category": "biweekly",
+    "refresh": {
+      "zh": "双周刷新",
+      "en": ""
+    },
+    "summary": {
+      "zh": "双周周期内容。",
+      "en": ""
+    },
+    "tags": ["双周常"]
+  },
+  {
+    "id": "arc-disc-shop",
+    "title": {
+      "zh": "弧盘商店-弧盘选购",
+      "en": ""
+    },
+    "category": "monthly",
+    "refresh": {
+      "zh": "每月刷新",
+      "en": ""
+    },
+    "summary": {
+      "zh": "月度弧盘选购内容。",
+      "en": ""
+    },
+    "tags": ["月常", "弧盘"]
+  },
+  {
+    "id": "market-rosemary-exchange",
+    "title": {
+      "zh": "集市兑换-迷迭兑换",
+      "en": ""
+    },
+    "category": "monthly",
+    "refresh": {
+      "zh": "每月刷新",
+      "en": ""
+    },
+    "summary": {
+      "zh": "使用抽卡产物兑换抽卡道具、方斯和养成道具。",
+      "en": ""
+    },
+    "tags": ["月常", "兑换", "抽卡"]
+  },
+  {
+    "id": "realm-recycle-station",
+    "title": {
+      "zh": "玩法商店-异境回收站",
+      "en": ""
+    },
+    "category": "monthly",
+    "refresh": {
+      "zh": "每月刷新",
+      "en": ""
+    },
+    "summary": {
+      "zh": "使用深渊通关产物兑换方斯和养成道具。",
+      "en": ""
+    },
+    "tags": ["月常", "兑换", "深渊"]
+  },
+  {
+    "id": "version-events",
+    "title": {
+      "zh": "版本活动",
+      "en": ""
+    },
+    "category": "version",
+    "refresh": {
+      "zh": "随版本更新",
+      "en": ""
+    },
+    "summary": {
+      "zh": "版本期间开放的活动内容。",
+      "en": ""
+    },
+    "tags": ["版本任务", "活动"]
+  },
+  {
+    "id": "version-pass-missions",
+    "title": {
+      "zh": "环期赏令-版本任务",
+      "en": ""
+    },
+    "category": "version",
+    "refresh": {
+      "zh": "随版本更新",
+      "en": ""
+    },
+    "summary": {
+      "zh": "完成环期赏令中的版本任务。",
+      "en": ""
+    },
+    "tags": ["版本任务", "环期赏令"]
+  },
+  {
+    "id": "hunter-exchange",
+    "title": {
+      "zh": "猎人交易所",
+      "en": ""
+    },
+    "category": "version",
+    "refresh": {
+      "zh": "随版本更新",
+      "en": ""
+    },
+    "summary": {
+      "zh": "使用方斯兑换抽卡道具和养成道具。",
+      "en": ""
+    },
+    "tags": ["版本任务", "方斯", "兑换"]
+  },
+  {
+    "id": "banner",
+    "title": {
+      "zh": "卡池",
+      "en": ""
+    },
+    "category": "version",
+    "refresh": {
+      "zh": "随版本更新",
+      "en": ""
+    },
+    "summary": {
+      "zh": "关注当前版本卡池开放情况。",
+      "en": ""
+    },
+    "tags": ["版本任务", "抽卡"]
+  },
+  {
+    "id": "skin-discount",
+    "title": {
+      "zh": "皮肤优惠活动",
+      "en": ""
+    },
+    "category": "version",
+    "refresh": {
+      "zh": "随版本更新",
+      "en": ""
+    },
+    "summary": {
+      "zh": "关注版本期间的皮肤优惠活动。",
+      "en": ""
+    },
+    "tags": ["版本任务", "皮肤"]
+  }
+]

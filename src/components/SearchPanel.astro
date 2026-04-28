@@ -1,0 +1,97 @@
+---
+const assetBase = import.meta.env.BASE_URL.endsWith("/")
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
+const pagefindUrl = `${assetBase}pagefind/pagefind.js`;
+---
+
+<div class="search-panel" data-search-panel data-pagefind-url={pagefindUrl} hidden>
+  <div class="search-backdrop" data-search-close></div>
+  <section class="search-dialog" role="dialog" aria-modal="true" aria-labelledby="search-title">
+    <div class="search-dialog-head">
+      <h2 id="search-title" data-i18n-zh="搜索手账" data-i18n-en="Search Notes">搜索手账</h2>
+      <button class="icon-button" type="button" data-search-close aria-label="关闭搜索">关闭</button>
+    </div>
+    <input class="search-input" type="search" data-search-input placeholder="搜索术语、角色、Bug、链接..." />
+    <div class="search-status" data-search-status>输入关键词后开始搜索。</div>
+    <ol class="search-results" data-search-results></ol>
+  </section>
+</div>
+
+<script>
+  // @ts-nocheck
+  const panel = document.querySelector("[data-search-panel]");
+  const input = document.querySelector("[data-search-input]");
+  const results = document.querySelector("[data-search-results]");
+  const status = document.querySelector("[data-search-status]");
+  const pagefindUrl = panel?.getAttribute("data-pagefind-url");
+  let pagefind;
+  let timer;
+
+  const openPanel = () => {
+    panel.hidden = false;
+    document.body.classList.add("is-searching");
+    setTimeout(() => input?.focus(), 20);
+  };
+
+  const closePanel = () => {
+    panel.hidden = true;
+    document.body.classList.remove("is-searching");
+  };
+
+  const loadPagefind = async () => {
+    if (pagefind) return pagefind;
+    try {
+      pagefind = await import(/* @vite-ignore */ pagefindUrl);
+    } catch {
+      status.textContent = "本地开发时需要先执行构建才会生成搜索索引。";
+    }
+    return pagefind;
+  };
+
+  const renderResults = async (query) => {
+    const api = await loadPagefind();
+    if (!api || !query.trim()) {
+      results.innerHTML = "";
+      status.textContent = query.trim() ? "搜索索引暂不可用。" : "输入关键词后开始搜索。";
+      return;
+    }
+
+    status.textContent = "搜索中...";
+    const search = await api.search(query, { excerptLength: 18 });
+    const entries = await Promise.all(search.results.slice(0, 8).map((result) => result.data()));
+    results.innerHTML = entries
+      .map(
+        (entry) => `
+          <li>
+            <a href="${entry.url}">
+              <strong>${entry.meta?.title || entry.url}</strong>
+              <span>${entry.excerpt || ""}</span>
+            </a>
+          </li>
+        `,
+      )
+      .join("");
+    status.textContent = entries.length ? `找到 ${search.results.length} 条结果。` : "没有找到匹配结果。";
+  };
+
+  document.addEventListener("click", (event) => {
+    const target = event.target;
+    if (!(target instanceof HTMLElement)) return;
+    if (target.closest("[data-search-open]")) openPanel();
+    if (target.closest("[data-search-close]")) closePanel();
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && !panel.hidden) closePanel();
+    if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === "k") {
+      event.preventDefault();
+      openPanel();
+    }
+  });
+
+  input?.addEventListener("input", () => {
+    window.clearTimeout(timer);
+    timer = window.setTimeout(() => renderResults(input.value), 180);
+  });
+</script>

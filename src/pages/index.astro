@@ -1,0 +1,88 @@
+---
+import BaseLayout from "@/components/BaseLayout.astro";
+import PageHero from "@/components/PageHero.astro";
+import SectionHeader from "@/components/SectionHeader.astro";
+import { withBase } from "@/lib/site";
+
+const sections = [
+  {
+    href: "/tasks/",
+    title: "海市事务",
+    titleEn: "Hethereau Affairs",
+    summary: "日常、周常、双周常与周期刷新事项。",
+    summaryEn: "Daily, weekly, biweekly, and rotating tasks.",
+  },
+  {
+    href: "/bugs/",
+    title: "Bug 收集",
+    titleEn: "Bug Collection",
+    summary: "记录有趣现象，保留简述并跳转原始视频。",
+    summaryEn: "Short notes for interesting bugs with source links.",
+  },
+  {
+    href: "/characters/",
+    title: "角色信息",
+    titleEn: "Characters",
+    summary: "轻量角色索引，不替代专业 Wiki。",
+    summaryEn: "A lightweight character index.",
+  },
+  {
+    href: "/terms/",
+    title: "名词解释",
+    titleEn: "Glossary",
+    summary: "整理养成与系统术语，并提供近似概念对应。",
+    summaryEn: "Game terms with short explanations and comparisons.",
+  },
+  {
+    href: "/translations/",
+    title: "中英对照",
+    titleEn: "CN/EN Translation",
+    summary: "角色名、地点、道具和系统词的中英对照。",
+    summaryEn: "Chinese and English references for names and terms.",
+  },
+  {
+    href: "/links/",
+    title: "外部链接",
+    titleEn: "External Links",
+    summary: "官网、下载、Wiki、社区与相关工具入口。",
+    summaryEn: "Official, wiki, community, and tool links.",
+  },
+];
+---
+
+<BaseLayout active="/">
+  <PageHero
+    eyebrow="异环手账 / NTE Notes"
+    title="一个异环轻量资料站"
+    titleEn="A Lightweight NTE Field Notebook"
+    description="收纳异环的周期事项、术语解释、中英对照、角色索引、Bug 趣闻和外部链接。"
+    descriptionEn="A lightweight hub for NTE tasks, glossary entries, translations, characters, bug notes, and links."
+  />
+
+  <section>
+    <SectionHeader
+      title="板块"
+      titleEn="Sections"
+      description="从这里进入各个资料区。后续内容增多后，顶部搜索会成为最快入口。"
+      descriptionEn="Jump into each data section. As the site grows, global search will be the fastest entry."
+    />
+    <div class="grid">
+      {
+        sections.map((section) => (
+          <a class="card" href={withBase(section.href)}>
+            <h3 data-i18n-zh={section.title} data-i18n-en={section.titleEn}>
+              {section.title}
+            </h3>
+            <p data-i18n-zh={section.summary} data-i18n-en={section.summaryEn}>
+              {section.summary}
+            </p>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="notice">
+    本站为非官方玩家项目。条目内容会优先保持轻量、可检索和可维护，详细攻略与深度养成会尽量链接到更专业的资料站。
+  </section>
+</BaseLayout>

@@ -1,0 +1,37 @@
+---
+import BaseLayout from "@/components/BaseLayout.astro";
+import PageHero from "@/components/PageHero.astro";
+import SectionHeader from "@/components/SectionHeader.astro";
+import characters from "@/data/characters.json";
+---
+
+<BaseLayout title="角色信息" active="/characters/">
+  <PageHero
+    eyebrow="Characters"
+    title="角色信息"
+    titleEn="Characters"
+    description="第一版只做基础信息索引，暂不放角色图片。后续可补充二创图来源、外部 Wiki 链接和更多筛选字段。"
+    descriptionEn="A light character index. Images and deeper guides can be added later."
+  />
+
+  <SectionHeader title="角色索引" titleEn="Character Index" />
+  <div class="grid">
+    {
+      characters.map((character) => (
+        <article class="data-card">
+          <div class="meta-row">
+            <span class="pill" data-i18n-zh={character.attribute.zh} data-i18n-en={character.attribute.en}>
+              {character.attribute.zh}
+            </span>
+            <span class="tag" data-i18n-zh={character.weapon.zh} data-i18n-en={character.weapon.en}>
+              {character.weapon.zh}
+            </span>
+          </div>
+          <h3 data-i18n-zh={character.name.zh} data-i18n-en={character.name.en}>{character.name.zh}</h3>
+          <p data-i18n-zh={character.role.zh} data-i18n-en={character.role.en}>{character.role.zh}</p>
+          <p data-i18n-zh={character.summary.zh} data-i18n-en={character.summary.en}>{character.summary.zh}</p>
+        </article>
+      ))
+    }
+  </div>
+</BaseLayout>

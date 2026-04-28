@@ -1,0 +1,282 @@
+[
+  {
+    "id": "toy-store-free-shopping",
+    "title": {
+      "zh": "潮玩店零元购",
+      "en": ""
+    },
+    "status": {
+      "zh": "未确认",
+      "en": ""
+    },
+    "summary": {
+      "zh": "被抓后直接传送走，白嫖盒子/商品。",
+      "en": ""
+    },
+    "source": {
+      "label": "BV1bDovBsEGS",
+      "url": "https://www.bilibili.com/video/BV1bDovBsEGS"
+    },
+    "tags": ["逃课玩法"]
+  },
+  {
+    "id": "auction-low-price-bid",
+    "title": {
+      "zh": "拍卖会底价竞拍",
+      "en": ""
+    },
+    "status": {
+      "zh": "已修复",
+      "en": ""
+    },
+    "summary": {
+      "zh": "首次加价后反复点击竞价和 Esc，使 NPC 来不及出价，以接近底价拍到。",
+      "en": ""
+    },
+    "source": {
+      "label": "BV1fMooBYEr8",
+      "url": "https://www.bilibili.com/video/BV1fMooBYEr8"
+    },
+    "tags": ["逃课玩法"]
+  },
+  {
+    "id": "auto-fishing",
+    "title": {
+      "zh": "自动钓鱼",
+      "en": ""
+    },
+    "status": {
+      "zh": "未确认",
+      "en": ""
+    },
+    "summary": {
+      "zh": "鱼刚上钩立即开编队/聊天，钓鱼自动完成。",
+      "en": ""
+    },
+    "source": {
+      "label": "BV1n3oBBUEHT",
+      "url": "https://www.bilibili.com/video/BV1n3oBBUEHT"
+    },
+    "tags": ["逃课玩法"]
+  },
+  {
+    "id": "wrong-bait-fishing",
+    "title": {
+      "zh": "错饵钓鱼法",
+      "en": ""
+    },
+    "status": {
+      "zh": "已修复",
+      "en": ""
+    },
+    "summary": {
+      "zh": "淡水用海水饵、海水用淡水饵，错饵钓鱼保底出 6 体力鱼。",
+      "en": ""
+    },
+    "source": {
+      "label": "BV1e6oZB8E4D",
+      "url": "https://www.bilibili.com/video/BV1e6oZB8E4D"
+    },
+    "tags": ["已修复"]
+  },
+  {
+    "id": "solo-race-early-acceleration",
+    "title": {
+      "zh": "赛车单机提前加速",
+      "en": ""
+    },
+    "status": {
+      "zh": "未确认",
+      "en": ""
+    },
+    "summary": {
+      "zh": "单机赛车加载时按 W，可提前加速。",
+      "en": ""
+    },
+    "source": {
+      "label": "BV1mQoGBsEpL",
+      "url": "https://www.bilibili.com/video/BV1mQoGBsEpL"
+    },
+    "tags": ["赛车"]
+  },
+  {
+    "id": "multiplayer-race-get-off",
+    "title": {
+      "zh": "赛车联机下车",
+      "en": ""
+    },
+    "status": {
+      "zh": "未确认",
+      "en": ""
+    },
+    "summary": {
+      "zh": "联机赛车加载时规律按 F 可下车，之后可攻击他人车辆、蹭车或召唤摩托。",
+      "en": ""
+    },
+    "source": {
+      "label": "BV1BHoQBEETd",
+      "url": "https://www.bilibili.com/video/BV1BHoQBEETd"
+    },
+    "tags": ["赛车", "联机"]
+  },
+  {
+    "id": "rabbit-hole-double-exp",
+    "title": {
+      "zh": "兔子洞双倍经验",
+      "en": ""
+    },
+    "status": {
+      "zh": "已修复",
+      "en": ""
+    },
+    "summary": {
+      "zh": "刷取特定副本获得双倍经验。",
+      "en": ""
+    },
+    "source": {
+      "label": "BV1fMooBYEr8",
+      "url": "https://www.bilibili.com/video/BV1fMooBYEr8"
+    },
+    "tags": ["已修复"]
+  },
+  {
+    "id": "pink-paw-vault-speedrun",
+    "title": {
+      "zh": "粉爪大劫案速降金库速刷",
+      "en": ""
+    },
+    "status": {
+      "zh": "部分修复",
+      "en": ""
+    },
+    "summary": {
+      "zh": "速降/卡点进入金库，用于速刷资源。",
+      "en": ""
+    },
+    "source": {
+      "label": "过于复杂，请自行搜索",
+      "url": "https://www.bilibili.com/"
+    },
+    "tags": ["部分修复", "资源"]
+  },
+  {
+    "id": "block-fans-speedrun",
+    "title": {
+      "zh": "泯除方块速刷方斯",
+      "en": ""
+    },
+    "status": {
+      "zh": "已修复",
+      "en": ""
+    },
+    "summary": {
+      "zh": "快速进入、退出或反复按 F，消耗体力并直接获得方斯。",
+      "en": ""
+    },
+    "source": {
+      "label": "BV1n3oBBUEHT",
+      "url": "https://www.bilibili.com/video/BV1n3oBBUEHT"
+    },
+    "tags": ["已修复", "方斯"]
+  },
+  {
+    "id": "mint-pajama-reflection",
+    "title": {
+      "zh": "薄荷睡衣显示异常",
+      "en": ""
+    },
+    "status": {
+      "zh": "已修复",
+      "en": ""
+    },
+    "summary": {
+      "zh": "薄荷的睡衣在窗户倒映中显示异常。",
+      "en": ""
+    },
+    "source": {
+      "label": "BV1sgogB1ELv",
+      "url": "https://www.bilibili.com/video/BV1sgogB1ELv"
+    },
+    "tags": ["已修复", "显示异常"]
+  },
+  {
+    "id": "mint-counter-reset-skill",
+    "title": {
+      "zh": "薄荷反击重置 E",
+      "en": ""
+    },
+    "status": {
+      "zh": "未确认",
+      "en": ""
+    },
+    "summary": {
+      "zh": "反击可重置 E，绕过 3 秒限制。",
+      "en": ""
+    },
+    "source": {
+      "label": "BV1VeokBJE84",
+      "url": "https://www.bilibili.com/video/BV1VeokBJE84"
+    },
+    "tags": ["角色机制"]
+  },
+  {
+    "id": "xiaozi-infinite-damage",
+    "title": {
+      "zh": "小吱无限伤害",
+      "en": ""
+    },
+    "status": {
+      "zh": "已修复",
+      "en": ""
+    },
+    "summary": {
+      "zh": "小吱普通攻击时切出界面，造成巨额伤害/秒怪。",
+      "en": ""
+    },
+    "source": {
+      "label": "BV1n3oBBUEHT",
+      "url": "https://www.bilibili.com/video/BV1n3oBBUEHT"
+    },
+    "tags": ["已修复", "角色机制"]
+  },
+  {
+    "id": "haiyue-flying-jellyfish",
+    "title": {
+      "zh": "海月飞天水母",
+      "en": ""
+    },
+    "status": {
+      "zh": "已修复",
+      "en": ""
+    },
+    "summary": {
+      "zh": "使用海月相关机制触发飞天，可用于高空跑图、开图、看风景。",
+      "en": ""
+    },
+    "source": {
+      "label": "BV1uYoBBeErn",
+      "url": "https://www.bilibili.com/video/BV1uYoBBeErn"
+    },
+    "tags": ["跑图", "观景"]
+  },
+  {
+    "id": "ten-times-item-buff",
+    "title": {
+      "zh": "10 倍道具 buff",
+      "en": ""
+    },
+    "status": {
+      "zh": "已修复",
+      "en": ""
+    },
+    "summary": {
+      "zh": "道具 buff 数值异常叠加/放大到约 10 倍。",
+      "en": ""
+    },
+    "source": {
+      "label": "BV1PJo2BLEQ3",
+      "url": "https://www.bilibili.com/video/BV1PJo2BLEQ3"
+    },
+    "tags": ["数值异常"]
+  }
+]

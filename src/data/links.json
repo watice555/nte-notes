@@ -1,0 +1,145 @@
+[
+  {
+    "id": "nteguide",
+    "title": {
+      "zh": "NTE Guide",
+      "en": "NTE Guide"
+    },
+    "url": "https://nteguide.com/",
+    "category": "Wiki",
+    "summary": {
+      "zh": "NTE 资料站。",
+      "en": ""
+    }
+  },
+  {
+    "id": "fandom-wiki",
+    "title": {
+      "zh": "Fandom Wiki",
+      "en": "Fandom Wiki"
+    },
+    "url": "https://neverness-to-everness.fandom.com/wiki/Neverness_to_Everness_Wiki",
+    "category": "Wiki",
+    "summary": {
+      "zh": "Fandom 上的 Neverness to Everness Wiki。",
+      "en": ""
+    }
+  },
+  {
+    "id": "neverness-gg",
+    "title": {
+      "zh": "Neverness.gg",
+      "en": "Neverness.gg"
+    },
+    "url": "https://neverness.gg/",
+    "category": "Wiki",
+    "summary": {
+      "zh": "NTE 资料与攻略站。",
+      "en": ""
+    }
+  },
+  {
+    "id": "prydwen",
+    "title": {
+      "zh": "Prydwen",
+      "en": "Prydwen"
+    },
+    "url": "https://www.prydwen.gg/neverness-to-everness/",
+    "category": "Wiki",
+    "summary": {
+      "zh": "Prydwen 的 NTE 分区。",
+      "en": ""
+    }
+  },
+  {
+    "id": "ntegame",
+    "title": {
+      "zh": "NTEGame",
+      "en": "NTEGame"
+    },
+    "url": "https://www.ntegame.com/",
+    "category": "Wiki",
+    "summary": {
+      "zh": "NTE 相关资料站。",
+      "en": ""
+    }
+  },
+  {
+    "id": "nte-wiki-online",
+    "title": {
+      "zh": "NTE Wiki Online",
+      "en": "NTE Wiki Online"
+    },
+    "url": "https://nte-wiki.online/",
+    "category": "Wiki",
+    "summary": {
+      "zh": "NTE 在线 Wiki。",
+      "en": ""
+    }
+  },
+  {
+    "id": "tajiduo",
+    "title": {
+      "zh": "塔吉多",
+      "en": "Tajiduo Community"
+    },
+    "url": "https://www.tajiduo.com/bbs/index.html#/home",
+    "category": "社区",
+    "summary": {
+      "zh": "官方玩家社区。",
+      "en": ""
+    }
+  },
+  {
+    "id": "bilibili",
+    "title": {
+      "zh": "哔哩哔哩",
+      "en": "Bilibili"
+    },
+    "url": "https://www.bilibili.com/",
+    "category": "社区",
+    "summary": {
+      "zh": "最活跃的二次元视频社区。",
+      "en": ""
+    }
+  },
+  {
+    "id": "official-cn",
+    "title": {
+      "zh": "官方网站（大陆）",
+      "en": "Official Website (Mainland China)"
+    },
+    "url": "https://yh.wanmei.com/",
+    "category": "官方",
+    "summary": {
+      "zh": "大陆地区官方网站。",
+      "en": ""
+    }
+  },
+  {
+    "id": "official-tw-hk-mo",
+    "title": {
+      "zh": "官方网站（台港澳）",
+      "en": "Official Website (TW/HK/MO)"
+    },
+    "url": "https://nte.iwplay.com.tw/",
+    "category": "官方",
+    "summary": {
+      "zh": "台港澳地区官方网站。",
+      "en": ""
+    }
+  },
+  {
+    "id": "official-global",
+    "title": {
+      "zh": "官方网站（国际）",
+      "en": "Official Website (Global)"
+    },
+    "url": "https://nte.perfectworld.com/",
+    "category": "官方",
+    "summary": {
+      "zh": "国际服官方网站。",
+      "en": ""
+    }
+  }
+]

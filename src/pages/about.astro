@@ -1,0 +1,49 @@
+---
+import BaseLayout from "@/components/BaseLayout.astro";
+import PageHero from "@/components/PageHero.astro";
+import SectionHeader from "@/components/SectionHeader.astro";
+---
+
+<BaseLayout title="关于" active="/about/">
+  <PageHero
+    eyebrow="About"
+    title="关于异环手账"
+    titleEn="About NTE Notes"
+    description="这是一个面向异环玩家的非官方轻量资料站，提供常用信息，方便游玩。"
+    descriptionEn="An unofficial lightweight reference site for NTE players."
+  />
+
+  <section class="grid two">
+    <article class="data-card">
+      <h2>联系作者</h2>
+      <dl class="contact-list">
+        <div>
+          <dt>GitHub</dt>
+          <dd><a class="external-link" href="https://github.com/watice555" target="_blank" rel="noreferrer">watice555</a></dd>
+        </div>
+        <div>
+          <dt>QQ</dt>
+          <dd>1825692103</dd>
+        </div>
+        <div>
+          <dt>哔哩哔哩</dt>
+          <dd><a class="external-link" href="https://space.bilibili.com/356760036" target="_blank" rel="noreferrer">wat1825</a></dd>
+        </div>
+        <div>
+          <dt>邮箱</dt>
+          <dd><a class="external-link" href="mailto:1825692103@qq.com">1825692103@qq.com</a></dd>
+          <dd><a class="external-link" href="mailto:w1825692103@gmail.com">w1825692103@gmail.com</a></dd>
+        </div>
+      </dl>
+    </article>
+    <article class="data-card">
+      <h2>贡献资料</h2>
+      <p>推荐通过结构化数据文件维护内容：补充条目、修正翻译、提交外链或报告过期信息。</p>
+    </article>
+  </section>
+
+  <SectionHeader title="声明" titleEn="Disclaimer" />
+  <section class="notice">
+    本站为非官方玩家项目，与游戏官方无隶属关系。站内对原神等其他游戏概念的对应仅用于玩家理解，不表示机制完全一致。
+  </section>
+</BaseLayout>

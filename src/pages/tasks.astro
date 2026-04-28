@@ -1,0 +1,77 @@
+---
+import BaseLayout from "@/components/BaseLayout.astro";
+import PageHero from "@/components/PageHero.astro";
+import SectionHeader from "@/components/SectionHeader.astro";
+import tasks from "@/data/tasks.json";
+
+const categoryLabels: Record<string, string> = {
+  daily: "每日",
+  weekly: "每周",
+  biweekly: "双周",
+  monthly: "每月",
+  version: "版本",
+};
+
+const groups = [
+  {
+    key: "daily",
+    title: "日常",
+    description: "每日刷新或适合每天顺手检查的事项。",
+  },
+  {
+    key: "weekly",
+    title: "周常",
+    description: "每周刷新、结算或限次领取的事项。",
+  },
+  {
+    key: "biweekly",
+    title: "双周常",
+    description: "双周轮换或阶段性周期内容。",
+  },
+  {
+    key: "monthly",
+    title: "月常",
+    description: "每月刷新或适合按月检查的兑换内容。",
+  },
+  {
+    key: "version",
+    title: "版本任务",
+    description: "随版本活动、卡池和商店周期变化的事项。",
+  },
+];
+---
+
+<BaseLayout title="海市事务" active="/tasks/">
+  <PageHero
+    eyebrow="Hethereau Affairs"
+    title="海市事务"
+    titleEn="Hethereau Affairs"
+    description="用于整理日常、周常等周期刷新事项。条目会保留刷新周期和简短说明。"
+    descriptionEn="A compact checklist for daily, weekly, biweekly, and rotating tasks."
+    quips={["打工人，打工魂"]}
+  />
+
+  {
+    groups.map((group) => {
+      const items = tasks.filter((task) => task.category === group.key);
+      if (items.length === 0) return null;
+
+      return (
+        <section>
+          <SectionHeader title={group.title} description={group.description} />
+          <div class="grid">
+            {items.map((task) => (
+              <article class="data-card">
+                <div class="meta-row">
+                  <span class="pill">{categoryLabels[task.category] ?? task.category}</span>
+                </div>
+                <h3 data-i18n-zh={task.title.zh} data-i18n-en={task.title.en}>{task.title.zh}</h3>
+                <p data-i18n-zh={task.summary.zh} data-i18n-en={task.summary.en}>{task.summary.zh}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+      );
+    })
+  }
+</BaseLayout>

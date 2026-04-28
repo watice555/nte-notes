@@ -1,0 +1,42 @@
+---
+import BaseLayout from "@/components/BaseLayout.astro";
+import PageHero from "@/components/PageHero.astro";
+import SectionHeader from "@/components/SectionHeader.astro";
+import bugs from "@/data/bugs.json";
+---
+
+<BaseLayout title="Bug 收集" active="/bugs/">
+  <PageHero
+    eyebrow="Bug Notes"
+    title="Bug 收集"
+    titleEn="Bug Collection"
+    description="收集和记录异环中的有趣 Bug ~"
+    descriptionEn="Short notes for interesting NTE bugs and oddities with source links."
+    quips={["一切异常就是正常", "开放世界开放的解"]}
+  />
+
+  <div class="page-meta-corner">更新时间：4月28日</div>
+
+  <section class="notice small-note">
+    本页面仅为异环 Bug 留下记录，不鼓励玩家利用 Bug。BV 号仅为提供说明，不代表认为此视频是首发或原创。由于 Bug 过多，难免有遗漏、更新不及时等情况，欢迎投稿。
+  </section>
+
+  <SectionHeader title="条目" titleEn="Entries" />
+  <div class="grid two">
+    {
+      bugs.map((bug) => (
+        <article class="data-card bug-card">
+          {bug.status.zh === "已修复" && <span class="fix-badge">已修复</span>}
+          {bug.status.zh === "部分修复" && <span class="fix-badge partial">部分修复</span>}
+          <h3 data-i18n-zh={bug.title.zh} data-i18n-en={bug.title.en}>{bug.title.zh}</h3>
+          <p data-i18n-zh={bug.summary.zh} data-i18n-en={bug.summary.en}>{bug.summary.zh}</p>
+          <p class="bug-source">
+            <a href={bug.source.url} target="_blank" rel="noreferrer">
+              {bug.source.label}
+            </a>
+          </p>
+        </article>
+      ))
+    }
+  </div>
+</BaseLayout>
