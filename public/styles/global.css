@@ -503,6 +503,41 @@ h3 {
   margin-bottom: 16px;
 }
 
+.page-action-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+  margin: -12px 0 18px;
+}
+
+.copy-button {
+  display: inline-flex;
+  min-height: 36px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(35, 199, 217, 0.24);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--primary-dark);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 800;
+  padding: 0 12px;
+  box-shadow: 0 8px 20px rgba(14, 143, 166, 0.06);
+}
+
+.copy-button:hover {
+  border-color: rgba(35, 199, 217, 0.42);
+  background: rgba(215, 248, 255, 0.5);
+}
+
+.copy-status {
+  color: var(--primary-dark);
+  font-size: 13px;
+  font-weight: 800;
+}
+
 .filter-panel {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));

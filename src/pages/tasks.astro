@@ -49,6 +49,70 @@ const groups = [
     descriptionEn: "Tasks that change with version events, banners, and shops.",
   },
 ];
+
+const buildTaskMarkdown = (lang: "zh" | "en") => {
+  const isEn = lang === "en";
+  const lines = [
+    `# ${isEn ? "Hethereau Affairs" : "海市事务"}`,
+    "",
+    isEn
+      ? "A compact checklist for daily, weekly, biweekly, and rotating tasks."
+      : "用于整理日常、周常等周期刷新事项。条目会保留刷新周期和简短说明。",
+    "",
+  ];
+
+  groups.forEach((group) => {
+    const items = tasks.filter((task) => task.category === group.key);
+    if (items.length === 0) return;
+
+    lines.push(`## ${isEn ? group.titleEn : group.title}`, "");
+    items.forEach((task) => {
+      const title = isEn ? task.title.en : task.title.zh;
+      const summary = isEn ? task.summary.en : task.summary.zh;
+      lines.push(`- **${title}**: ${summary}`);
+    });
+    lines.push("");
+  });
+
+  return lines.join("\n").trim();
+};
+
+const taskMarkdown = {
+  zh: buildTaskMarkdown("zh"),
+  en: buildTaskMarkdown("en"),
+};
+
+const buildTaskText = (lang: "zh" | "en") => {
+  const isEn = lang === "en";
+  const lines = [
+    isEn ? "Hethereau Affairs" : "海市事务",
+    "",
+    isEn
+      ? "A compact checklist for daily, weekly, biweekly, and rotating tasks."
+      : "用于整理日常、周常等周期刷新事项。条目会保留刷新周期和简短说明。",
+    "",
+  ];
+
+  groups.forEach((group) => {
+    const items = tasks.filter((task) => task.category === group.key);
+    if (items.length === 0) return;
+
+    lines.push(isEn ? group.titleEn : group.title, "");
+    items.forEach((task) => {
+      const title = isEn ? task.title.en : task.title.zh;
+      const summary = isEn ? task.summary.en : task.summary.zh;
+      lines.push(`${title}: ${summary}`);
+    });
+    lines.push("");
+  });
+
+  return lines.join("\n").trim();
+};
+
+const taskText = {
+  zh: buildTaskText("zh"),
+  en: buildTaskText("en"),
+};
 ---
 
 <BaseLayout title="海市事务" active="/tasks/">
@@ -60,6 +124,40 @@ const groups = [
     descriptionEn="A compact checklist for daily, weekly, biweekly, and rotating tasks."
     quips={["打工人，打工魂"]}
   />
+
+  <div class="page-action-row">
+    <button
+      class="copy-button"
+      type="button"
+      data-copy-content
+      data-copy-zh={taskMarkdown.zh}
+      data-copy-en={taskMarkdown.en}
+      data-i18n-zh="复制为 Markdown"
+      data-i18n-en="Copy as Markdown"
+    >
+      复制为 Markdown
+    </button>
+    <button
+      class="copy-button"
+      type="button"
+      data-copy-content
+      data-copy-zh={taskText.zh}
+      data-copy-en={taskText.en}
+      data-i18n-zh="复制为文本"
+      data-i18n-en="Copy as Text"
+    >
+      复制为文本
+    </button>
+    <span
+      class="copy-status"
+      data-copy-status
+      data-i18n-zh="已复制"
+      data-i18n-en="Copied"
+      hidden
+    >
+      已复制
+    </span>
+  </div>
 
   {
     groups.map((group) => {
@@ -96,3 +194,47 @@ const groups = [
     })
   }
 </BaseLayout>
+
+<script>
+  // @ts-nocheck
+  const copyButtons = Array.from(document.querySelectorAll("[data-copy-content]"));
+  const copyStatus = document.querySelector("[data-copy-status]");
+
+  const fallbackCopy = (text) => {
+    const textarea = document.createElement("textarea");
+    textarea.value = text;
+    textarea.setAttribute("readonly", "");
+    textarea.style.position = "fixed";
+    textarea.style.left = "-9999px";
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand("copy");
+    textarea.remove();
+  };
+
+  copyButtons.forEach((copyButton) => {
+    copyButton.addEventListener("click", async () => {
+      const lang = document.body.dataset.lang === "en" ? "en" : "zh";
+      const text = copyButton.getAttribute(lang === "en" ? "data-copy-en" : "data-copy-zh") || "";
+
+      try {
+        if (navigator.clipboard?.writeText) {
+          await navigator.clipboard.writeText(text);
+        } else {
+          fallbackCopy(text);
+        }
+
+        if (copyStatus) {
+          copyStatus.hidden = false;
+          window.clearTimeout(copyStatus.dataset.timer);
+          copyStatus.dataset.timer = String(window.setTimeout(() => {
+            copyStatus.hidden = true;
+          }, 1800));
+        }
+      } catch {
+        fallbackCopy(text);
+        if (copyStatus) copyStatus.hidden = false;
+      }
+    });
+  });
+</script>

@@ -20,26 +20,6 @@
     "tags": ["逃课玩法"]
   },
   {
-    "id": "auction-low-price-bid",
-    "title": {
-      "zh": "拍卖会底价竞拍",
-      "en": "Auction Low-Price Bidding"
-    },
-    "status": {
-      "zh": "已修复",
-      "en": "Fixed"
-    },
-    "summary": {
-      "zh": "首次加价后反复点击竞价和 Esc，使 NPC 来不及出价，以接近底价拍到。",
-      "en": "After the first bid increase, repeatedly click bid and Esc so NPCs cannot bid in time, winning at close to the starting price."
-    },
-    "source": {
-      "label": "BV1fMooBYEr8",
-      "url": "https://www.bilibili.com/video/BV1fMooBYEr8"
-    },
-    "tags": ["逃课玩法"]
-  },
-  {
     "id": "auto-fishing",
     "title": {
       "zh": "自动钓鱼",
@@ -58,26 +38,6 @@
       "url": "https://www.bilibili.com/video/BV1n3oBBUEHT"
     },
     "tags": ["逃课玩法"]
-  },
-  {
-    "id": "wrong-bait-fishing",
-    "title": {
-      "zh": "错饵钓鱼法",
-      "en": "Wrong-Bait Fishing"
-    },
-    "status": {
-      "zh": "已修复",
-      "en": "Fixed"
-    },
-    "summary": {
-      "zh": "淡水用海水饵、海水用淡水饵，错饵钓鱼保底出 6 体力鱼。",
-      "en": "Use saltwater bait in freshwater, or freshwater bait in saltwater, to guarantee 6-stamina fish."
-    },
-    "source": {
-      "label": "BV1e6oZB8E4D",
-      "url": "https://www.bilibili.com/video/BV1e6oZB8E4D"
-    },
-    "tags": ["已修复"]
   },
   {
     "id": "solo-race-early-acceleration",
@@ -120,24 +80,44 @@
     "tags": ["赛车", "联机"]
   },
   {
-    "id": "rabbit-hole-double-exp",
+    "id": "mint-counter-reset-skill",
     "title": {
-      "zh": "兔子洞双倍经验",
-      "en": "Rabbit Hole Double EXP"
+      "zh": "薄荷反击重置 E 无视 CD",
+      "en": "Mint Counter Resets Skill E"
     },
     "status": {
-      "zh": "已修复",
-      "en": "Fixed"
+      "zh": "未确认",
+      "en": "Unconfirmed"
     },
     "summary": {
-      "zh": "刷取特定副本获得双倍经验。",
-      "en": "Farm a specific stage to obtain double EXP."
+      "zh": "反击重置 E 效果的 3 秒 CD 不生效。",
+      "en": "Countering can reset Skill E and bypass the 3-second limit."
     },
     "source": {
-      "label": "BV1fMooBYEr8",
-      "url": "https://www.bilibili.com/video/BV1fMooBYEr8"
+      "label": "BV1VeokBJE84",
+      "url": "https://www.bilibili.com/video/BV1VeokBJE84"
     },
-    "tags": ["已修复"]
+    "tags": ["角色机制"]
+  },
+  {
+    "id": "vina-apartment-furniture-duplication",
+    "title": {
+      "zh": "维纳公寓家具复制",
+      "en": "Vina Apartment Furniture Duplication"
+    },
+    "status": {
+      "zh": "未确认",
+      "en": "Unconfirmed"
+    },
+    "summary": {
+      "zh": "在维纳公寓特定点位摆放家具、重新登录、收纳会使家具自我复制。一些同为家具和礼物的物品也可复制。",
+      "en": "Place furniture at specific spots in Vina Apartment, relog, then store it to make the furniture duplicate itself. Some items that count as both furniture and gifts can also be duplicated."
+    },
+    "source": {
+      "label": "BV16J92BeEqN",
+      "url": "https://www.bilibili.com/video/BV16J92BeEqN"
+    },
+    "tags": ["家具", "维纳公寓"]
   },
   {
     "id": "pink-paw-vault-speedrun",
@@ -158,6 +138,66 @@
       "url": "https://www.bilibili.com/"
     },
     "tags": ["部分修复", "资源"]
+  },
+  {
+    "id": "auction-low-price-bid",
+    "title": {
+      "zh": "拍卖会底价竞拍",
+      "en": "Auction Low-Price Bidding"
+    },
+    "status": {
+      "zh": "已修复",
+      "en": "Fixed"
+    },
+    "summary": {
+      "zh": "首次加价后反复点击竞价和 Esc，使 NPC 来不及出价，以接近底价拍到。",
+      "en": "After the first bid increase, repeatedly click bid and Esc so NPCs cannot bid in time, winning at close to the starting price."
+    },
+    "source": {
+      "label": "BV1fMooBYEr8",
+      "url": "https://www.bilibili.com/video/BV1fMooBYEr8"
+    },
+    "tags": ["逃课玩法"]
+  },
+  {
+    "id": "wrong-bait-fishing",
+    "title": {
+      "zh": "错饵钓鱼法",
+      "en": "Wrong-Bait Fishing"
+    },
+    "status": {
+      "zh": "已修复",
+      "en": "Fixed"
+    },
+    "summary": {
+      "zh": "淡水用海水饵、海水用淡水饵，错饵钓鱼保底出 6 体力鱼。",
+      "en": "Use saltwater bait in freshwater, or freshwater bait in saltwater, to guarantee 6-stamina fish."
+    },
+    "source": {
+      "label": "BV1e6oZB8E4D",
+      "url": "https://www.bilibili.com/video/BV1e6oZB8E4D"
+    },
+    "tags": ["已修复"]
+  },
+  {
+    "id": "rabbit-hole-double-exp",
+    "title": {
+      "zh": "兔子洞双倍经验",
+      "en": "Rabbit Hole Double EXP"
+    },
+    "status": {
+      "zh": "已修复",
+      "en": "Fixed"
+    },
+    "summary": {
+      "zh": "刷取特定副本获得双倍经验。",
+      "en": "Farm a specific stage to obtain double EXP."
+    },
+    "source": {
+      "label": "BV1fMooBYEr8",
+      "url": "https://www.bilibili.com/video/BV1fMooBYEr8"
+    },
+    "tags": ["已修复"]
   },
   {
     "id": "block-fans-speedrun",
@@ -198,26 +238,6 @@
       "url": "https://www.bilibili.com/video/BV1sgogB1ELv"
     },
     "tags": ["已修复", "显示异常"]
-  },
-  {
-    "id": "mint-counter-reset-skill",
-    "title": {
-      "zh": "薄荷反击重置 E 无视 CD",
-      "en": "Mint Counter Resets Skill E"
-    },
-    "status": {
-      "zh": "未确认",
-      "en": "Unconfirmed"
-    },
-    "summary": {
-      "zh": "反击重置 E 效果的 3 秒 CD 不生效。",
-      "en": "Countering can reset Skill E and bypass the 3-second limit."
-    },
-    "source": {
-      "label": "BV1VeokBJE84",
-      "url": "https://www.bilibili.com/video/BV1VeokBJE84"
-    },
-    "tags": ["角色机制"]
   },
   {
     "id": "xiaozi-infinite-damage",
@@ -278,25 +298,5 @@
       "url": "https://www.bilibili.com/video/BV1PJo2BLEQ3"
     },
     "tags": ["数值异常"]
-  },
-  {
-    "id": "vina-apartment-furniture-duplication",
-    "title": {
-      "zh": "维纳公寓家具增生",
-      "en": "Vina Apartment Furniture Duplication"
-    },
-    "status": {
-      "zh": "未确认",
-      "en": "Unconfirmed"
-    },
-    "summary": {
-      "zh": "在维纳公寓特定点位摆放家具、重新登录、收纳会使家具自我复制。",
-      "en": "Place furniture at specific spots in Vina Apartment, relog, then store it to make the furniture duplicate itself."
-    },
-    "source": {
-      "label": "BV16J92BeEqN",
-      "url": "https://www.bilibili.com/video/BV16J92BeEqN"
-    },
-    "tags": ["家具", "维纳公寓"]
   }
 ]
