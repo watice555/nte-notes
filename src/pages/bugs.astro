@@ -48,11 +48,13 @@ import bugs from "@/data/bugs.json";
           )}
           <h3 data-i18n-zh={bug.title.zh} data-i18n-en={bug.title.en}>{bug.title.zh}</h3>
           <p data-i18n-zh={bug.summary.zh} data-i18n-en={bug.summary.en}>{bug.summary.zh}</p>
-          <p class="bug-source">
-            <a href={bug.source.url} target="_blank" rel="noreferrer">
-              {bug.source.label}
-            </a>
-          </p>
+          {bug.source.label && bug.source.url && (
+            <p class="bug-source">
+              <a href={bug.source.url} target="_blank" rel="noreferrer">
+                {bug.source.label}
+              </a>
+            </p>
+          )}
         </article>
       ))
     }

@@ -110,8 +110,8 @@
       "en": "Unconfirmed"
     },
     "summary": {
-      "zh": "在维纳公寓特定点位摆放家具、重新登录、收纳会使家具自我复制。一些同为家具和礼物的物品也可复制。",
-      "en": "Place furniture at specific spots in Vina Apartment, relog, then store it to make the furniture duplicate itself. Some items that count as both furniture and gifts can also be duplicated."
+      "zh": "在维纳公寓特定点位摆放家具，会使相应家具状态异常，被收纳后重新进入游戏，这些家具仍然会出现，反复收纳可复制家具。部分家具也属于赠礼，可用于提升角色好感度。",
+      "en": "Place furniture at specific spots in Vina Apartment to make the corresponding furniture enter an abnormal state. After storing it and re-entering the game, the furniture still appears; repeatedly storing it can duplicate the furniture. Some furniture also counts as gifts and can be used to raise character bond levels."
     },
     "source": {
       "label": "BV16J92BeEqN",
@@ -122,20 +122,20 @@
   {
     "id": "pink-paw-vault-speedrun",
     "title": {
-      "zh": "粉爪大劫案速降金库速刷",
-      "en": "Pink Paw Heist Vault Speedrun"
+      "zh": "粉爪大劫案速刷",
+      "en": "Pink Paw Heist Speedrun"
     },
     "status": {
       "zh": "部分修复",
       "en": "Partially fixed"
     },
     "summary": {
-      "zh": "速降/卡点进入金库，用于速刷资源。",
-      "en": "Use rapid descent or positioning tricks to enter the vault and farm resources quickly."
+      "zh": "通过多种超常规方式到达金库等以达到速刷效果，相关bug部分修复，但又有新bug产生，建议自行搜索最新动态。",
+      "en": "Use various unconventional methods to reach the vault and similar targets for faster farming. Related bugs have been partially fixed, but new bugs have also appeared; searching for the latest updates is recommended."
     },
     "source": {
-      "label": "过于复杂，请自行搜索",
-      "url": "https://www.bilibili.com/"
+      "label": "",
+      "url": ""
     },
     "tags": ["部分修复", "资源"]
   },
