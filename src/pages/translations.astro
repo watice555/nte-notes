@@ -3,6 +3,14 @@ import BaseLayout from "@/components/BaseLayout.astro";
 import PageHero from "@/components/PageHero.astro";
 import SectionHeader from "@/components/SectionHeader.astro";
 import translations from "@/data/translations.json";
+
+const categoryLabels: Record<string, string> = {
+  游戏名: "Game Title",
+  世界观: "World",
+  角色: "Character",
+  属性: "Attribute",
+  弧盘类别: "Arc Type",
+};
 ---
 
 <BaseLayout title="中英对照" active="/translations/">
@@ -10,22 +18,29 @@ import translations from "@/data/translations.json";
     eyebrow="CN / EN Reference"
     title="中英对照"
     titleEn="Chinese / English Reference"
-    description="用于查询角色名、地点、道具、系统名词等中英对照。这个页面支持本地快速筛选。"
-    descriptionEn="A searchable Chinese and English reference for names, places, items, and systems."
+    description="用于查询角色名、地点、道具、系统名词等中英对照。持续建设中~"
+    descriptionEn="A searchable Chinese and English reference for names, places, items, and systems. Work in progress."
   />
 
   <SectionHeader title="对照表" titleEn="Reference Table" />
   <div class="tool-row">
-    <input class="filter-input" type="search" data-table-filter placeholder="搜索中文、英文、别名、分类..." />
+    <input
+      class="filter-input"
+      type="search"
+      data-table-filter
+      placeholder="搜索中文、英文、别名、分类..."
+      data-i18n-placeholder-zh="搜索中文、英文、别名、分类..."
+      data-i18n-placeholder-en="Search Chinese, English, aliases, or categories..."
+    />
   </div>
   <table class="data-table" data-filter-table>
     <thead>
       <tr>
-        <th>中文</th>
+        <th data-i18n-zh="中文" data-i18n-en="Chinese">中文</th>
         <th>English</th>
-        <th>分类</th>
-        <th>别名</th>
-        <th>备注</th>
+        <th data-i18n-zh="分类" data-i18n-en="Category">分类</th>
+        <th data-i18n-zh="别名" data-i18n-en="Aliases">别名</th>
+        <th data-i18n-zh="备注" data-i18n-en="Notes">备注</th>
       </tr>
     </thead>
     <tbody>
@@ -34,7 +49,9 @@ import translations from "@/data/translations.json";
           <tr data-filter-text={`${item.zh} ${item.en} ${item.category} ${item.aliases.join(" ")} ${item.note.zh} ${item.note.en}`}>
             <td>{item.zh}</td>
             <td lang="en">{item.en}</td>
-            <td>{item.category}</td>
+            <td data-i18n-zh={item.category} data-i18n-en={categoryLabels[item.category] ?? item.category}>
+              {item.category}
+            </td>
             <td>{item.aliases.join(" / ")}</td>
             <td data-i18n-zh={item.note.zh} data-i18n-en={item.note.en}>{item.note.zh}</td>
           </tr>

@@ -3,7 +3,7 @@
     "id": "daily-activity",
     "title": {
       "zh": "探索指南-每日活跃",
-      "en": ""
+      "en": "Exploration Guide - Daily Activity"
     },
     "category": "daily",
     "refresh": {
@@ -12,7 +12,7 @@
     },
     "summary": {
       "zh": "每日活跃 100 点。",
-      "en": ""
+      "en": "Reach 100 daily activity points."
     },
     "tags": ["日常", "探索指南"]
   },
@@ -20,7 +20,7 @@
     "id": "daily-pass-missions",
     "title": {
       "zh": "环期赏令-每日任务",
-      "en": ""
+      "en": "Season Pass - Daily Missions"
     },
     "category": "daily",
     "refresh": {
@@ -29,7 +29,7 @@
     },
     "summary": {
       "zh": "完成环期赏令中的每日任务。",
-      "en": ""
+      "en": "Complete the daily missions in the Season Pass."
     },
     "tags": ["日常", "环期赏令"]
   },
@@ -37,16 +37,16 @@
     "id": "instinct-pixel",
     "title": {
       "zh": "本性像素",
-      "en": ""
+      "en": "Instinct Pixel"
     },
     "category": "daily",
     "refresh": {
       "zh": "持续恢复",
-      "en": ""
+      "en": "Regenerates over time"
     },
     "summary": {
       "zh": "养成体力，持续恢复，10 点/小时。",
-      "en": ""
+      "en": "Progression stamina that regenerates over time at 10 points per hour."
     },
     "tags": ["日常", "体力", "养成"]
   },
@@ -54,16 +54,16 @@
     "id": "bond-gifts",
     "title": {
       "zh": "羁遇-赠礼",
-      "en": ""
+      "en": "Bond Encounters - Gifts"
     },
     "category": "daily",
     "refresh": {
       "zh": "每日限制",
-      "en": ""
+      "en": "Daily limit"
     },
     "summary": {
       "zh": "送礼物增加好感度。每日总限 10 次，单角色限 3 次。",
-      "en": ""
+      "en": "Give gifts to raise bond level. Limited to 10 gifts per day total and 3 per character."
     },
     "tags": ["日常", "好感度"]
   },
@@ -71,16 +71,16 @@
     "id": "fountain-wish",
     "title": {
       "zh": "喷泉池",
-      "en": ""
+      "en": "Fountain Pool"
     },
     "category": "daily",
     "refresh": {
       "zh": "每日可做",
-      "en": ""
+      "en": "Available daily"
     },
     "summary": {
       "zh": "许愿获得 buff 和 5~10 枚“嗯！硬币”。100 币可兑换弧盘“千金难买你开心”。",
-      "en": ""
+      "en": "Make a wish to receive a buff and 5-10 Yep! Coins. 100 coins can be exchanged for the arc \"Priceless Smile\"."
     },
     "tags": ["日常", "许愿", "弧盘"]
   },
@@ -88,16 +88,16 @@
     "id": "wishwood-slope",
     "title": {
       "zh": "愿木坡",
-      "en": ""
+      "en": "Wishwood Slope"
     },
     "category": "daily",
     "refresh": {
       "zh": "每日可做",
-      "en": ""
+      "en": "Available daily"
     },
     "summary": {
       "zh": "祈福，为随机角色增加 50 好感度。",
-      "en": ""
+      "en": "Pray to grant 50 bond points to a random character."
     },
     "tags": ["日常", "好感度"]
   },
@@ -105,16 +105,16 @@
     "id": "witch-house-fortune",
     "title": {
       "zh": "魔女之家",
-      "en": ""
+      "en": "Witch's House"
     },
     "category": "daily",
     "refresh": {
       "zh": "每日可做",
-      "en": ""
+      "en": "Available daily"
     },
     "summary": {
       "zh": "卜运，可分别获得彩蛋线索、buff 和宝石线索。",
-      "en": ""
+      "en": "Draw fortunes to receive easter egg clues, buffs, and gem clues."
     },
     "tags": ["日常", "线索", "buff"]
   },
@@ -122,16 +122,16 @@
     "id": "vina-apartment-clouds",
     "title": {
       "zh": "维纳公寓：压缩嘭嘭朵",
-      "en": ""
+      "en": "Vina Apartment: Compressed Pom-Pom Clouds"
     },
     "category": "daily",
     "refresh": {
       "zh": "每日可收取",
-      "en": ""
+      "en": "Collectable daily"
     },
     "summary": {
       "zh": "收取压缩嘭嘭朵，可作为好感度礼物。",
-      "en": ""
+      "en": "Collect Compressed Pom-Pom Clouds, which can be used as bond gifts."
     },
     "tags": ["日常", "好感度", "礼物"]
   },
@@ -139,16 +139,16 @@
     "id": "cafe-income",
     "title": {
       "zh": "一咖舍",
-      "en": ""
+      "en": "Yikashe Cafe"
     },
     "category": "daily",
     "refresh": {
       "zh": "每日经营",
-      "en": ""
+      "en": "Daily operation"
     },
     "summary": {
       "zh": "提取收益并补货。",
-      "en": ""
+      "en": "Collect income and restock the cafe."
     },
     "tags": ["日常", "经营"]
   },
@@ -156,16 +156,16 @@
     "id": "city-vitality",
     "title": {
       "zh": "都市活力",
-      "en": ""
+      "en": "City Vitality"
     },
     "category": "weekly",
     "refresh": {
       "zh": "每周一刷新",
-      "en": ""
+      "en": "Resets every Monday"
     },
     "summary": {
       "zh": "每周一刷新至上限，通过任意都市闲趣可将都市活力转化为方斯。",
-      "en": ""
+      "en": "Refills to the cap every Monday. Any urban leisure activity can convert City Vitality into Faens."
     },
     "tags": ["周常", "都市闲趣", "方斯"]
   },
@@ -173,16 +173,16 @@
     "id": "weekly-boss",
     "title": {
       "zh": "周本",
-      "en": ""
+      "en": "Weekly Bosses"
     },
     "category": "weekly",
     "refresh": {
       "zh": "每周 3 次",
-      "en": ""
+      "en": "3 times per week"
     },
     "summary": {
       "zh": "探索指南-异象巡礼，每周 3 次。",
-      "en": ""
+      "en": "Exploration Guide - Anomaly Pilgrimage, available 3 times per week."
     },
     "tags": ["周常", "探索指南", "异象巡礼"]
   },
@@ -190,16 +190,16 @@
     "id": "weekly-pass-missions",
     "title": {
       "zh": "环期赏令-每周任务",
-      "en": ""
+      "en": "Season Pass - Weekly Missions"
     },
     "category": "weekly",
     "refresh": {
       "zh": "每周刷新",
-      "en": ""
+      "en": "Weekly reset"
     },
     "summary": {
       "zh": "完成环期赏令中的每周任务。",
-      "en": ""
+      "en": "Complete the weekly missions in the Season Pass."
     },
     "tags": ["周常", "环期赏令"]
   },
@@ -207,16 +207,16 @@
     "id": "auction-house",
     "title": {
       "zh": "拍卖行",
-      "en": ""
+      "en": "Auction House"
     },
     "category": "weekly",
     "refresh": {
       "zh": "每周刷新",
-      "en": ""
+      "en": "Weekly reset"
     },
     "summary": {
       "zh": "用方斯竞拍，拍品每周刷新。",
-      "en": ""
+      "en": "Bid with Faens. Auction items refresh weekly."
     },
     "tags": ["周常", "方斯"]
   },
@@ -224,16 +224,16 @@
     "id": "mammon",
     "title": {
       "zh": "维纳公寓：玛门",
-      "en": ""
+      "en": "Vina Apartment: Mammon"
     },
     "category": "weekly",
     "refresh": {
       "zh": "每周刷新",
-      "en": ""
+      "en": "Weekly reset"
     },
     "summary": {
       "zh": "挑战副本获得方斯。",
-      "en": ""
+      "en": "Challenge the stage to earn Faens."
     },
     "tags": ["周常", "挑战", "方斯"]
   },
@@ -241,16 +241,16 @@
     "id": "outer-realm",
     "title": {
       "zh": "深渊（轨外之境）",
-      "en": ""
+      "en": "Abyss (Outer Realm)"
     },
     "category": "biweekly",
     "refresh": {
       "zh": "双周刷新",
-      "en": ""
+      "en": "Biweekly reset"
     },
     "summary": {
       "zh": "注意：开服阶段持续一个版本。",
-      "en": ""
+      "en": "Note: during launch, this content lasts for one full version."
     },
     "tags": ["双周常", "深渊"]
   },
@@ -258,16 +258,16 @@
     "id": "pink-paw-heist",
     "title": {
       "zh": "粉爪大劫",
-      "en": ""
+      "en": "Pink Paw Heist"
     },
     "category": "biweekly",
     "refresh": {
       "zh": "双周刷新",
-      "en": ""
+      "en": "Biweekly reset"
     },
     "summary": {
       "zh": "双周周期内容。",
-      "en": ""
+      "en": "Biweekly recurring content."
     },
     "tags": ["双周常"]
   },
@@ -275,16 +275,16 @@
     "id": "arc-disc-shop",
     "title": {
       "zh": "弧盘商店-弧盘选购",
-      "en": ""
+      "en": "Arc Shop - Arc Selection"
     },
     "category": "monthly",
     "refresh": {
       "zh": "每月刷新",
-      "en": ""
+      "en": "Monthly reset"
     },
     "summary": {
       "zh": "月度弧盘选购内容。",
-      "en": ""
+      "en": "Monthly arc selection items."
     },
     "tags": ["月常", "弧盘"]
   },
@@ -292,16 +292,16 @@
     "id": "market-rosemary-exchange",
     "title": {
       "zh": "集市兑换-迷迭兑换",
-      "en": ""
+      "en": "Market Exchange - Rosemary Exchange"
     },
     "category": "monthly",
     "refresh": {
       "zh": "每月刷新",
-      "en": ""
+      "en": "Monthly reset"
     },
     "summary": {
       "zh": "使用抽卡产物兑换抽卡道具、方斯和养成道具。",
-      "en": ""
+      "en": "Use gacha byproducts to exchange for pull items, Faens, and progression materials."
     },
     "tags": ["月常", "兑换", "抽卡"]
   },
@@ -309,16 +309,16 @@
     "id": "realm-recycle-station",
     "title": {
       "zh": "玩法商店-异境回收站",
-      "en": ""
+      "en": "Gameplay Shop - Outer Realm Recycle Station"
     },
     "category": "monthly",
     "refresh": {
       "zh": "每月刷新",
-      "en": ""
+      "en": "Monthly reset"
     },
     "summary": {
       "zh": "使用深渊通关产物兑换方斯和养成道具。",
-      "en": ""
+      "en": "Use Abyss clear rewards to exchange for Faens and progression materials."
     },
     "tags": ["月常", "兑换", "深渊"]
   },
@@ -326,16 +326,16 @@
     "id": "version-events",
     "title": {
       "zh": "版本活动",
-      "en": ""
+      "en": "Version Events"
     },
     "category": "version",
     "refresh": {
       "zh": "随版本更新",
-      "en": ""
+      "en": "Updates with each version"
     },
     "summary": {
       "zh": "版本期间开放的活动内容。",
-      "en": ""
+      "en": "Limited-time event content available during the version."
     },
     "tags": ["版本任务", "活动"]
   },
@@ -343,16 +343,16 @@
     "id": "version-pass-missions",
     "title": {
       "zh": "环期赏令-版本任务",
-      "en": ""
+      "en": "Season Pass - Version Missions"
     },
     "category": "version",
     "refresh": {
       "zh": "随版本更新",
-      "en": ""
+      "en": "Updates with each version"
     },
     "summary": {
       "zh": "完成环期赏令中的版本任务。",
-      "en": ""
+      "en": "Complete version missions in the Season Pass."
     },
     "tags": ["版本任务", "环期赏令"]
   },
@@ -360,16 +360,16 @@
     "id": "hunter-exchange",
     "title": {
       "zh": "猎人交易所",
-      "en": ""
+      "en": "Hunter Exchange"
     },
     "category": "version",
     "refresh": {
       "zh": "随版本更新",
-      "en": ""
+      "en": "Updates with each version"
     },
     "summary": {
       "zh": "使用方斯兑换抽卡道具和养成道具。",
-      "en": ""
+      "en": "Use Faens to exchange for pull items and progression materials."
     },
     "tags": ["版本任务", "方斯", "兑换"]
   },
@@ -377,16 +377,16 @@
     "id": "banner",
     "title": {
       "zh": "卡池",
-      "en": ""
+      "en": "Banners"
     },
     "category": "version",
     "refresh": {
       "zh": "随版本更新",
-      "en": ""
+      "en": "Updates with each version"
     },
     "summary": {
       "zh": "关注当前版本卡池开放情况。",
-      "en": ""
+      "en": "Track the currently available version banners."
     },
     "tags": ["版本任务", "抽卡"]
   },
@@ -394,16 +394,16 @@
     "id": "skin-discount",
     "title": {
       "zh": "皮肤优惠活动",
-      "en": ""
+      "en": "Outfit Discount Event"
     },
     "category": "version",
     "refresh": {
       "zh": "随版本更新",
-      "en": ""
+      "en": "Updates with each version"
     },
     "summary": {
       "zh": "关注版本期间的皮肤优惠活动。",
-      "en": ""
+      "en": "Track outfit discount events during the version."
     },
     "tags": ["版本任务", "皮肤"]
   }

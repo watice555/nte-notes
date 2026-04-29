@@ -7,18 +7,315 @@
     "aliases": ["NTE"],
     "note": {
       "zh": "官方英文名常缩写为 NTE。",
-      "en": ""
+      "en": "Official English title; commonly abbreviated as NTE."
     }
   },
   {
     "id": "hethereau",
     "zh": "海特洛市",
     "en": "Hethereau",
-    "category": "地点",
-    "aliases": ["海市"],
+    "category": "世界观",
+    "aliases": [""],
     "note": {
-      "zh": "站内“海市事务”中的海市即海特洛市。",
-      "en": ""
+      "zh": "",
+      "en": "World and setting term."
+    }
+  },
+  {
+    "id": "esper-zero",
+    "zh": "零",
+    "en": "Esper Zero",
+    "category": "角色",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": "Character name."
+    }
+  },
+  {
+    "id": "mint",
+    "zh": "薄荷",
+    "en": "Mint",
+    "category": "角色",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": "Character name."
+    }
+  },
+  {
+    "id": "nanally",
+    "zh": "娜娜莉",
+    "en": "Nanally",
+    "category": "角色",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": "Character name."
+    }
+  },
+  {
+    "id": "baicang",
+    "zh": "白藏",
+    "en": "Baicang",
+    "category": "角色",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": "Character name."
+    }
+  },
+  {
+    "id": "fadia",
+    "zh": "法帝娅",
+    "en": "Fadia",
+    "category": "角色",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": "Character name."
+    }
+  },
+  {
+    "id": "adler",
+    "zh": "阿德勒",
+    "en": "Adler",
+    "category": "角色",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": "Character name."
+    }
+  },
+  {
+    "id": "sakiri",
+    "zh": "早雾",
+    "en": "Sakiri",
+    "category": "角色",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": "Character name."
+    }
+  },
+  {
+    "id": "chiz",
+    "zh": "小吱",
+    "en": "Chiz",
+    "category": "角色",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": "Character name."
+    }
+  },
+  {
+    "id": "jiuyuan",
+    "zh": "九原",
+    "en": "Jiuyuan",
+    "category": "角色",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": "Character name."
+    }
+  },
+  {
+    "id": "skia",
+    "zh": "翳",
+    "en": "Skia",
+    "category": "角色",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": "Character name."
+    }
+  },
+  {
+    "id": "daffodil",
+    "zh": "达芙蒂尔",
+    "en": "Daffodil",
+    "category": "角色",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": "Character name."
+    }
+  },
+  {
+    "id": "hathor",
+    "zh": "哈索尔",
+    "en": "Hathor",
+    "category": "角色",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": "Character name."
+    }
+  },
+  {
+    "id": "haniel",
+    "zh": "哈尼娅",
+    "en": "Haniel",
+    "category": "角色",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": "Character name."
+    }
+  },
+  {
+    "id": "hotori",
+    "zh": "浔",
+    "en": "Hotori",
+    "category": "角色",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": "Character name."
+    }
+  },
+  {
+    "id": "lacrimosa",
+    "zh": "安魂曲",
+    "en": "Lacrimosa",
+    "category": "角色",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": "Character name."
+    }
+  },
+  {
+    "id": "edgar",
+    "zh": "埃德嘉",
+    "en": "Edgar",
+    "category": "角色",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": "Character name."
+    }
+  },
+  {
+    "id": "cosmos",
+    "zh": "光",
+    "en": "Cosmos",
+    "category": "属性",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": "Attribute name."
+    }
+  },
+  {
+    "id": "anima",
+    "zh": "灵",
+    "en": "Anima",
+    "category": "属性",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": "Attribute name."
+    }
+  },
+  {
+    "id": "incantation",
+    "zh": "咒",
+    "en": "Incantation",
+    "category": "属性",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": "Attribute name."
+    }
+  },
+  {
+    "id": "chaos",
+    "zh": "暗",
+    "en": "Chaos",
+    "category": "属性",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": "Attribute name."
+    }
+  },
+  {
+    "id": "psyche",
+    "zh": "魂",
+    "en": "Psyche",
+    "category": "属性",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": "Attribute name."
+    }
+  },
+  {
+    "id": "lakshana",
+    "zh": "相",
+    "en": "Lakshana",
+    "category": "属性",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": "Attribute name."
+    }
+  },
+  {
+    "id": "gas",
+    "zh": "气态",
+    "en": "Gas",
+    "category": "弧盘类别",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": "Arc type."
+    }
+  },
+  {
+    "id": "liquid",
+    "zh": "液态",
+    "en": "Liquid",
+    "category": "弧盘类别",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": "Arc type."
+    }
+  },
+  {
+    "id": "solid",
+    "zh": "固态",
+    "en": "Solid",
+    "category": "弧盘类别",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": "Arc type."
+    }
+  },
+  {
+    "id": "plasma",
+    "zh": "等离子",
+    "en": "Plasma",
+    "category": "弧盘类别",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": "Arc type."
+    }
+  },
+  {
+    "id": "synthesis",
+    "zh": "聚合",
+    "en": "Synthesis",
+    "category": "弧盘类别",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": "Arc type."
     }
   }
 ]

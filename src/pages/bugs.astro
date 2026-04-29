@@ -15,10 +15,20 @@ import bugs from "@/data/bugs.json";
     quips={["一切异常就是正常", "开放世界开放的解"]}
   />
 
-  <div class="page-meta-corner">更新时间：4月28日</div>
+  <div
+    class="page-meta-corner"
+    data-i18n-zh="更新时间：4月29日"
+    data-i18n-en="Updated: April 29"
+  >
+    更新时间：4月29日
+  </div>
 
-  <section class="notice small-note">
-    本页面仅为异环 Bug 留下记录，不鼓励玩家利用 Bug。BV 号仅为提供说明，不代表认为此视频是首发或原创。由于 Bug 过多，难免有遗漏、更新不及时等情况，欢迎投稿。
+  <section
+    class="notice small-note"
+    data-i18n-zh="本页面仅为异环 Bug 留下记录，不鼓励玩家利用 Bug。BV 号仅为提供说明，不代表认为此视频是首发或原创。由于 Bug 过多，难免有遗漏、更新不及时等情况，欢迎投稿。根据社区反馈和官方公告标注修复情况，但未标注的不代表保证仍能使用。"
+    data-i18n-en="This page records NTE bugs for reference only and does not encourage exploiting them. BV links are included for context and do not imply that a video is the first source or original discovery. Some bugs may be missing or outdated; submissions are welcome. Fix status is marked based on community feedback and official announcements, but unmarked entries are not guaranteed to still work."
+  >
+    本页面仅为异环 Bug 留下记录，不鼓励玩家利用 Bug。BV 号仅为提供说明，不代表认为此视频是首发或原创。由于 Bug 过多，难免有遗漏、更新不及时等情况，欢迎投稿。根据社区反馈和官方公告标注修复情况，但未标注的不代表保证仍能使用。
   </section>
 
   <SectionHeader title="条目" titleEn="Entries" />
@@ -26,8 +36,16 @@ import bugs from "@/data/bugs.json";
     {
       bugs.map((bug) => (
         <article class="data-card bug-card">
-          {bug.status.zh === "已修复" && <span class="fix-badge">已修复</span>}
-          {bug.status.zh === "部分修复" && <span class="fix-badge partial">部分修复</span>}
+          {bug.status.zh === "已修复" && (
+            <span class="fix-badge" data-i18n-zh={bug.status.zh} data-i18n-en={bug.status.en}>
+              {bug.status.zh}
+            </span>
+          )}
+          {bug.status.zh === "部分修复" && (
+            <span class="fix-badge partial" data-i18n-zh={bug.status.zh} data-i18n-en={bug.status.en}>
+              {bug.status.zh}
+            </span>
+          )}
           <h3 data-i18n-zh={bug.title.zh} data-i18n-en={bug.title.en}>{bug.title.zh}</h3>
           <p data-i18n-zh={bug.summary.zh} data-i18n-en={bug.summary.en}>{bug.summary.zh}</p>
           <p class="bug-source">

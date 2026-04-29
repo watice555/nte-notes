@@ -54,6 +54,16 @@ const assetBase = import.meta.env.BASE_URL.endsWith("/")
           const en = node.getAttribute("data-i18n-en") || zh;
           node.textContent = lang === "en" && en ? en : zh;
         });
+        document.querySelectorAll("[data-i18n-placeholder-en]").forEach((node) => {
+          const zh = node.getAttribute("data-i18n-placeholder-zh") || "";
+          const en = node.getAttribute("data-i18n-placeholder-en") || zh;
+          node.setAttribute("placeholder", lang === "en" && en ? en : zh);
+        });
+        document.querySelectorAll("[data-i18n-aria-label-en]").forEach((node) => {
+          const zh = node.getAttribute("data-i18n-aria-label-zh") || "";
+          const en = node.getAttribute("data-i18n-aria-label-en") || zh;
+          node.setAttribute("aria-label", lang === "en" && en ? en : zh);
+        });
         document.querySelectorAll("[data-lang-toggle]").forEach((node) => {
           node.setAttribute("aria-pressed", String(lang === "en"));
         });

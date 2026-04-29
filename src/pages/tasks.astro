@@ -4,39 +4,49 @@ import PageHero from "@/components/PageHero.astro";
 import SectionHeader from "@/components/SectionHeader.astro";
 import tasks from "@/data/tasks.json";
 
-const categoryLabels: Record<string, string> = {
-  daily: "每日",
-  weekly: "每周",
-  biweekly: "双周",
-  monthly: "每月",
-  version: "版本",
+const categoryLabels: Record<string, { zh: string; en: string }> = {
+  daily: { zh: "每日", en: "Daily" },
+  weekly: { zh: "每周", en: "Weekly" },
+  biweekly: { zh: "双周", en: "Biweekly" },
+  monthly: { zh: "每月", en: "Monthly" },
+  version: { zh: "版本", en: "Version" },
 };
 
 const groups = [
   {
     key: "daily",
     title: "日常",
+    titleEn: "Daily",
     description: "每日刷新或适合每天顺手检查的事项。",
+    descriptionEn: "Daily resets and quick checks worth doing each day.",
   },
   {
     key: "weekly",
     title: "周常",
+    titleEn: "Weekly",
     description: "每周刷新、结算或限次领取的事项。",
+    descriptionEn: "Weekly resets, settlements, and limited weekly claims.",
   },
   {
     key: "biweekly",
     title: "双周常",
+    titleEn: "Biweekly",
     description: "双周轮换或阶段性周期内容。",
+    descriptionEn: "Biweekly rotations and staged recurring content.",
   },
   {
     key: "monthly",
     title: "月常",
+    titleEn: "Monthly",
     description: "每月刷新或适合按月检查的兑换内容。",
+    descriptionEn: "Monthly resets and exchange items to check once per month.",
   },
   {
     key: "version",
     title: "版本任务",
+    titleEn: "Version Tasks",
     description: "随版本活动、卡池和商店周期变化的事项。",
+    descriptionEn: "Tasks that change with version events, banners, and shops.",
   },
 ];
 ---
@@ -58,12 +68,23 @@ const groups = [
 
       return (
         <section>
-          <SectionHeader title={group.title} description={group.description} />
+          <SectionHeader
+            title={group.title}
+            titleEn={group.titleEn}
+            description={group.description}
+            descriptionEn={group.descriptionEn}
+          />
           <div class="grid">
             {items.map((task) => (
               <article class="data-card">
                 <div class="meta-row">
-                  <span class="pill">{categoryLabels[task.category] ?? task.category}</span>
+                  <span
+                    class="pill"
+                    data-i18n-zh={categoryLabels[task.category]?.zh ?? task.category}
+                    data-i18n-en={categoryLabels[task.category]?.en ?? task.category}
+                  >
+                    {categoryLabels[task.category]?.zh ?? task.category}
+                  </span>
                 </div>
                 <h3 data-i18n-zh={task.title.zh} data-i18n-en={task.title.en}>{task.title.zh}</h3>
                 <p data-i18n-zh={task.summary.zh} data-i18n-en={task.summary.en}>{task.summary.zh}</p>

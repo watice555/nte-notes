@@ -3,15 +3,15 @@
     "id": "toy-store-free-shopping",
     "title": {
       "zh": "潮玩店零元购",
-      "en": ""
+      "en": "Toy Store Free Shopping"
     },
     "status": {
       "zh": "未确认",
-      "en": ""
+      "en": "Unconfirmed"
     },
     "summary": {
       "zh": "被抓后直接传送走，白嫖盒子/商品。",
-      "en": ""
+      "en": "After being caught, teleport away directly to keep boxes or goods for free."
     },
     "source": {
       "label": "BV1bDovBsEGS",
@@ -23,15 +23,15 @@
     "id": "auction-low-price-bid",
     "title": {
       "zh": "拍卖会底价竞拍",
-      "en": ""
+      "en": "Auction Low-Price Bidding"
     },
     "status": {
       "zh": "已修复",
-      "en": ""
+      "en": "Fixed"
     },
     "summary": {
       "zh": "首次加价后反复点击竞价和 Esc，使 NPC 来不及出价，以接近底价拍到。",
-      "en": ""
+      "en": "After the first bid increase, repeatedly click bid and Esc so NPCs cannot bid in time, winning at close to the starting price."
     },
     "source": {
       "label": "BV1fMooBYEr8",
@@ -43,15 +43,15 @@
     "id": "auto-fishing",
     "title": {
       "zh": "自动钓鱼",
-      "en": ""
+      "en": "Auto Fishing"
     },
     "status": {
       "zh": "未确认",
-      "en": ""
+      "en": "Unconfirmed"
     },
     "summary": {
       "zh": "鱼刚上钩立即开编队/聊天，钓鱼自动完成。",
-      "en": ""
+      "en": "Open the party setup or chat right after a fish bites to complete fishing automatically."
     },
     "source": {
       "label": "BV1n3oBBUEHT",
@@ -63,15 +63,15 @@
     "id": "wrong-bait-fishing",
     "title": {
       "zh": "错饵钓鱼法",
-      "en": ""
+      "en": "Wrong-Bait Fishing"
     },
     "status": {
       "zh": "已修复",
-      "en": ""
+      "en": "Fixed"
     },
     "summary": {
       "zh": "淡水用海水饵、海水用淡水饵，错饵钓鱼保底出 6 体力鱼。",
-      "en": ""
+      "en": "Use saltwater bait in freshwater, or freshwater bait in saltwater, to guarantee 6-stamina fish."
     },
     "source": {
       "label": "BV1e6oZB8E4D",
@@ -83,15 +83,15 @@
     "id": "solo-race-early-acceleration",
     "title": {
       "zh": "赛车单机提前加速",
-      "en": ""
+      "en": "Solo Race Early Acceleration"
     },
     "status": {
       "zh": "未确认",
-      "en": ""
+      "en": "Unconfirmed"
     },
     "summary": {
       "zh": "单机赛车加载时按 W，可提前加速。",
-      "en": ""
+      "en": "Press W during solo race loading to accelerate early."
     },
     "source": {
       "label": "BV1mQoGBsEpL",
@@ -103,15 +103,15 @@
     "id": "multiplayer-race-get-off",
     "title": {
       "zh": "赛车联机下车",
-      "en": ""
+      "en": "Getting Out During Multiplayer Races"
     },
     "status": {
       "zh": "未确认",
-      "en": ""
+      "en": "Unconfirmed"
     },
     "summary": {
       "zh": "联机赛车加载时规律按 F 可下车，之后可攻击他人车辆、蹭车或召唤摩托。",
-      "en": ""
+      "en": "Press F rhythmically while a multiplayer race loads to leave the vehicle, then attack other vehicles, hitch a ride, or summon a motorcycle."
     },
     "source": {
       "label": "BV1BHoQBEETd",
@@ -123,15 +123,15 @@
     "id": "rabbit-hole-double-exp",
     "title": {
       "zh": "兔子洞双倍经验",
-      "en": ""
+      "en": "Rabbit Hole Double EXP"
     },
     "status": {
       "zh": "已修复",
-      "en": ""
+      "en": "Fixed"
     },
     "summary": {
       "zh": "刷取特定副本获得双倍经验。",
-      "en": ""
+      "en": "Farm a specific stage to obtain double EXP."
     },
     "source": {
       "label": "BV1fMooBYEr8",
@@ -143,15 +143,15 @@
     "id": "pink-paw-vault-speedrun",
     "title": {
       "zh": "粉爪大劫案速降金库速刷",
-      "en": ""
+      "en": "Pink Paw Heist Vault Speedrun"
     },
     "status": {
       "zh": "部分修复",
-      "en": ""
+      "en": "Partially fixed"
     },
     "summary": {
       "zh": "速降/卡点进入金库，用于速刷资源。",
-      "en": ""
+      "en": "Use rapid descent or positioning tricks to enter the vault and farm resources quickly."
     },
     "source": {
       "label": "过于复杂，请自行搜索",
@@ -163,15 +163,15 @@
     "id": "block-fans-speedrun",
     "title": {
       "zh": "泯除方块速刷方斯",
-      "en": ""
+      "en": "Block-Clearing Faens Speedrun"
     },
     "status": {
       "zh": "已修复",
-      "en": ""
+      "en": "Fixed"
     },
     "summary": {
       "zh": "快速进入、退出或反复按 F，消耗体力并直接获得方斯。",
-      "en": ""
+      "en": "Enter and exit quickly, or press F repeatedly, to consume stamina and receive Faens directly."
     },
     "source": {
       "label": "BV1n3oBBUEHT",
@@ -183,15 +183,15 @@
     "id": "mint-pajama-reflection",
     "title": {
       "zh": "薄荷睡衣显示异常",
-      "en": ""
+      "en": "Mint Pajama Reflection Display Issue"
     },
     "status": {
       "zh": "已修复",
-      "en": ""
+      "en": "Fixed"
     },
     "summary": {
       "zh": "薄荷的睡衣在窗户倒映中显示异常。",
-      "en": ""
+      "en": "Mint's pajamas display incorrectly in window reflections."
     },
     "source": {
       "label": "BV1sgogB1ELv",
@@ -202,16 +202,16 @@
   {
     "id": "mint-counter-reset-skill",
     "title": {
-      "zh": "薄荷反击重置 E",
-      "en": ""
+      "zh": "薄荷反击重置 E 无视 CD",
+      "en": "Mint Counter Resets Skill E"
     },
     "status": {
       "zh": "未确认",
-      "en": ""
+      "en": "Unconfirmed"
     },
     "summary": {
-      "zh": "反击可重置 E，绕过 3 秒限制。",
-      "en": ""
+      "zh": "反击重置 E 效果的 3 秒 CD 不生效。",
+      "en": "Countering can reset Skill E and bypass the 3-second limit."
     },
     "source": {
       "label": "BV1VeokBJE84",
@@ -223,15 +223,15 @@
     "id": "xiaozi-infinite-damage",
     "title": {
       "zh": "小吱无限伤害",
-      "en": ""
+      "en": "Chiz Infinite Damage"
     },
     "status": {
       "zh": "已修复",
-      "en": ""
+      "en": "Fixed"
     },
     "summary": {
       "zh": "小吱普通攻击时切出界面，造成巨额伤害/秒怪。",
-      "en": ""
+      "en": "Switch interfaces during Chiz's normal attacks to deal extremely high damage or instantly defeat enemies."
     },
     "source": {
       "label": "BV1n3oBBUEHT",
@@ -243,15 +243,15 @@
     "id": "haiyue-flying-jellyfish",
     "title": {
       "zh": "海月飞天水母",
-      "en": ""
+      "en": "Haiyue Flying Jellyfish"
     },
     "status": {
       "zh": "已修复",
-      "en": ""
+      "en": "Fixed"
     },
     "summary": {
       "zh": "使用海月相关机制触发飞天，可用于高空跑图、开图、看风景。",
-      "en": ""
+      "en": "Trigger flight through Haiyue-related mechanics, useful for high-altitude traversal, map reveal, or sightseeing."
     },
     "source": {
       "label": "BV1uYoBBeErn",
@@ -263,20 +263,40 @@
     "id": "ten-times-item-buff",
     "title": {
       "zh": "10 倍道具 buff",
-      "en": ""
+      "en": "10x Item Buff"
     },
     "status": {
       "zh": "已修复",
-      "en": ""
+      "en": "Fixed"
     },
     "summary": {
       "zh": "道具 buff 数值异常叠加/放大到约 10 倍。",
-      "en": ""
+      "en": "Item buff values stack or amplify abnormally to roughly 10 times their intended value."
     },
     "source": {
       "label": "BV1PJo2BLEQ3",
       "url": "https://www.bilibili.com/video/BV1PJo2BLEQ3"
     },
     "tags": ["数值异常"]
+  },
+  {
+    "id": "vina-apartment-furniture-duplication",
+    "title": {
+      "zh": "维纳公寓家具增生",
+      "en": "Vina Apartment Furniture Duplication"
+    },
+    "status": {
+      "zh": "未确认",
+      "en": "Unconfirmed"
+    },
+    "summary": {
+      "zh": "在维纳公寓特定点位摆放家具、重新登录、收纳会使家具自我复制。",
+      "en": "Place furniture at specific spots in Vina Apartment, relog, then store it to make the furniture duplicate itself."
+    },
+    "source": {
+      "label": "BV16J92BeEqN",
+      "url": "https://www.bilibili.com/video/BV16J92BeEqN"
+    },
+    "tags": ["家具", "维纳公寓"]
   }
 ]

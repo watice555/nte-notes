@@ -1,26 +1,486 @@
 [
   {
+    "id": "esper-zero",
+    "name": {
+      "zh": "零",
+      "en": "Esper Zero"
+    },
+    "rarity": "S",
+    "gender": {
+      "zh": "可选",
+      "en": "Player's Choice"
+    },
+    "attribute": {
+      "zh": "光",
+      "en": "Cosmos"
+    },
+    "arcType": {
+      "zh": "固态",
+      "en": "Solid"
+    },
+    "role": {
+      "zh": "输出",
+      "en": "Damage"
+    },
+    "summary": {
+      "zh": "主角，可选择男 / 女版本。",
+      "en": "The protagonist, with male and female versions chosen by the player."
+    },
+    "links": [
+      {
+        "label": "Fandom",
+        "url": "https://neverness-to-everness.fandom.com/wiki/Esper_Zero"
+      }
+    ]
+  },
+  {
+    "id": "mint",
+    "name": {
+      "zh": "薄荷",
+      "en": "Mint"
+    },
+    "rarity": "A",
+    "gender": {
+      "zh": "女",
+      "en": "Female"
+    },
+    "attribute": {
+      "zh": "灵",
+      "en": "Anima"
+    },
+    "arcType": {
+      "zh": "液态",
+      "en": "Liquid"
+    },
+    "role": {
+      "zh": "输出",
+      "en": "Damage"
+    },
+    "summary": {
+      "zh": "异象管理局收容二组成员。",
+      "en": "A member of the Bureau of Anomaly Control's Containment Unit 2."
+    },
+    "links": [
+      {
+        "label": "Fandom",
+        "url": "https://neverness-to-everness.fandom.com/wiki/Mint"
+      }
+    ]
+  },
+  {
     "id": "nanally",
     "name": {
       "zh": "娜娜莉",
       "en": "Nanally"
     },
-    "role": {
-      "zh": "基础信息占位",
-      "en": ""
+    "rarity": "S",
+    "gender": {
+      "zh": "女",
+      "en": "Female"
     },
     "attribute": {
-      "zh": "待补充",
-      "en": ""
+      "zh": "灵",
+      "en": "Anima"
     },
-    "weapon": {
-      "zh": "待补充",
-      "en": ""
+    "arcType": {
+      "zh": "等离子",
+      "en": "Plasma"
+    },
+    "role": {
+      "zh": "输出",
+      "en": "Damage"
     },
     "summary": {
-      "zh": "角色合集第一版只保留基础字段，详细养成可链接到专业 Wiki。",
-      "en": ""
+      "zh": "伊波恩古董店成员。首个限定角色。",
+      "en": "A member of Eibon Antique Shop. The first limited character."
     },
-    "links": []
+    "links": [
+      {
+        "label": "Fandom",
+        "url": "https://neverness-to-everness.fandom.com/wiki/Nanally"
+      },
+      {
+        "label": "Mobalytics",
+        "url": "https://mobalytics.gg/neverness-to-everness/characters/nanally-build-guide"
+      }
+    ]
+  },
+  {
+    "id": "baicang",
+    "name": {
+      "zh": "白藏",
+      "en": "Baicang"
+    },
+    "rarity": "S",
+    "gender": {
+      "zh": "男",
+      "en": "Male"
+    },
+    "attribute": {
+      "zh": "咒",
+      "en": "Incantation"
+    },
+    "arcType": {
+      "zh": "聚合",
+      "en": "Synthesis"
+    },
+    "role": {
+      "zh": "输出",
+      "en": "Damage"
+    },
+    "summary": {
+      "zh": "异象管理局 ETD-4 队长。",
+      "en": "Captain of the Bureau of Anomaly Control's ETD-4."
+    },
+    "links": [
+      {
+        "label": "Fandom",
+        "url": "https://neverness-to-everness.fandom.com/wiki/Baicang"
+      },
+      {
+        "label": "Mobalytics",
+        "url": "https://mobalytics.gg/neverness-to-everness/characters/baicang-build-guide"
+      }
+    ]
+  },
+  {
+    "id": "fadia",
+    "name": {
+      "zh": "法帝娅",
+      "en": "Fadia"
+    },
+    "rarity": "S",
+    "gender": {
+      "zh": "女",
+      "en": "Female"
+    },
+    "attribute": {
+      "zh": "魂",
+      "en": "Psyche"
+    },
+    "arcType": {
+      "zh": "聚合",
+      "en": "Synthesis"
+    },
+    "role": {
+      "zh": "生存",
+      "en": "Survival"
+    },
+    "summary": {
+      "zh": "异象管理局 ETD-4 成员。",
+      "en": "A member of the Bureau of Anomaly Control's ETD-4."
+    },
+    "links": [
+      {
+        "label": "Fandom",
+        "url": "https://neverness-to-everness.fandom.com/wiki/Fadia"
+      }
+    ]
+  },
+  {
+    "id": "adler",
+    "name": {
+      "zh": "阿德勒",
+      "en": "Adler"
+    },
+    "rarity": "A",
+    "gender": {
+      "zh": "男",
+      "en": "Male"
+    },
+    "attribute": {
+      "zh": "咒",
+      "en": "Incantation"
+    },
+    "arcType": {
+      "zh": "聚合",
+      "en": "Synthesis"
+    },
+    "role": {
+      "zh": "生存",
+      "en": "Survival"
+    },
+    "summary": {
+      "zh": "伊波恩古董店成员。",
+      "en": "A member of Eibon Antique Shop."
+    },
+    "links": [
+      {
+        "label": "Fandom",
+        "url": "https://neverness-to-everness.fandom.com/wiki/Adler"
+      }
+    ]
+  },
+  {
+    "id": "sakiri",
+    "name": {
+      "zh": "早雾",
+      "en": "Sakiri"
+    },
+    "rarity": "S",
+    "gender": {
+      "zh": "女",
+      "en": "Female"
+    },
+    "attribute": {
+      "zh": "咒",
+      "en": "Incantation"
+    },
+    "arcType": {
+      "zh": "气态",
+      "en": "Gas"
+    },
+    "role": {
+      "zh": "辅助",
+      "en": "Buff"
+    },
+    "summary": {
+      "zh": "伊波恩古董店成员。",
+      "en": "A member of Eibon Antique Shop."
+    },
+    "links": [
+      {
+        "label": "Fandom",
+        "url": "https://neverness-to-everness.fandom.com/wiki/Sakiri"
+      }
+    ]
+  },
+  {
+    "id": "chiz",
+    "name": {
+      "zh": "小吱",
+      "en": "Chiz"
+    },
+    "rarity": "S",
+    "gender": {
+      "zh": "女",
+      "en": "Female"
+    },
+    "attribute": {
+      "zh": "光",
+      "en": "Cosmos"
+    },
+    "arcType": {
+      "zh": "气态",
+      "en": "Gas"
+    },
+    "role": {
+      "zh": "输出",
+      "en": "Damage"
+    },
+    "summary": {
+      "zh": "德沃夏克家族成员。",
+      "en": "A member of the Dvorak family."
+    },
+    "links": [
+      {
+        "label": "Fandom",
+        "url": "https://neverness-to-everness.fandom.com/wiki/Chiz"
+      }
+    ]
+  },
+  {
+    "id": "jiuyuan",
+    "name": {
+      "zh": "九原",
+      "en": "Jiuyuan"
+    },
+    "rarity": "S",
+    "gender": {
+      "zh": "女",
+      "en": "Female"
+    },
+    "attribute": {
+      "zh": "灵",
+      "en": "Anima"
+    },
+    "arcType": {
+      "zh": "固态",
+      "en": "Solid"
+    },
+    "role": {
+      "zh": "输出",
+      "en": "Damage"
+    },
+    "summary": {
+      "zh": "斯特利速递成员。",
+      "en": "A member of Sterry Express."
+    },
+    "links": [
+      {
+        "label": "Fandom",
+        "url": "https://neverness-to-everness.fandom.com/wiki/Jiuyuan"
+      }
+    ]
+  },
+  {
+    "id": "skia",
+    "name": {
+      "zh": "翳",
+      "en": "Skia"
+    },
+    "rarity": "A",
+    "gender": {
+      "zh": "男",
+      "en": "Male"
+    },
+    "attribute": {
+      "zh": "相",
+      "en": "Lakshana"
+    },
+    "arcType": {
+      "zh": "气态",
+      "en": "Gas"
+    },
+    "role": {
+      "zh": "输出",
+      "en": "Damage"
+    },
+    "summary": {
+      "zh": "异象管理局 ETD-4 副官。",
+      "en": "Lieutenant of the Bureau of Anomaly Control's ETD-4."
+    },
+    "links": [
+      {
+        "label": "Fandom",
+        "url": "https://neverness-to-everness.fandom.com/wiki/Skia"
+      }
+    ]
+  },
+  {
+    "id": "daffodil",
+    "name": {
+      "zh": "达芙蒂尔",
+      "en": "Daffodil"
+    },
+    "rarity": "S",
+    "gender": {
+      "zh": "女",
+      "en": "Female"
+    },
+    "attribute": {
+      "zh": "暗",
+      "en": "Chaos"
+    },
+    "arcType": {
+      "zh": "液态",
+      "en": "Liquid"
+    },
+    "role": {
+      "zh": "输出",
+      "en": "Damage"
+    },
+    "summary": {
+      "zh": "伊波恩古董店成员。",
+      "en": "A member of Eibon Antique Shop."
+    },
+    "links": [
+      {
+        "label": "Fandom",
+        "url": "https://neverness-to-everness.fandom.com/wiki/Daffodill"
+      }
+    ]
+  },
+  {
+    "id": "hathor",
+    "name": {
+      "zh": "哈索尔",
+      "en": "Hathor"
+    },
+    "rarity": "S",
+    "gender": {
+      "zh": "女",
+      "en": "Female"
+    },
+    "attribute": {
+      "zh": "相",
+      "en": "Lakshana"
+    },
+    "arcType": {
+      "zh": "等离子",
+      "en": "Plasma"
+    },
+    "role": {
+      "zh": "输出",
+      "en": "Damage"
+    },
+    "summary": {
+      "zh": "斯特利速递成员。",
+      "en": "A member of Sterry Express."
+    },
+    "links": [
+      {
+        "label": "Fandom",
+        "url": "https://neverness-to-everness.fandom.com/wiki/Hathor"
+      }
+    ]
+  },
+  {
+    "id": "haniel",
+    "name": {
+      "zh": "哈尼娅",
+      "en": "Haniel"
+    },
+    "rarity": "A",
+    "gender": {
+      "zh": "女",
+      "en": "Female"
+    },
+    "attribute": {
+      "zh": "魂",
+      "en": "Psyche"
+    },
+    "arcType": {
+      "zh": "固态",
+      "en": "Solid"
+    },
+    "role": {
+      "zh": "辅助",
+      "en": "Buff"
+    },
+    "summary": {
+      "zh": "斯特利速递成员。",
+      "en": "A member of Sterry Express."
+    },
+    "links": [
+      {
+        "label": "Fandom",
+        "url": "https://neverness-to-everness.fandom.com/wiki/Haniel"
+      }
+    ]
+  },
+  {
+    "id": "edgar",
+    "name": {
+      "zh": "埃德嘉",
+      "en": "Edgar"
+    },
+    "rarity": "A",
+    "gender": {
+      "zh": "男",
+      "en": "Male"
+    },
+    "attribute": {
+      "zh": "光",
+      "en": "Cosmos"
+    },
+    "arcType": {
+      "zh": "液态",
+      "en": "Liquid"
+    },
+    "role": {
+      "zh": "生存",
+      "en": "Survival"
+    },
+    "summary": {
+      "zh": "伊波恩古董店成员。",
+      "en": "A member of Eibon Antique Shop."
+    },
+    "links": [
+      {
+        "label": "Fandom",
+        "url": "https://neverness-to-everness.fandom.com/wiki/Edgar"
+      }
+    ]
   }
 ]

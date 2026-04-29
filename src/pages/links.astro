@@ -8,19 +8,31 @@ const groups = [
   {
     key: "Wiki",
     title: "Wiki 类",
+    titleEn: "Wikis",
     description: "资料站、Wiki 和攻略索引。",
+    descriptionEn: "Reference sites, wikis, and guide indexes.",
   },
   {
     key: "社区",
     title: "社区",
+    titleEn: "Communities",
     description: "玩家讨论、视频和社区内容入口。",
+    descriptionEn: "Player discussion, video, and community portals.",
   },
   {
     key: "官方",
     title: "官方",
+    titleEn: "Official",
     description: "不同地区的官方网站入口，亦是下载入口。",
+    descriptionEn: "Official sites for different regions, including download pages.",
   },
 ];
+
+const categoryLabels: Record<string, { zh: string; en: string }> = {
+  Wiki: { zh: "Wiki", en: "Wiki" },
+  社区: { zh: "社区", en: "Community" },
+  官方: { zh: "官方", en: "Official" },
+};
 ---
 
 <BaseLayout title="外部链接" active="/links/">
@@ -39,12 +51,23 @@ const groups = [
 
       return (
         <section>
-          <SectionHeader title={group.title} description={group.description} />
+          <SectionHeader
+            title={group.title}
+            titleEn={group.titleEn}
+            description={group.description}
+            descriptionEn={group.descriptionEn}
+          />
           <div class="grid two">
             {items.map((link) => (
               <article class="data-card">
                 <div class="meta-row">
-                  <span class="pill">{link.category}</span>
+                  <span
+                    class="pill"
+                    data-i18n-zh={categoryLabels[link.category]?.zh ?? link.category}
+                    data-i18n-en={categoryLabels[link.category]?.en ?? link.category}
+                  >
+                    {categoryLabels[link.category]?.zh ?? link.category}
+                  </span>
                 </div>
                 <h3 data-i18n-zh={link.title.zh} data-i18n-en={link.title.en}>{link.title.zh}</h3>
                 <p data-i18n-zh={link.summary.zh} data-i18n-en={link.summary.en}>{link.summary.zh}</p>

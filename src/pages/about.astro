@@ -15,11 +15,15 @@ import SectionHeader from "@/components/SectionHeader.astro";
 
   <section class="grid two">
     <article class="data-card">
-      <h2>联系作者</h2>
+      <h2 data-i18n-zh="联系作者" data-i18n-en="Contact">联系作者</h2>
       <dl class="contact-list">
         <div>
           <dt>GitHub</dt>
           <dd><a class="external-link" href="https://github.com/watice555" target="_blank" rel="noreferrer">watice555</a></dd>
+        </div>
+        <div>
+          <dt data-i18n-zh="异环 UID" data-i18n-en="NTE UID">异环 UID</dt>
+          <dd>218023783000</dd>
         </div>
         <div>
           <dt>QQ</dt>
@@ -30,20 +34,29 @@ import SectionHeader from "@/components/SectionHeader.astro";
           <dd><a class="external-link" href="https://space.bilibili.com/356760036" target="_blank" rel="noreferrer">wat1825</a></dd>
         </div>
         <div>
-          <dt>邮箱</dt>
+          <dt data-i18n-zh="邮箱" data-i18n-en="Email">邮箱</dt>
           <dd><a class="external-link" href="mailto:1825692103@qq.com">1825692103@qq.com</a></dd>
           <dd><a class="external-link" href="mailto:w1825692103@gmail.com">w1825692103@gmail.com</a></dd>
         </div>
       </dl>
     </article>
     <article class="data-card">
-      <h2>贡献资料</h2>
-      <p>推荐通过结构化数据文件维护内容：补充条目、修正翻译、提交外链或报告过期信息。</p>
+      <h2 data-i18n-zh="贡献资料" data-i18n-en="Contribute">贡献资料</h2>
+      <p
+        data-i18n-zh="推荐通过结构化数据文件维护内容：补充条目、修正翻译、提交外链或报告过期信息。"
+        data-i18n-en="Content is maintained through structured data files: add entries, fix translations, submit useful links, or report outdated information."
+      >
+        推荐通过结构化数据文件维护内容：补充条目、修正翻译、提交外链或报告过期信息。
+      </p>
     </article>
   </section>
 
   <SectionHeader title="声明" titleEn="Disclaimer" />
-  <section class="notice">
+  <section
+    class="notice"
+    data-i18n-zh="本站为非官方玩家项目，与游戏官方无隶属关系。站内对原神等其他游戏概念的对应仅用于玩家理解，不表示机制完全一致。"
+    data-i18n-en="This is an unofficial fan project and is not affiliated with the game publisher or developer. References to concepts from Genshin Impact or other games are only for orientation and do not imply identical mechanics."
+  >
     本站为非官方玩家项目，与游戏官方无隶属关系。站内对原神等其他游戏概念的对应仅用于玩家理解，不表示机制完全一致。
   </section>
 </BaseLayout>

@@ -12,11 +12,11 @@ const assetBase = import.meta.env.BASE_URL.endsWith("/")
 const navEn: Record<string, string> = {
   "/": "Home",
   "/tasks/": "Hethereau Affairs",
-  "/bugs/": "Bugs",
-  "/characters/": "Characters",
+  "/bugs/": "Bug Notes",
+  "/characters/": "Character Info",
   "/terms/": "Glossary",
-  "/translations/": "CN/EN",
-  "/links/": "Links",
+  "/translations/": "CN/EN Reference",
+  "/links/": "External Links",
   "/about/": "About",
 };
 ---
@@ -46,11 +46,29 @@ const navEn: Record<string, string> = {
     }
   </nav>
   <div class="header-actions">
-    <button class="icon-button" type="button" data-search-open aria-label="打开搜索">
+    <button
+      class="icon-button"
+      type="button"
+      data-search-open
+      aria-label="打开搜索"
+      data-i18n-aria-label-zh="打开搜索"
+      data-i18n-aria-label-en="Open search"
+      data-i18n-zh="搜索"
+      data-i18n-en="Search"
+    >
       搜索
     </button>
-    <button class="lang-toggle" type="button" data-lang-toggle aria-pressed="false">
-      中 / EN
-    </button>
+    <div class="language-control">
+      <button class="lang-toggle" type="button" data-lang-toggle aria-pressed="false">
+        中 / EN
+      </button>
+      <small
+        class="translation-note"
+        data-i18n-zh="英文翻译还有待完善"
+        data-i18n-en="English content is still being refined."
+      >
+        英文翻译还有待完善
+      </small>
+    </div>
   </div>
 </header>
