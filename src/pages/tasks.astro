@@ -68,7 +68,7 @@ const buildTaskMarkdown = (lang: "zh" | "en") => {
     lines.push(`## ${isEn ? group.titleEn : group.title}`, "");
     items.forEach((task) => {
       const title = isEn ? task.title.en : task.title.zh;
-      const summary = isEn ? task.summary.en : task.summary.zh;
+      const summary = (isEn ? task.summary.en : task.summary.zh).replace(/\n/g, "\n  ");
       lines.push(`- **${title}**: ${summary}`);
     });
     lines.push("");

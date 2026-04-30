@@ -151,6 +151,18 @@
         text-align: left;
         box-shadow: none;
       }
+      .item-card[draggable="true"] {
+        cursor: grab;
+      }
+      .item-card.dragging {
+        opacity: 0.42;
+      }
+      .item-card.drop-before {
+        box-shadow: 0 -3px 0 var(--accent), var(--shadow);
+      }
+      .item-card.drop-after {
+        box-shadow: 0 3px 0 var(--accent), var(--shadow);
+      }
       .item-card.active {
         border-color: var(--accent);
         box-shadow: 0 0 0 2px rgba(22, 117, 111, 0.14);
@@ -330,8 +342,10 @@
               </div>
               <div class="editor-actions">
                 <button id="duplicateButton" type="button">复制</button>
+                <button id="moveTopButton" type="button">置顶</button>
                 <button id="moveUpButton" class="icon" type="button" title="上移">↑</button>
                 <button id="moveDownButton" class="icon" type="button" title="下移">↓</button>
+                <button id="moveBottomButton" type="button">置底</button>
                 <button id="deleteButton" class="danger" type="button">删除</button>
               </div>
             </div>
@@ -349,6 +363,7 @@
         file: "",
         items: [],
         selectedIndex: -1,
+        dragIndex: -1,
         dirty: false
       };
 
@@ -366,8 +381,10 @@
         editorSubtitle: document.querySelector("#editorSubtitle"),
         editorForm: document.querySelector("#editorForm"),
         duplicateButton: document.querySelector("#duplicateButton"),
+        moveTopButton: document.querySelector("#moveTopButton"),
         moveUpButton: document.querySelector("#moveUpButton"),
         moveDownButton: document.querySelector("#moveDownButton"),
+        moveBottomButton: document.querySelector("#moveBottomButton"),
         deleteButton: document.querySelector("#deleteButton"),
         status: document.querySelector("#status"),
         buildLog: document.querySelector("#buildLog")
@@ -527,27 +544,29 @@
         el.listTitle.textContent = knownLabels[state.file] || state.file;
         el.itemCount.textContent = `${rows.length} / ${state.items.length}`;
         el.itemList.innerHTML = rows.length ? rows.map(({ item, index }) => `
-          <button class="item-card ${index === state.selectedIndex ? "active" : ""}" type="button" data-index="${index}">
+          <button class="item-card ${index === state.selectedIndex ? "active" : ""}" type="button" draggable="true" data-index="${index}">
             <strong>${escapeText(titleOf(item))}</strong>
             <small>${escapeText(subtitleOf(item))}</small>
           </button>
         `).join("") : `<div class="empty">没有匹配条目</div>`;
       };
 
-      const fieldKind = (key, value) => {
+      const fieldKind = (path, value) => {
         if (typeof value !== "string") return "input";
         const longKeys = ["summary", "description", "explanation", "notes", "body", "content"];
-        return longKeys.some((part) => key.toLowerCase().includes(part)) || value.length > 70 ? "textarea" : "input";
+        const fieldPath = path.map(String).join(".").toLowerCase();
+        return longKeys.some((part) => fieldPath.includes(part)) || value.length > 70 ? "textarea" : "input";
       };
 
       const pathName = (path) => path.map(String).join(".");
 
       const renderPrimitiveField = (parent, item, path, key, value) => {
         const label = document.createElement("label");
-        if (fieldKind(key, value) === "textarea") label.classList.add("wide");
+        const kind = fieldKind(path, value);
+        if (kind === "textarea") label.classList.add("wide");
         const caption = document.createElement("span");
         caption.textContent = pathName(path);
-        const control = fieldKind(key, value) === "textarea" ? document.createElement("textarea") : document.createElement("input");
+        const control = kind === "textarea" ? document.createElement("textarea") : document.createElement("input");
         control.value = value ?? "";
         control.addEventListener("input", () => {
           set(item, path, control.value);
@@ -770,13 +789,40 @@
         renderAll();
       };
 
-      const moveSelected = (offset) => {
-        const nextIndex = state.selectedIndex + offset;
-        if (nextIndex < 0 || nextIndex >= state.items.length) return;
-        [state.items[state.selectedIndex], state.items[nextIndex]] = [state.items[nextIndex], state.items[state.selectedIndex]];
+      const moveItem = (fromIndex, insertionIndex) => {
+        if (fromIndex < 0 || fromIndex >= state.items.length) return;
+        const boundedIndex = Math.max(0, Math.min(insertionIndex, state.items.length));
+        if (boundedIndex === fromIndex || boundedIndex === fromIndex + 1) return;
+        const [item] = state.items.splice(fromIndex, 1);
+        const nextIndex = fromIndex < boundedIndex ? boundedIndex - 1 : boundedIndex;
+        state.items.splice(nextIndex, 0, item);
         state.selectedIndex = nextIndex;
         markDirty();
         renderAll();
+      };
+
+      const visibleIndexes = () => filteredIndexes().map(({ index }) => index);
+
+      const moveSelected = (offset) => {
+        const indexes = visibleIndexes();
+        const visiblePosition = indexes.indexOf(state.selectedIndex);
+        if (visiblePosition === -1) return;
+        const targetIndex = indexes[visiblePosition + offset];
+        if (targetIndex === undefined) return;
+        moveItem(state.selectedIndex, offset > 0 ? targetIndex + 1 : targetIndex);
+      };
+
+      const moveSelectedToEdge = (edge) => {
+        const indexes = visibleIndexes();
+        if (!indexes.includes(state.selectedIndex)) return;
+        const insertionIndex = edge === "start" ? indexes[0] : indexes[indexes.length - 1] + 1;
+        moveItem(state.selectedIndex, insertionIndex);
+      };
+
+      const clearDropMarkers = () => {
+        el.itemList.querySelectorAll(".drop-before, .drop-after").forEach((item) => {
+          item.classList.remove("drop-before", "drop-after");
+        });
       };
 
       const deleteSelected = () => {
@@ -817,12 +863,49 @@
         renderList();
         renderEditor();
       });
+      el.itemList.addEventListener("dragstart", (event) => {
+        const button = event.target.closest("[data-index]");
+        if (!button) return;
+        state.dragIndex = Number(button.dataset.index);
+        button.classList.add("dragging");
+        event.dataTransfer.effectAllowed = "move";
+        event.dataTransfer.setData("text/plain", String(state.dragIndex));
+      });
+      el.itemList.addEventListener("dragover", (event) => {
+        const button = event.target.closest("[data-index]");
+        if (!button || state.dragIndex < 0) return;
+        event.preventDefault();
+        clearDropMarkers();
+        const rect = button.getBoundingClientRect();
+        button.classList.add(event.clientY > rect.top + rect.height / 2 ? "drop-after" : "drop-before");
+      });
+      el.itemList.addEventListener("dragleave", (event) => {
+        if (!el.itemList.contains(event.relatedTarget)) clearDropMarkers();
+      });
+      el.itemList.addEventListener("drop", (event) => {
+        const button = event.target.closest("[data-index]");
+        if (!button || state.dragIndex < 0) return;
+        event.preventDefault();
+        const targetIndex = Number(button.dataset.index);
+        const rect = button.getBoundingClientRect();
+        const insertionIndex = targetIndex + (event.clientY > rect.top + rect.height / 2 ? 1 : 0);
+        clearDropMarkers();
+        moveItem(state.dragIndex, insertionIndex);
+        state.dragIndex = -1;
+      });
+      el.itemList.addEventListener("dragend", () => {
+        state.dragIndex = -1;
+        el.itemList.querySelectorAll(".dragging").forEach((item) => item.classList.remove("dragging"));
+        clearDropMarkers();
+      });
       el.addButton.addEventListener("click", addItem);
       el.saveButton.addEventListener("click", () => save().catch((error) => setStatus(error.message, "bad")));
       el.buildButton.addEventListener("click", () => build().catch((error) => setStatus(error.message, "bad")));
       el.duplicateButton.addEventListener("click", duplicateItem);
+      el.moveTopButton.addEventListener("click", () => moveSelectedToEdge("start"));
       el.moveUpButton.addEventListener("click", () => moveSelected(-1));
       el.moveDownButton.addEventListener("click", () => moveSelected(1));
+      el.moveBottomButton.addEventListener("click", () => moveSelectedToEdge("end"));
       el.deleteButton.addEventListener("click", deleteSelected);
 
       window.addEventListener("beforeunload", (event) => {

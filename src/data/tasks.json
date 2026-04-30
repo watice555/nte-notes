@@ -14,7 +14,10 @@
       "zh": "每日活跃 100 点。",
       "en": "Reach 100 daily activity points."
     },
-    "tags": ["日常", "探索指南"]
+    "tags": [
+      "日常",
+      "探索指南"
+    ]
   },
   {
     "id": "daily-pass-missions",
@@ -31,7 +34,10 @@
       "zh": "完成环期赏令中的每日任务。",
       "en": "Complete the daily missions in the Season Pass."
     },
-    "tags": ["日常", "环期赏令"]
+    "tags": [
+      "日常",
+      "环期赏令"
+    ]
   },
   {
     "id": "instinct-pixel",
@@ -48,7 +54,11 @@
       "zh": "养成体力，持续恢复，10 点/小时。",
       "en": "Progression stamina that regenerates over time at 10 points per hour."
     },
-    "tags": ["日常", "体力", "养成"]
+    "tags": [
+      "日常",
+      "体力",
+      "养成"
+    ]
   },
   {
     "id": "bond-gifts",
@@ -65,7 +75,10 @@
       "zh": "送礼物增加好感度。每日总限 10 次，单角色限 3 次。",
       "en": "Give gifts to raise bond level. Limited to 10 gifts per day total and 3 per character."
     },
-    "tags": ["日常", "好感度"]
+    "tags": [
+      "日常",
+      "好感度"
+    ]
   },
   {
     "id": "fountain-wish",
@@ -82,7 +95,11 @@
       "zh": "许愿获得 buff 和 5~10 枚“嗯！硬币”。100 币可兑换弧盘“千金难买你开心”。",
       "en": "Make a wish to receive a buff and 5-10 Yep! Coins. 100 coins can be exchanged for the arc \"Priceless Smile\"."
     },
-    "tags": ["日常", "许愿", "弧盘"]
+    "tags": [
+      "日常",
+      "许愿",
+      "弧盘"
+    ]
   },
   {
     "id": "wishwood-slope",
@@ -99,7 +116,10 @@
       "zh": "祈福，为随机角色增加 50 好感度。",
       "en": "Pray to grant 50 bond points to a random character."
     },
-    "tags": ["日常", "好感度"]
+    "tags": [
+      "日常",
+      "好感度"
+    ]
   },
   {
     "id": "witch-house-fortune",
@@ -116,7 +136,11 @@
       "zh": "卜运，可分别获得彩蛋线索、buff 和宝石线索。",
       "en": "Draw fortunes to receive easter egg clues, buffs, and gem clues."
     },
-    "tags": ["日常", "线索", "buff"]
+    "tags": [
+      "日常",
+      "线索",
+      "buff"
+    ]
   },
   {
     "id": "vina-apartment-clouds",
@@ -133,7 +157,11 @@
       "zh": "收取压缩嘭嘭朵，可作为好感度礼物。",
       "en": "Collect Compressed Pom-Pom Clouds, which can be used as bond gifts."
     },
-    "tags": ["日常", "好感度", "礼物"]
+    "tags": [
+      "日常",
+      "好感度",
+      "礼物"
+    ]
   },
   {
     "id": "cafe-income",
@@ -150,7 +178,10 @@
       "zh": "提取收益并补货。",
       "en": "Collect income and restock the cafe."
     },
-    "tags": ["日常", "经营"]
+    "tags": [
+      "日常",
+      "经营"
+    ]
   },
   {
     "id": "city-vitality",
@@ -167,7 +198,11 @@
       "zh": "每周一刷新至上限，通过任意都市闲趣可将都市活力转化为方斯。",
       "en": "Refills to the cap every Monday. Any urban leisure activity can convert City Vitality into Faens."
     },
-    "tags": ["周常", "都市闲趣", "方斯"]
+    "tags": [
+      "周常",
+      "都市闲趣",
+      "方斯"
+    ]
   },
   {
     "id": "weekly-boss",
@@ -184,7 +219,11 @@
       "zh": "探索指南-异象巡礼，每周 3 次。",
       "en": "Exploration Guide - Anomaly Pilgrimage, available 3 times per week."
     },
-    "tags": ["周常", "探索指南", "异象巡礼"]
+    "tags": [
+      "周常",
+      "探索指南",
+      "异象巡礼"
+    ]
   },
   {
     "id": "weekly-pass-missions",
@@ -201,7 +240,10 @@
       "zh": "完成环期赏令中的每周任务。",
       "en": "Complete the weekly missions in the Season Pass."
     },
-    "tags": ["周常", "环期赏令"]
+    "tags": [
+      "周常",
+      "环期赏令"
+    ]
   },
   {
     "id": "auction-house",
@@ -218,7 +260,10 @@
       "zh": "用方斯竞拍，拍品每周刷新。",
       "en": "Bid with Faens. Auction items refresh weekly."
     },
-    "tags": ["周常", "方斯"]
+    "tags": [
+      "周常",
+      "方斯"
+    ]
   },
   {
     "id": "mammon",
@@ -235,7 +280,11 @@
       "zh": "挑战副本获得方斯。",
       "en": "Challenge the stage to earn Faens."
     },
-    "tags": ["周常", "挑战", "方斯"]
+    "tags": [
+      "周常",
+      "挑战",
+      "方斯"
+    ]
   },
   {
     "id": "outer-realm",
@@ -252,7 +301,10 @@
       "zh": "注意：开服阶段持续一个版本。",
       "en": "Note: during launch, this content lasts for one full version."
     },
-    "tags": ["双周常", "深渊"]
+    "tags": [
+      "双周常",
+      "深渊"
+    ]
   },
   {
     "id": "pink-paw-heist",
@@ -269,7 +321,9 @@
       "zh": "双周周期内容。",
       "en": "Biweekly recurring content."
     },
-    "tags": ["双周常"]
+    "tags": [
+      "双周常"
+    ]
   },
   {
     "id": "market-latitude-loss-exchange",
@@ -283,27 +337,14 @@
       "en": "Monthly reset"
     },
     "summary": {
-      "zh": "抽卡高级副产物兑换无梦果核和常驻角色。建议：不兑换无梦果核。常住角色折算30抽，按需兑换。",
+      "zh": "使用抽卡高级副产物兑换无梦果核和常驻角色。\n建议：不兑换无梦果核。常驻角色折算30抽，按需兑换。",
       "en": "Use premium gacha byproducts to exchange for Dreamless Cores and standard characters. Recommendation: do not exchange for Dreamless Cores. Standard characters are valued at 30 pulls, so exchange as needed."
     },
-    "tags": ["月常", "兑换", "抽卡"]
-  },
-  {
-    "id": "arc-disc-shop",
-    "title": {
-      "zh": "弧盘商店-弧盘选购",
-      "en": "Arc Shop - Arc Selection"
-    },
-    "category": "monthly",
-    "refresh": {
-      "zh": "每月刷新",
-      "en": "Monthly reset"
-    },
-    "summary": {
-      "zh": "月度弧盘选购内容。",
-      "en": "Monthly arc selection items."
-    },
-    "tags": ["月常", "弧盘"]
+    "tags": [
+      "月常",
+      "兑换",
+      "抽卡"
+    ]
   },
   {
     "id": "market-rosemary-exchange",
@@ -317,10 +358,14 @@
       "en": "Monthly reset"
     },
     "summary": {
-      "zh": "使用抽卡低级产物兑换抽卡道具、方斯和养成道具。建议：优先兑换抽卡道具，限定抽>武器抽>常驻抽>其他。",
-      "en": "Use lower-tier gacha byproducts to exchange for pull items, Faens, and progression materials. Recommendation: prioritize pull items, limited pulls > weapon pulls > standard pulls > others."
+      "zh": "使用抽卡低级产物兑换抽卡道具、方斯和养成道具。\n建议：优先兑换抽卡道具，限定抽>武器抽>常驻抽>其他。",
+      "en": "Use lower-tier gacha byproducts to exchange for pull items, Faens, and progression materials. \nRecommendation: prioritize pull items, limited pulls > weapon pulls > standard pulls > others."
     },
-    "tags": ["月常", "兑换", "抽卡"]
+    "tags": [
+      "月常",
+      "兑换",
+      "抽卡"
+    ]
   },
   {
     "id": "realm-recycle-station",
@@ -337,7 +382,31 @@
       "zh": "使用深渊通关产物兑换方斯和养成道具。",
       "en": "Use Abyss clear rewards to exchange for Faens and progression materials."
     },
-    "tags": ["月常", "兑换", "深渊"]
+    "tags": [
+      "月常",
+      "兑换",
+      "深渊"
+    ]
+  },
+  {
+    "id": "arc-disc-shop",
+    "title": {
+      "zh": "弧盘商店-弧盘选购",
+      "en": "Arc Shop - Arc Selection"
+    },
+    "category": "monthly",
+    "refresh": {
+      "zh": "每月刷新",
+      "en": "Monthly reset"
+    },
+    "summary": {
+      "zh": "使用武器池抽数兑换常驻S级弧盘。这些弧盘在异象委托中赠送一张，兑换必要性较低。",
+      "en": "Use weapon pool pulls to exchange for Standard S-grade Arcs. These Arcs grant one free in anomaly commissions, making the necessity of exchanging them low."
+    },
+    "tags": [
+      "月常",
+      "弧盘"
+    ]
   },
   {
     "id": "version-events",
@@ -354,7 +423,10 @@
       "zh": "版本期间开放的活动内容。",
       "en": "Limited-time event content available during the version."
     },
-    "tags": ["版本任务", "活动"]
+    "tags": [
+      "版本任务",
+      "活动"
+    ]
   },
   {
     "id": "version-pass-missions",
@@ -371,7 +443,10 @@
       "zh": "完成环期赏令中的版本任务。",
       "en": "Complete version missions in the Season Pass."
     },
-    "tags": ["版本任务", "环期赏令"]
+    "tags": [
+      "版本任务",
+      "环期赏令"
+    ]
   },
   {
     "id": "hunter-exchange",
@@ -388,7 +463,11 @@
       "zh": "使用方斯兑换抽卡道具和养成道具。",
       "en": "Use Faens to exchange for pull items and progression materials."
     },
-    "tags": ["版本任务", "方斯", "兑换"]
+    "tags": [
+      "版本任务",
+      "方斯",
+      "兑换"
+    ]
   },
   {
     "id": "banner",
@@ -405,7 +484,10 @@
       "zh": "关注当前版本卡池开放情况。",
       "en": "Track the currently available version banners."
     },
-    "tags": ["版本任务", "抽卡"]
+    "tags": [
+      "版本任务",
+      "抽卡"
+    ]
   },
   {
     "id": "skin-discount",
@@ -422,6 +504,9 @@
       "zh": "关注版本期间的皮肤优惠活动。",
       "en": "Track outfit discount events during the version."
     },
-    "tags": ["版本任务", "皮肤"]
+    "tags": [
+      "版本任务",
+      "皮肤"
+    ]
   }
 ]
