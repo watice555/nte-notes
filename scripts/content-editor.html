@@ -1,0 +1,839 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NTE Notes 内容编辑器</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f6f7f9;
+        --panel: #ffffff;
+        --panel-soft: #f0f4f7;
+        --line: #d7dee5;
+        --text: #18212b;
+        --muted: #637082;
+        --accent: #16756f;
+        --accent-strong: #0f5f5a;
+        --danger: #ad2f37;
+        --shadow: 0 12px 28px rgba(19, 31, 45, 0.08);
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      button, input, textarea, select {
+        font: inherit;
+      }
+      button {
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        background: var(--panel);
+        color: var(--text);
+        min-height: 36px;
+        padding: 0 12px;
+        cursor: pointer;
+      }
+      button:hover { border-color: var(--accent); }
+      button.primary {
+        border-color: var(--accent);
+        background: var(--accent);
+        color: white;
+      }
+      button.primary:hover { background: var(--accent-strong); }
+      button.danger {
+        border-color: rgba(173, 47, 55, 0.35);
+        color: var(--danger);
+      }
+      button.icon {
+        width: 36px;
+        padding: 0;
+      }
+      input, textarea, select {
+        width: 100%;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        background: white;
+        color: var(--text);
+        padding: 8px 10px;
+      }
+      textarea {
+        min-height: 88px;
+        resize: vertical;
+      }
+      label {
+        display: grid;
+        gap: 6px;
+        color: var(--muted);
+        font-size: 12px;
+      }
+      label span {
+        color: var(--text);
+        font-size: 13px;
+        font-weight: 650;
+      }
+      .app {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        min-height: 100vh;
+      }
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 5;
+        display: grid;
+        grid-template-columns: minmax(180px, 260px) 1fr auto;
+        gap: 12px;
+        align-items: center;
+        border-bottom: 1px solid var(--line);
+        background: rgba(246, 247, 249, 0.94);
+        padding: 12px 16px;
+        backdrop-filter: blur(12px);
+      }
+      .brand {
+        display: grid;
+        gap: 2px;
+      }
+      .brand strong { font-size: 16px; }
+      .brand small { color: var(--muted); }
+      .toolbar {
+        display: grid;
+        grid-template-columns: minmax(160px, 220px) minmax(160px, 1fr) minmax(130px, 180px);
+        gap: 10px;
+      }
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: flex-end;
+      }
+      .layout {
+        display: grid;
+        grid-template-columns: minmax(260px, 360px) 1fr;
+        min-height: 0;
+      }
+      .sidebar {
+        border-right: 1px solid var(--line);
+        background: #eef2f5;
+        min-height: 0;
+        padding: 14px;
+        overflow: auto;
+      }
+      .list-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 10px;
+      }
+      .count {
+        color: var(--muted);
+        font-size: 12px;
+      }
+      .item-list {
+        display: grid;
+        gap: 8px;
+      }
+      .item-card {
+        display: grid;
+        gap: 4px;
+        width: 100%;
+        min-height: auto;
+        border-radius: 8px;
+        background: var(--panel);
+        padding: 10px;
+        text-align: left;
+        box-shadow: none;
+      }
+      .item-card.active {
+        border-color: var(--accent);
+        box-shadow: 0 0 0 2px rgba(22, 117, 111, 0.14);
+      }
+      .item-card strong {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .item-card small {
+        color: var(--muted);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .main {
+        min-width: 0;
+        padding: 18px;
+        overflow: auto;
+      }
+      .editor-shell {
+        max-width: 980px;
+        margin: 0 auto;
+        display: grid;
+        gap: 14px;
+      }
+      .editor-head {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 12px;
+        align-items: start;
+      }
+      .editor-title h1 {
+        margin: 0;
+        font-size: 22px;
+      }
+      .editor-title p {
+        margin: 4px 0 0;
+        color: var(--muted);
+      }
+      .editor-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: flex-end;
+      }
+      .panel {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--panel);
+        padding: 14px;
+        box-shadow: var(--shadow);
+      }
+      .field-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+      }
+      .field-grid .wide,
+      .object-field,
+      .array-field {
+        grid-column: 1 / -1;
+      }
+      .object-field,
+      .array-field {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--panel-soft);
+        padding: 12px;
+      }
+      .object-title,
+      .array-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 10px;
+        color: var(--text);
+        font-weight: 700;
+      }
+      .array-items {
+        display: grid;
+        gap: 10px;
+      }
+      .array-item {
+        display: grid;
+        gap: 10px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: white;
+        padding: 10px;
+      }
+      .array-item-head {
+        display: flex;
+        justify-content: flex-end;
+        gap: 6px;
+      }
+      .status {
+        min-height: 24px;
+        color: var(--muted);
+      }
+      .status.ok { color: var(--accent-strong); }
+      .status.bad { color: var(--danger); }
+      .log {
+        display: none;
+        white-space: pre-wrap;
+        max-height: 240px;
+        overflow: auto;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #111820;
+        color: #d7e4ec;
+        padding: 12px;
+      }
+      .log.open { display: block; }
+      .empty {
+        color: var(--muted);
+        text-align: center;
+        padding: 40px 16px;
+      }
+      @media (max-width: 900px) {
+        .topbar,
+        .layout,
+        .editor-head {
+          grid-template-columns: 1fr;
+        }
+        .toolbar {
+          grid-template-columns: 1fr;
+        }
+        .actions,
+        .editor-actions {
+          justify-content: flex-start;
+        }
+        .sidebar {
+          border-right: 0;
+          border-bottom: 1px solid var(--line);
+          max-height: 360px;
+        }
+        .field-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <header class="topbar">
+        <div class="brand">
+          <strong>内容编辑器</strong>
+          <small>直接保存到 src/data/*.json</small>
+        </div>
+        <div class="toolbar">
+          <select id="fileSelect" aria-label="选择数据文件"></select>
+          <input id="searchInput" type="search" placeholder="搜索标题、ID、正文">
+          <select id="categoryFilter" aria-label="筛选分类"></select>
+        </div>
+        <div class="actions">
+          <button id="addButton" type="button">新增</button>
+          <button id="saveButton" class="primary" type="button">保存</button>
+          <button id="buildButton" type="button">构建</button>
+        </div>
+      </header>
+      <div class="layout">
+        <aside class="sidebar">
+          <div class="list-head">
+            <strong id="listTitle">条目</strong>
+            <span id="itemCount" class="count"></span>
+          </div>
+          <div id="itemList" class="item-list"></div>
+        </aside>
+        <main class="main">
+          <div class="editor-shell">
+            <div class="editor-head">
+              <div class="editor-title">
+                <h1 id="editorTitle">选择一个条目</h1>
+                <p id="editorSubtitle">左侧选择后即可编辑。</p>
+              </div>
+              <div class="editor-actions">
+                <button id="duplicateButton" type="button">复制</button>
+                <button id="moveUpButton" class="icon" type="button" title="上移">↑</button>
+                <button id="moveDownButton" class="icon" type="button" title="下移">↓</button>
+                <button id="deleteButton" class="danger" type="button">删除</button>
+              </div>
+            </div>
+            <form id="editorForm" class="panel"></form>
+            <div id="status" class="status"></div>
+            <pre id="buildLog" class="log"></pre>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script>
+      const state = {
+        files: [],
+        file: "",
+        items: [],
+        selectedIndex: -1,
+        dirty: false
+      };
+
+      const el = {
+        fileSelect: document.querySelector("#fileSelect"),
+        searchInput: document.querySelector("#searchInput"),
+        categoryFilter: document.querySelector("#categoryFilter"),
+        addButton: document.querySelector("#addButton"),
+        saveButton: document.querySelector("#saveButton"),
+        buildButton: document.querySelector("#buildButton"),
+        itemList: document.querySelector("#itemList"),
+        itemCount: document.querySelector("#itemCount"),
+        listTitle: document.querySelector("#listTitle"),
+        editorTitle: document.querySelector("#editorTitle"),
+        editorSubtitle: document.querySelector("#editorSubtitle"),
+        editorForm: document.querySelector("#editorForm"),
+        duplicateButton: document.querySelector("#duplicateButton"),
+        moveUpButton: document.querySelector("#moveUpButton"),
+        moveDownButton: document.querySelector("#moveDownButton"),
+        deleteButton: document.querySelector("#deleteButton"),
+        status: document.querySelector("#status"),
+        buildLog: document.querySelector("#buildLog")
+      };
+
+      const knownLabels = {
+        "tasks.json": "海市事务",
+        "bugs.json": "Bug 收集",
+        "characters.json": "角色信息",
+        "terms.json": "名词解释",
+        "translations.json": "中英对照",
+        "links.json": "外部链接"
+      };
+      const fileOrder = ["tasks.json", "bugs.json", "characters.json", "terms.json", "translations.json", "links.json"];
+
+      const taskCategories = [
+        ["daily", "日常"],
+        ["weekly", "周常"],
+        ["biweekly", "双周常"],
+        ["monthly", "月常"],
+        ["version", "版本任务"]
+      ];
+
+      const get = (value, path) => path.reduce((current, key) => current?.[key], value);
+      const set = (value, path, next) => {
+        let current = value;
+        path.slice(0, -1).forEach((key) => {
+          current = current[key];
+        });
+        current[path[path.length - 1]] = next;
+      };
+
+      const escapeText = (value) => String(value ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;");
+
+      const deepClone = (value) => JSON.parse(JSON.stringify(value));
+
+      const blankFrom = (value, key = "") => {
+        if (Array.isArray(value)) return [];
+        if (value && typeof value === "object") {
+          return Object.fromEntries(Object.entries(value).map(([childKey, childValue]) => [childKey, blankFrom(childValue, childKey)]));
+        }
+        if (key === "category" && state.file === "tasks.json") return "daily";
+        if (key === "rarity") return "A";
+        return "";
+      };
+
+      const titleOf = (item) => {
+        const title = item.title || item.name || item.term || item.label || item.id || {};
+        if (typeof title === "string") return title;
+        return title.zh || title.en || item.id || "未命名条目";
+      };
+
+      const subtitleOf = (item) => {
+        const parts = [];
+        if (item.id) parts.push(item.id);
+        if (item.category) parts.push(item.category);
+        if (item.rarity) parts.push(item.rarity);
+        if (item.url) parts.push(item.url);
+        return parts.join(" · ");
+      };
+
+      const searchableText = (value) => {
+        if (Array.isArray(value)) return value.map(searchableText).join(" ");
+        if (value && typeof value === "object") return Object.values(value).map(searchableText).join(" ");
+        return String(value ?? "");
+      };
+
+      const markDirty = () => {
+        state.dirty = true;
+        setStatus("有未保存修改", "");
+      };
+
+      const setStatus = (message, type = "") => {
+        el.status.textContent = message;
+        el.status.className = "status" + (type ? " " + type : "");
+      };
+
+      const api = async (url, options) => {
+        const response = await fetch(url, options);
+        const text = await response.text();
+        let data;
+        try {
+          data = text ? JSON.parse(text) : {};
+        } catch {
+          data = { error: text };
+        }
+        if (!response.ok) throw new Error(data.error || response.statusText);
+        return data;
+      };
+
+      const loadFiles = async () => {
+        const { files } = await api("/api/files");
+        state.files = files.sort((a, b) => {
+          const left = fileOrder.indexOf(a.name);
+          const right = fileOrder.indexOf(b.name);
+          if (left !== -1 || right !== -1) return (left === -1 ? 999 : left) - (right === -1 ? 999 : right);
+          return a.name.localeCompare(b.name, "en");
+        });
+        el.fileSelect.innerHTML = state.files.map((file) => {
+          const label = knownLabels[file.name] || file.name.replace(".json", "");
+          return `<option value="${escapeText(file.name)}">${escapeText(label)} (${escapeText(file.name)})</option>`;
+        }).join("");
+        state.file = state.files[0]?.name || "";
+        el.fileSelect.value = state.file;
+      };
+
+      const loadData = async (file = state.file) => {
+        if (!file) return;
+        if (state.dirty && !confirm("当前文件有未保存修改，要切换吗？")) {
+          el.fileSelect.value = state.file;
+          return;
+        }
+        const { items } = await api(`/api/data?file=${encodeURIComponent(file)}`);
+        state.file = file;
+        state.items = items;
+        state.selectedIndex = items.length ? 0 : -1;
+        state.dirty = false;
+        el.buildLog.classList.remove("open");
+        renderAll();
+        setStatus(`已加载 ${file}`, "ok");
+      };
+
+      const categories = () => {
+        const values = [...new Set(state.items.map((item) => item.category).filter(Boolean))];
+        return values.sort((a, b) => String(a).localeCompare(String(b), "zh-Hans-CN"));
+      };
+
+      const categoryLabel = (value) => {
+        if (state.file === "tasks.json") {
+          return taskCategories.find(([key]) => key === value)?.[1] || value;
+        }
+        return value;
+      };
+
+      const filteredIndexes = () => {
+        const query = el.searchInput.value.trim().toLowerCase();
+        const category = el.categoryFilter.value;
+        return state.items
+          .map((item, index) => ({ item, index }))
+          .filter(({ item }) => !category || item.category === category)
+          .filter(({ item }) => !query || searchableText(item).toLowerCase().includes(query));
+      };
+
+      const renderCategoryFilter = () => {
+        const values = categories();
+        el.categoryFilter.innerHTML = `<option value="">全部分类</option>` + values.map((value) => (
+          `<option value="${escapeText(value)}">${escapeText(categoryLabel(value))}</option>`
+        )).join("");
+      };
+
+      const renderList = () => {
+        const rows = filteredIndexes();
+        el.listTitle.textContent = knownLabels[state.file] || state.file;
+        el.itemCount.textContent = `${rows.length} / ${state.items.length}`;
+        el.itemList.innerHTML = rows.length ? rows.map(({ item, index }) => `
+          <button class="item-card ${index === state.selectedIndex ? "active" : ""}" type="button" data-index="${index}">
+            <strong>${escapeText(titleOf(item))}</strong>
+            <small>${escapeText(subtitleOf(item))}</small>
+          </button>
+        `).join("") : `<div class="empty">没有匹配条目</div>`;
+      };
+
+      const fieldKind = (key, value) => {
+        if (typeof value !== "string") return "input";
+        const longKeys = ["summary", "description", "explanation", "notes", "body", "content"];
+        return longKeys.some((part) => key.toLowerCase().includes(part)) || value.length > 70 ? "textarea" : "input";
+      };
+
+      const pathName = (path) => path.map(String).join(".");
+
+      const renderPrimitiveField = (parent, item, path, key, value) => {
+        const label = document.createElement("label");
+        if (fieldKind(key, value) === "textarea") label.classList.add("wide");
+        const caption = document.createElement("span");
+        caption.textContent = pathName(path);
+        const control = fieldKind(key, value) === "textarea" ? document.createElement("textarea") : document.createElement("input");
+        control.value = value ?? "";
+        control.addEventListener("input", () => {
+          set(item, path, control.value);
+          markDirty();
+          renderList();
+          renderEditorHeader();
+        });
+        label.append(caption, control);
+        parent.append(label);
+      };
+
+      const renderArrayField = (parent, item, path, key, values) => {
+        const section = document.createElement("div");
+        section.className = "array-field";
+        const title = document.createElement("div");
+        title.className = "array-title";
+        const name = document.createElement("span");
+        name.textContent = pathName(path);
+        const addButton = document.createElement("button");
+        addButton.type = "button";
+        addButton.textContent = "添加";
+        title.append(name, addButton);
+        const list = document.createElement("div");
+        list.className = "array-items";
+
+        const rerender = () => {
+          markDirty();
+          renderEditor();
+          renderList();
+        };
+
+        addButton.addEventListener("click", () => {
+          const currentValues = get(item, path);
+          const sample = currentValues[0];
+          currentValues.push(sample && typeof sample === "object" ? blankFrom(sample) : "");
+          rerender();
+        });
+
+        if (values.every((entry) => typeof entry !== "object" || entry === null)) {
+          const label = document.createElement("label");
+          const caption = document.createElement("span");
+          caption.textContent = "每行一项";
+          const textarea = document.createElement("textarea");
+          textarea.value = values.join("\n");
+          textarea.addEventListener("input", () => {
+            set(item, path, textarea.value.split(/\r?\n/).map((line) => line.trim()).filter(Boolean));
+            markDirty();
+            renderList();
+          });
+          label.append(caption, textarea);
+          list.append(label);
+        } else {
+          values.forEach((entry, index) => {
+            const card = document.createElement("div");
+            card.className = "array-item";
+            const head = document.createElement("div");
+            head.className = "array-item-head";
+            const up = document.createElement("button");
+            const down = document.createElement("button");
+            const remove = document.createElement("button");
+            up.type = down.type = remove.type = "button";
+            up.textContent = "↑";
+            down.textContent = "↓";
+            remove.textContent = "删除";
+            remove.className = "danger";
+            up.disabled = index === 0;
+            down.disabled = index === values.length - 1;
+            up.addEventListener("click", () => {
+              [values[index - 1], values[index]] = [values[index], values[index - 1]];
+              rerender();
+            });
+            down.addEventListener("click", () => {
+              [values[index + 1], values[index]] = [values[index], values[index + 1]];
+              rerender();
+            });
+            remove.addEventListener("click", () => {
+              values.splice(index, 1);
+              rerender();
+            });
+            head.append(up, down, remove);
+            card.append(head);
+            if (entry && typeof entry === "object") {
+              const grid = document.createElement("div");
+              grid.className = "field-grid";
+              renderObjectFields(grid, item, [...path, index], entry);
+              card.append(grid);
+            } else {
+              renderPrimitiveField(card, item, [...path, index], String(index), entry);
+            }
+            list.append(card);
+          });
+        }
+
+        section.append(title, list);
+        parent.append(section);
+      };
+
+      const renderObjectFields = (parent, item, basePath, object) => {
+        Object.entries(object).forEach(([key, value]) => {
+          const path = [...basePath, key];
+          if (Array.isArray(value)) {
+            renderArrayField(parent, item, path, key, value);
+          } else if (value && typeof value === "object") {
+            const section = document.createElement("div");
+            section.className = "object-field";
+            const title = document.createElement("div");
+            title.className = "object-title";
+            title.textContent = pathName(path);
+            const grid = document.createElement("div");
+            grid.className = "field-grid";
+            renderObjectFields(grid, item, path, value);
+            section.append(title, grid);
+            parent.append(section);
+          } else if (key === "category" && state.file === "tasks.json") {
+            const label = document.createElement("label");
+            const caption = document.createElement("span");
+            caption.textContent = pathName(path);
+            const select = document.createElement("select");
+            select.innerHTML = taskCategories.map(([value, label]) => (
+              `<option value="${escapeText(value)}">${escapeText(label)} (${escapeText(value)})</option>`
+            )).join("");
+            select.value = value || "daily";
+            select.addEventListener("change", () => {
+              set(item, path, select.value);
+              markDirty();
+              renderCategoryFilter();
+              renderList();
+              renderEditorHeader();
+            });
+            label.append(caption, select);
+            parent.append(label);
+          } else {
+            renderPrimitiveField(parent, item, path, key, value);
+          }
+        });
+      };
+
+      const renderEditorHeader = () => {
+        const item = state.items[state.selectedIndex];
+        if (!item) {
+          el.editorTitle.textContent = "选择一个条目";
+          el.editorSubtitle.textContent = "左侧选择后即可编辑。";
+          return;
+        }
+        el.editorTitle.textContent = titleOf(item);
+        el.editorSubtitle.textContent = subtitleOf(item) || state.file;
+      };
+
+      const renderEditor = () => {
+        const item = state.items[state.selectedIndex];
+        renderEditorHeader();
+        if (!item) {
+          el.editorForm.innerHTML = `<div class="empty">当前文件没有条目，点击“新增”开始。</div>`;
+          return;
+        }
+        el.editorForm.innerHTML = "";
+        const grid = document.createElement("div");
+        grid.className = "field-grid";
+        renderObjectFields(grid, item, [], item);
+        el.editorForm.append(grid);
+      };
+
+      const renderAll = () => {
+        renderCategoryFilter();
+        renderList();
+        renderEditor();
+      };
+
+      const save = async () => {
+        validateItems();
+        el.saveButton.disabled = true;
+        try {
+          const result = await api(`/api/data?file=${encodeURIComponent(state.file)}`, {
+            method: "POST",
+            headers: { "content-type": "application/json" },
+            body: JSON.stringify({ items: state.items })
+          });
+          state.dirty = false;
+          setStatus(`已保存，备份：${result.backup}`, "ok");
+        } finally {
+          el.saveButton.disabled = false;
+        }
+      };
+
+      const validateItems = () => {
+        const ids = state.items.map((item) => item.id).filter(Boolean);
+        const duplicates = ids.filter((id, index) => ids.indexOf(id) !== index);
+        if (duplicates.length) throw new Error(`ID 重复：${[...new Set(duplicates)].join(", ")}`);
+      };
+
+      const addItem = () => {
+        const template = state.items[state.selectedIndex] || state.items[0] || { id: "", title: { zh: "", en: "" }, summary: { zh: "", en: "" } };
+        const item = blankFrom(template);
+        item.id = makeUniqueId("new-item");
+        state.items.push(item);
+        state.selectedIndex = state.items.length - 1;
+        markDirty();
+        renderAll();
+      };
+
+      const makeUniqueId = (base) => {
+        const existing = new Set(state.items.map((item) => item.id));
+        let next = base;
+        let index = 2;
+        while (existing.has(next)) {
+          next = `${base}-${index}`;
+          index += 1;
+        }
+        return next;
+      };
+
+      const duplicateItem = () => {
+        const item = state.items[state.selectedIndex];
+        if (!item) return;
+        const copy = deepClone(item);
+        copy.id = makeUniqueId(`${item.id || "copy"}-copy`);
+        state.items.splice(state.selectedIndex + 1, 0, copy);
+        state.selectedIndex += 1;
+        markDirty();
+        renderAll();
+      };
+
+      const moveSelected = (offset) => {
+        const nextIndex = state.selectedIndex + offset;
+        if (nextIndex < 0 || nextIndex >= state.items.length) return;
+        [state.items[state.selectedIndex], state.items[nextIndex]] = [state.items[nextIndex], state.items[state.selectedIndex]];
+        state.selectedIndex = nextIndex;
+        markDirty();
+        renderAll();
+      };
+
+      const deleteSelected = () => {
+        const item = state.items[state.selectedIndex];
+        if (!item || !confirm(`删除“${titleOf(item)}”？`)) return;
+        state.items.splice(state.selectedIndex, 1);
+        state.selectedIndex = Math.min(state.selectedIndex, state.items.length - 1);
+        markDirty();
+        renderAll();
+      };
+
+      const build = async () => {
+        if (state.dirty) {
+          await save();
+        }
+        el.buildButton.disabled = true;
+        el.buildLog.classList.add("open");
+        el.buildLog.textContent = "构建中...";
+        try {
+          const result = await api("/api/build", { method: "POST" });
+          el.buildLog.textContent = result.log;
+          setStatus("构建完成", "ok");
+        } catch (error) {
+          el.buildLog.textContent = error.message;
+          setStatus("构建失败", "bad");
+        } finally {
+          el.buildButton.disabled = false;
+        }
+      };
+
+      el.fileSelect.addEventListener("change", () => loadData(el.fileSelect.value).catch((error) => setStatus(error.message, "bad")));
+      el.searchInput.addEventListener("input", renderList);
+      el.categoryFilter.addEventListener("change", renderList);
+      el.itemList.addEventListener("click", (event) => {
+        const button = event.target.closest("[data-index]");
+        if (!button) return;
+        state.selectedIndex = Number(button.dataset.index);
+        renderList();
+        renderEditor();
+      });
+      el.addButton.addEventListener("click", addItem);
+      el.saveButton.addEventListener("click", () => save().catch((error) => setStatus(error.message, "bad")));
+      el.buildButton.addEventListener("click", () => build().catch((error) => setStatus(error.message, "bad")));
+      el.duplicateButton.addEventListener("click", duplicateItem);
+      el.moveUpButton.addEventListener("click", () => moveSelected(-1));
+      el.moveDownButton.addEventListener("click", () => moveSelected(1));
+      el.deleteButton.addEventListener("click", deleteSelected);
+
+      window.addEventListener("beforeunload", (event) => {
+        if (!state.dirty) return;
+        event.preventDefault();
+        event.returnValue = "";
+      });
+
+      loadFiles()
+        .then(() => loadData())
+        .catch((error) => setStatus(error.message, "bad"));
+    </script>
+  </body>
+</html>

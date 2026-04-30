@@ -19,6 +19,16 @@ npm install
 npm run dev
 ```
 
+## 内容编辑器
+
+可以启动本地编辑器修改网站内容：
+
+```bash
+npm run editor
+```
+
+打开终端里显示的本地地址后，可用表单编辑 `src/data/*.json`。保存前会在 `.content-editor-backups/` 自动备份原文件。
+
 ## 构建
 
 ```bash

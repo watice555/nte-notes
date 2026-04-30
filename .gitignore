@@ -2,6 +2,7 @@ node_modules/
 dist/
 drafts/
 .astro/
+.content-editor-backups/
 .env
 .env.local
 npm-debug.log*

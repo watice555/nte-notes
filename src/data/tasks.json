@@ -272,6 +272,23 @@
     "tags": ["双周常"]
   },
   {
+    "id": "market-latitude-loss-exchange",
+    "title": {
+      "zh": "集市兑换-失纬兑换",
+      "en": "Market Exchange - Lost Latitude Exchange"
+    },
+    "category": "monthly",
+    "refresh": {
+      "zh": "每月刷新",
+      "en": "Monthly reset"
+    },
+    "summary": {
+      "zh": "抽卡高级副产物兑换无梦果核和常驻角色。建议：不兑换无梦果核。常住角色折算30抽，按需兑换。",
+      "en": "Use premium gacha byproducts to exchange for Dreamless Cores and standard characters. Recommendation: do not exchange for Dreamless Cores. Standard characters are valued at 30 pulls, so exchange as needed."
+    },
+    "tags": ["月常", "兑换", "抽卡"]
+  },
+  {
     "id": "arc-disc-shop",
     "title": {
       "zh": "弧盘商店-弧盘选购",
@@ -300,8 +317,8 @@
       "en": "Monthly reset"
     },
     "summary": {
-      "zh": "使用抽卡产物兑换抽卡道具、方斯和养成道具。",
-      "en": "Use gacha byproducts to exchange for pull items, Faens, and progression materials."
+      "zh": "使用抽卡低级产物兑换抽卡道具、方斯和养成道具。建议：优先兑换抽卡道具，限定抽>武器抽>常驻抽>其他。",
+      "en": "Use lower-tier gacha byproducts to exchange for pull items, Faens, and progression materials. Recommendation: prioritize pull items, limited pulls > weapon pulls > standard pulls > others."
     },
     "tags": ["月常", "兑换", "抽卡"]
   },
