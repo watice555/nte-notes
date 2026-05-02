@@ -7,9 +7,19 @@ interface Props {
   description: string;
   descriptionEn?: string;
   quips?: string[];
+  quipsEn?: string[];
 }
 
-const { eyebrow, eyebrowEn, title, titleEn, description, descriptionEn, quips = [] } = Astro.props;
+const {
+  eyebrow,
+  eyebrowEn,
+  title,
+  titleEn,
+  description,
+  descriptionEn,
+  quips = [],
+  quipsEn = quips,
+} = Astro.props;
 ---
 
 <section class="page-hero">
@@ -20,24 +30,45 @@ const { eyebrow, eyebrowEn, title, titleEn, description, descriptionEn, quips = 
   </div>
   {
     quips.length > 0 && (
-      <div class="hero-quips" aria-label="栏目吐槽" data-random-quip={JSON.stringify(quips)}>
-        <span class="hero-quip">“{quips[0]}”</span>
+      <div
+        class="hero-quips"
+        aria-label="栏目吐槽"
+        data-random-quip-zh={JSON.stringify(quips)}
+        data-random-quip-en={JSON.stringify(quipsEn)}
+      >
+        <span
+          class="hero-quip"
+          data-i18n-zh={`“${quips[0]}”`}
+          data-i18n-en={`“${quipsEn[0] ?? quips[0]}”`}
+        >
+          “{quips[0]}”
+        </span>
       </div>
     )
   }
 </section>
 
 <script>
-  document.querySelectorAll("[data-random-quip]").forEach((container) => {
-    const raw = container.getAttribute("data-random-quip");
+  document.querySelectorAll("[data-random-quip-zh]").forEach((container) => {
+    const rawZh = container.getAttribute("data-random-quip-zh");
+    const rawEn = container.getAttribute("data-random-quip-en");
     const target = container.querySelector(".hero-quip");
-    if (!raw || !target) return;
+    if (!rawZh || !target) return;
 
     try {
-      const quips = JSON.parse(raw);
-      if (!Array.isArray(quips) || quips.length === 0) return;
-      const selected = quips[Math.floor(Math.random() * quips.length)];
-      target.textContent = `“${selected}”`;
+      const zhQuips = JSON.parse(rawZh);
+      const enQuips = rawEn ? JSON.parse(rawEn) : zhQuips;
+      if (!Array.isArray(zhQuips) || zhQuips.length === 0) return;
+
+      const index = Math.floor(Math.random() * zhQuips.length);
+      const selectedZh = zhQuips[index] ?? zhQuips[0];
+      const selectedEn = Array.isArray(enQuips) ? enQuips[index] ?? enQuips[0] ?? selectedZh : selectedZh;
+      const zhText = `“${selectedZh}”`;
+      const enText = `“${selectedEn}”`;
+
+      target.setAttribute("data-i18n-zh", zhText);
+      target.setAttribute("data-i18n-en", enText);
+      target.textContent = document.body.dataset.lang === "en" && selectedEn ? enText : zhText;
     } catch {
       // Keep the server-rendered fallback if the data attribute is malformed.
     }

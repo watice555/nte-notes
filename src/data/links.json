@@ -1,28 +1,15 @@
 [
   {
-    "id": "nteguide",
+    "id": "everness-info",
     "title": {
-      "zh": "NTE Guide",
-      "en": "NTE Guide"
+      "zh": "Everness.info",
+      "en": "Everness.info"
     },
-    "url": "https://nteguide.com/",
+    "url": "https://everness.info/",
     "category": "Wiki",
     "summary": {
-      "zh": "NTE 资料站。",
+      "zh": "NTE 资料与攻略站。",
       "en": "An NTE reference site."
-    }
-  },
-  {
-    "id": "fandom-wiki",
-    "title": {
-      "zh": "Fandom Wiki",
-      "en": "Fandom Wiki"
-    },
-    "url": "https://neverness-to-everness.fandom.com/wiki/Neverness_to_Everness_Wiki",
-    "category": "Wiki",
-    "summary": {
-      "zh": "Fandom 上的 Neverness to Everness Wiki。",
-      "en": "The Neverness to Everness Wiki on Fandom."
     }
   },
   {
@@ -62,19 +49,6 @@
     "summary": {
       "zh": "NTE 相关资料站。",
       "en": "A reference site for NTE-related information."
-    }
-  },
-  {
-    "id": "nte-wiki-online",
-    "title": {
-      "zh": "NTE Wiki Online",
-      "en": "NTE Wiki Online"
-    },
-    "url": "https://nte-wiki.online/",
-    "category": "Wiki",
-    "summary": {
-      "zh": "NTE 在线 Wiki。",
-      "en": "An online NTE wiki."
     }
   },
   {

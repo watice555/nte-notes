@@ -1,5 +1,45 @@
 [
   {
+    "id": "nanali-building-interior-clip",
+    "title": {
+      "zh": "使用娜娜莉进入楼体内部",
+      "en": "Entering Building Interiors with Nanali"
+    },
+    "status": {
+      "zh": "未确认",
+      "en": "Unconfirmed"
+    },
+    "summary": {
+      "zh": "使用娜娜莉改变重力的效果，在特定方式下卡进楼体内部。",
+      "en": "Use Nanali's gravity-changing effect to clip into building interiors in certain ways."
+    },
+    "source": {
+      "label": "BV1gC9xBtEC3",
+      "url": "https://www.bilibili.com/video/BV1gC9xBtEC3/"
+    },
+    "tags": ["角色机制", "跑图"]
+  },
+  {
+    "id": "early-sunny-island-access",
+    "title": {
+      "zh": "提前进入向阳岛",
+      "en": "Early Sunny Island Access"
+    },
+    "status": {
+      "zh": "未确认",
+      "en": "Unconfirmed"
+    },
+    "summary": {
+      "zh": "通过绕过空气墙，使用海月飞天等手段绕过封锁到达当前未开放区域。",
+      "en": "Bypass invisible walls and use methods such as Haiyue flight to get past the blockade and reach currently unopened areas."
+    },
+    "source": {
+      "label": "BV1fj9hBnEsh",
+      "url": "https://www.bilibili.com/video/BV1fj9hBnEsh/"
+    },
+    "tags": ["跑图", "未开放区域"]
+  },
+  {
     "id": "toy-store-free-shopping",
     "title": {
       "zh": "潮玩店零元购",

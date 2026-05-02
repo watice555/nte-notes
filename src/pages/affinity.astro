@@ -12,10 +12,34 @@ const formatter = new Intl.NumberFormat("zh-CN");
     eyebrow="Affinity"
     title="好感度"
     titleEn="Affinity"
-    description="整理角色赠礼性价比与好感等级升级需求。"
-    descriptionEn="Gift value references and affinity level requirements."
+    description="整理角色好感提升方式、赠礼性价比与升级需求。"
+    descriptionEn="Affinity sources, gift value references, and level requirements."
     quips={["投其所好，少走弯路"]}
+    quipsEn={["Give wisely, level smoothly"]}
   />
+
+  <section>
+    <SectionHeader
+      title="提升方式"
+      titleEn="Affinity Sources"
+      description="可通过赠礼、互动或地图内容提升好感度。"
+      descriptionEn="Raise affinity through gifts, interactions, and map activities."
+    />
+    <div class="grid">
+      {
+        affinity.methods.map((method) => (
+          <article class="data-card">
+            <h3 data-i18n-zh={method.title.zh} data-i18n-en={method.title.en}>
+              {method.title.zh}
+            </h3>
+            <p data-i18n-zh={method.summary.zh} data-i18n-en={method.summary.en}>
+              {method.summary.zh}
+            </p>
+          </article>
+        ))
+      }
+    </div>
+  </section>
 
   <section>
     <SectionHeader

@@ -17,7 +17,7 @@
       "character": "娜娜莉",
       "best": {
         "400": { "name": "邪恶粉碎！", "value": 14400 },
-        "200": { "name": "炽眼的绯红", "value": 5400 },
+        "200": { "name": "灼眼的绯红", "value": 5400 },
         "100": { "name": "酷辣辣辣条", "value": 300 }
       }
     },
@@ -26,15 +26,15 @@
       "best": {
         "400": { "name": "跳跳兔盒", "value": 20000 },
         "200": { "name": "幻想曲", "value": 3000 },
-        "100": { "name": "甜猫猛猛茶", "value": 450 }
+        "100": { "name": "猫猫猛锤荔浦芋头布丁奶茶", "value": 450 }
       }
     },
     {
       "character": "九原",
       "best": {
         "400": { "name": "轨道之心", "value": 20000 },
-        "200": { "name": "月白浴瓶", "value": 3000 },
-        "100": { "name": "法膨胀全麦香", "value": 360 }
+        "200": { "name": "月白瓷瓶", "value": 3000 },
+        "100": { "name": "魔法膨胀全麦面包", "value": 360 }
       }
     },
     {
@@ -42,7 +42,7 @@
       "best": {
         "400": { "name": "冷冷琉光", "value": 5400 },
         "200": { "name": "恒", "value": 7500 },
-        "100": { "name": "经典三重奏", "value": 990 }
+        "100": { "name": "经典三重奏", "value": 660 }
       }
     },
     {
@@ -58,7 +58,7 @@
       "best": {
         "400": { "name": "约定", "value": 10000 },
         "200": { "name": "永恒的洁白", "value": 5400 },
-        "100": { "name": "苗低意色浴？", "value": 450 }
+        "100": { "name": "猫猫惬意鱼治摸茶", "value": 450 }
       }
     },
     {
@@ -74,7 +74,7 @@
       "best": {
         "400": { "name": "轨道之心", "value": 20000 },
         "200": { "name": "斑斓梦", "value": 5000 },
-        "100": { "name": "镇购经典沙拉", "value": 450 }
+        "100": { "name": "缤纷轻食沙拉", "value": 450 }
       }
     },
     {
@@ -89,8 +89,8 @@
       "character": "翳",
       "best": {
         "400": { "name": "白玉盏", "value": 20000 },
-        "200": { "name": "放空帕", "value": 4000 },
-        "100": { "name": "饱劫茶园", "value": 300 }
+        "200": { "name": "放空咻", "value": 4000 },
+        "100": { "name": "鲍勃茶园", "value": 300 }
       }
     },
     {
@@ -114,7 +114,59 @@
       "best": {
         "400": { "name": "约定", "value": 10000 },
         "200": { "name": "金环青影", "value": 3600 },
-        "100": { "name": "净化守护谷片", "value": 420 }
+        "100": { "name": "净化守护含片", "value": 420 }
+      }
+    }
+  ],
+  "methods": [
+    {
+      "title": {
+        "zh": "赠礼",
+        "en": "Gifts"
+      },
+      "summary": {
+        "zh": "通过赠礼提升角色好感度。每日至多送出10个礼物，其中单一角色至多送出3个。礼物除压缩嘭嘭朵通过异象家具产出外，几乎都可以通过方斯购买。",
+        "en": "Raise character affinity through gifts. You can give up to 10 gifts per day, with up to 3 gifts for a single character. Aside from Compressed Pom-Pom Bud, which comes from anomaly furniture, most gifts can be purchased with Fangs."
+      }
+    },
+    {
+      "title": {
+        "zh": "回忆映厅",
+        "en": "Memory Theater"
+      },
+      "summary": {
+        "zh": "地图上的角色偶遇事件。",
+        "en": "Character encounter events found on the map."
+      }
+    },
+    {
+      "title": {
+        "zh": "首次互动",
+        "en": "First Interaction"
+      },
+      "summary": {
+        "zh": "首次与角色互动可提升好感度。",
+        "en": "Raise affinity through a character's first interaction."
+      }
+    },
+    {
+      "title": {
+        "zh": "都市偕游",
+        "en": "City Outing"
+      },
+      "summary": {
+        "zh": "与角色共同看电影等，每日一次，需达到特定好感度等级后解锁。",
+        "en": "Watch movies and join similar activities with characters once per day. Requires reaching specific affinity levels to unlock."
+      }
+    },
+    {
+      "title": {
+        "zh": "愿木坡祈愿",
+        "en": "Wishwood Slope Prayer"
+      },
+      "summary": {
+        "zh": "为随机角色提升好感度。",
+        "en": "Raises affinity for a random character."
       }
     }
   ],
