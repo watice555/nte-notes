@@ -66,8 +66,8 @@
       "en": "Getting Out During Multiplayer Races"
     },
     "status": {
-      "zh": "未确认",
-      "en": "Unconfirmed"
+      "zh": "已修复",
+      "en": "Fixed"
     },
     "summary": {
       "zh": "联机赛车加载时规律按 F 可下车，之后可攻击他人车辆、蹭车或召唤摩托。",
@@ -86,8 +86,8 @@
       "en": "Mint Counter Resets Skill E"
     },
     "status": {
-      "zh": "未确认",
-      "en": "Unconfirmed"
+      "zh": "已修复",
+      "en": "Fixed"
     },
     "summary": {
       "zh": "反击重置 E 效果的 3 秒 CD 不生效。",
@@ -106,8 +106,8 @@
       "en": "Vina Apartment Furniture Duplication"
     },
     "status": {
-      "zh": "未确认",
-      "en": "Unconfirmed"
+      "zh": "已修复",
+      "en": "Fixed"
     },
     "summary": {
       "zh": "在维纳公寓特定点位摆放家具，会使相应家具状态异常，被收纳后重新进入游戏，这些家具仍然会出现，反复收纳可复制家具。部分家具也属于赠礼，可用于提升角色好感度。",

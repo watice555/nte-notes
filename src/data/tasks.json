@@ -81,6 +81,27 @@
     ]
   },
   {
+    "id": "bond-city-outing",
+    "title": {
+      "zh": "羁遇-都市偕游",
+      "en": "Bond Encounters - City Outing"
+    },
+    "category": "daily",
+    "refresh": {
+      "zh": "每日一次",
+      "en": "Once daily"
+    },
+    "summary": {
+      "zh": "可与角色看电影或乘摩天轮等以增加好感度，每日一次，各活动贡献次数。",
+      "en": "Watch movies, ride the Ferris wheel, and join similar outings with characters to raise bond level. Available once per day, with each activity contributing its own count."
+    },
+    "tags": [
+      "日常",
+      "好感度",
+      "羁遇"
+    ]
+  },
+  {
     "id": "fountain-wish",
     "title": {
       "zh": "喷泉池",
