@@ -629,6 +629,48 @@ h3 {
   border-bottom: 0;
 }
 
+.table-scroll {
+  overflow-x: auto;
+}
+
+.affinity-table {
+  min-width: 760px;
+}
+
+.affinity-table th[scope="row"] {
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.gift-name,
+.gift-value {
+  display: block;
+}
+
+.gift-name {
+  color: var(--ink);
+  font-weight: 850;
+}
+
+.gift-value {
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.level-table-wrap {
+  max-width: 520px;
+}
+
+.level-table .total-row td {
+  background: rgba(215, 248, 255, 0.52);
+  color: var(--primary-dark);
+  font-weight: 900;
+}
+
 .external-link {
   color: var(--primary-dark);
   font-weight: 800;

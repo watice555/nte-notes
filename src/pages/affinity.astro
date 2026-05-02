@@ -1,0 +1,105 @@
+---
+import BaseLayout from "@/components/BaseLayout.astro";
+import PageHero from "@/components/PageHero.astro";
+import SectionHeader from "@/components/SectionHeader.astro";
+import affinity from "@/data/affinity.json";
+
+const formatter = new Intl.NumberFormat("zh-CN");
+---
+
+<BaseLayout title="好感度" active="/affinity/">
+  <PageHero
+    eyebrow="Affinity"
+    title="好感度"
+    titleEn="Affinity"
+    description="整理角色赠礼性价比与好感等级升级需求。"
+    descriptionEn="Gift value references and affinity level requirements."
+    quips={["投其所好，少走弯路"]}
+  />
+
+  <section>
+    <SectionHeader
+      title="赠礼性价比"
+      titleEn="Gift Value"
+      description="各角色在 400、200、100 好感度档位中性价比较高的赠礼。"
+      descriptionEn="Best-value gifts for each character across the 400, 200, and 100 affinity tiers."
+    />
+    <p class="source-row">
+      <span data-i18n-zh="来源" data-i18n-en="Source">来源</span>
+      <a class="external-link" href={affinity.giftSource.url} target="_blank" rel="noreferrer">
+        {affinity.giftSource.label}
+      </a>
+    </p>
+
+    <div class="table-scroll">
+      <table class="data-table affinity-table">
+        <thead>
+          <tr>
+            <th data-i18n-zh="角色" data-i18n-en="Character">角色</th>
+            {
+              affinity.giftTiers.map((tier) => (
+                <th data-i18n-zh={`${tier} 好感度`} data-i18n-en={`${tier} Affinity`}>
+                  {tier} 好感度
+                </th>
+              ))
+            }
+          </tr>
+        </thead>
+        <tbody>
+          {
+            affinity.gifts.map((row) => (
+              <tr>
+                <th scope="row">{row.character}</th>
+                {
+                  affinity.giftTiers.map((tier) => {
+                    const gift = row.best[String(tier)];
+
+                    return (
+                      <td>
+                        <span class="gift-name">{gift.name}</span>
+                        <span class="gift-value">{formatter.format(gift.value)}</span>
+                      </td>
+                    );
+                  })
+                }
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <SectionHeader
+      title="升级需求"
+      titleEn="Level Requirements"
+      description="好感度等级提升所需数值。"
+      descriptionEn="Affinity required for each level-up."
+    />
+    <div class="table-scroll level-table-wrap">
+      <table class="data-table level-table">
+        <thead>
+          <tr>
+            <th data-i18n-zh="等级" data-i18n-en="Level">等级</th>
+            <th data-i18n-zh="所需好感度" data-i18n-en="Required Affinity">所需好感度</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            affinity.levels.map((level) => (
+              <tr>
+                <td>{level.from}级→{level.to}级</td>
+                <td>{formatter.format(level.required)}</td>
+              </tr>
+            ))
+          }
+          <tr class="total-row">
+            <td data-i18n-zh="合计" data-i18n-en="Total">合计</td>
+            <td>{formatter.format(affinity.totalRequired)}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</BaseLayout>

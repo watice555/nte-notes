@@ -1,0 +1,133 @@
+{
+  "giftSource": {
+    "label": "BV1bs9iBnEKb",
+    "url": "https://www.bilibili.com/video/BV1bs9iBnEKb/"
+  },
+  "giftTiers": [400, 200, 100],
+  "gifts": [
+    {
+      "character": "薄荷",
+      "best": {
+        "400": { "name": "绯红之名", "value": 18000 },
+        "200": { "name": "圆舞曲", "value": 3000 },
+        "100": { "name": "咕比脆", "value": 300 }
+      }
+    },
+    {
+      "character": "娜娜莉",
+      "best": {
+        "400": { "name": "邪恶粉碎！", "value": 14400 },
+        "200": { "name": "炽眼的绯红", "value": 5400 },
+        "100": { "name": "酷辣辣辣条", "value": 300 }
+      }
+    },
+    {
+      "character": "小吱",
+      "best": {
+        "400": { "name": "跳跳兔盒", "value": 20000 },
+        "200": { "name": "幻想曲", "value": 3000 },
+        "100": { "name": "甜猫猛猛茶", "value": 450 }
+      }
+    },
+    {
+      "character": "九原",
+      "best": {
+        "400": { "name": "轨道之心", "value": 20000 },
+        "200": { "name": "月白浴瓶", "value": 3000 },
+        "100": { "name": "法膨胀全麦香", "value": 360 }
+      }
+    },
+    {
+      "character": "法帝娅",
+      "best": {
+        "400": { "name": "冷冷琉光", "value": 5400 },
+        "200": { "name": "恒", "value": 7500 },
+        "100": { "name": "经典三重奏", "value": 990 }
+      }
+    },
+    {
+      "character": "早雾",
+      "best": {
+        "400": { "name": "跳跳兔盒", "value": 20000 },
+        "200": { "name": "斑斓梦", "value": 5000 },
+        "100": { "name": "「牛奶味」", "value": 360 }
+      }
+    },
+    {
+      "character": "达芙蒂尔",
+      "best": {
+        "400": { "name": "约定", "value": 10000 },
+        "200": { "name": "永恒的洁白", "value": 5400 },
+        "100": { "name": "苗低意色浴？", "value": 450 }
+      }
+    },
+    {
+      "character": "海月",
+      "best": {
+        "400": { "name": "约定", "value": 10000 },
+        "200": { "name": "幻想曲", "value": 3000 },
+        "100": { "name": "巨嘴奶黄包", "value": 300 }
+      }
+    },
+    {
+      "character": "哈索尔",
+      "best": {
+        "400": { "name": "轨道之心", "value": 20000 },
+        "200": { "name": "斑斓梦", "value": 5000 },
+        "100": { "name": "镇购经典沙拉", "value": 450 }
+      }
+    },
+    {
+      "character": "哈尼娅",
+      "best": {
+        "400": { "name": "绯红之名", "value": 18000 },
+        "200": { "name": "幻想曲", "value": 3000 },
+        "100": { "name": "酷辣辣辣条", "value": 300 }
+      }
+    },
+    {
+      "character": "翳",
+      "best": {
+        "400": { "name": "白玉盏", "value": 20000 },
+        "200": { "name": "放空帕", "value": 4000 },
+        "100": { "name": "饱劫茶园", "value": 300 }
+      }
+    },
+    {
+      "character": "埃德嘉",
+      "best": {
+        "400": { "name": "几何夜", "value": 10000 },
+        "200": { "name": "老大的肯定", "value": 4000 },
+        "100": { "name": "巨嘴奶黄包", "value": 300 }
+      }
+    },
+    {
+      "character": "白藏",
+      "best": {
+        "400": { "name": "强者之证", "value": 12000 },
+        "200": { "name": "灿烂之约", "value": 4500 },
+        "100": { "name": "元气儿童套餐", "value": 450 }
+      }
+    },
+    {
+      "character": "阿德勒",
+      "best": {
+        "400": { "name": "约定", "value": 10000 },
+        "200": { "name": "金环青影", "value": 3600 },
+        "100": { "name": "净化守护谷片", "value": 420 }
+      }
+    }
+  ],
+  "levels": [
+    { "from": 1, "to": 2, "required": 500 },
+    { "from": 2, "to": 3, "required": 1000 },
+    { "from": 3, "to": 4, "required": 2000 },
+    { "from": 4, "to": 5, "required": 3500 },
+    { "from": 5, "to": 6, "required": 5000 },
+    { "from": 6, "to": 7, "required": 7000 },
+    { "from": 7, "to": 8, "required": 9000 },
+    { "from": 8, "to": 9, "required": 12000 },
+    { "from": 9, "to": 10, "required": 16000 }
+  ],
+  "totalRequired": 56000
+}
