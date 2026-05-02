@@ -4,6 +4,13 @@ import PageHero from "@/components/PageHero.astro";
 import SectionHeader from "@/components/SectionHeader.astro";
 import links from "@/data/links.json";
 
+type LocalizedUrl = string | { zh?: string; en?: string };
+
+const getUrl = (url: LocalizedUrl, lang: "zh" | "en") => {
+  if (typeof url === "string") return url;
+  return url[lang] ?? url.zh ?? url.en ?? "";
+};
+
 const groups = [
   {
     key: "Wiki",
@@ -59,6 +66,11 @@ const categoryLabels: Record<string, { zh: string; en: string }> = {
           />
           <div class="grid two">
             {items.map((link) => (
+              (() => {
+                const urlZh = getUrl(link.url, "zh");
+                const urlEn = getUrl(link.url, "en");
+
+                return (
               <article class="data-card">
                 <div class="meta-row">
                   <span
@@ -72,11 +84,22 @@ const categoryLabels: Record<string, { zh: string; en: string }> = {
                 <h3 data-i18n-zh={link.title.zh} data-i18n-en={link.title.en}>{link.title.zh}</h3>
                 <p data-i18n-zh={link.summary.zh} data-i18n-en={link.summary.en}>{link.summary.zh}</p>
                 <p>
-                  <a class="external-link" href={link.url} target="_blank" rel="noreferrer">
-                    {link.url}
+                  <a
+                    class="external-link"
+                    href={urlZh}
+                    target="_blank"
+                    rel="noreferrer"
+                    data-i18n-zh={urlZh}
+                    data-i18n-en={urlEn}
+                    data-i18n-href-zh={urlZh}
+                    data-i18n-href-en={urlEn}
+                  >
+                    {urlZh}
                   </a>
                 </p>
               </article>
+                );
+              })()
             ))}
           </div>
         </section>

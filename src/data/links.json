@@ -78,6 +78,22 @@
     }
   },
   {
+    "id": "story-collection",
+    "title": {
+      "zh": "剧情合集",
+      "en": "Story Collection"
+    },
+    "url": {
+      "zh": "https://www.bilibili.com/video/BV1RPo8BnEhN",
+      "en": "https://www.youtube.com/watch?v=t_ryauO-RW8"
+    },
+    "category": "社区",
+    "summary": {
+      "zh": "剧情合集视频。",
+      "en": "Story collection videos."
+    }
+  },
+  {
     "id": "official-cn",
     "title": {
       "zh": "官方网站（大陆）",

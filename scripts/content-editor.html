@@ -446,7 +446,7 @@
         if (item.id) parts.push(item.id);
         if (item.category) parts.push(item.category);
         if (item.rarity) parts.push(item.rarity);
-        if (item.url) parts.push(item.url);
+        if (item.url) parts.push(typeof item.url === "string" ? item.url : item.url.zh || item.url.en);
         return parts.join(" · ");
       };
 
