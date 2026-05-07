@@ -76,7 +76,7 @@ const formatter = new Intl.NumberFormat("zh-CN");
                 <th scope="row">{row.character}</th>
                 {
                   affinity.giftTiers.map((tier) => {
-                    const gift = row.best[String(tier)];
+                    const gift = row.best[String(tier) as keyof typeof row.best];
 
                     return (
                       <td>
