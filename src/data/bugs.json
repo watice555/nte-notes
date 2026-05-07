@@ -40,6 +40,46 @@
     "tags": ["跑图", "未开放区域"]
   },
   {
+    "id": "nanali-horizontal-falling-speed",
+    "title": {
+      "zh": "娜娜莉横向下落快速移动",
+      "en": "Nanali Horizontal Falling Fast Movement"
+    },
+    "status": {
+      "zh": "未确认",
+      "en": "Unconfirmed"
+    },
+    "summary": {
+      "zh": "娜娜莉开 E 改变重力方向后，在墙面边缘跳跃并下落攻击，达成快速横向移动。",
+      "en": "After Nanali uses Skill E to change gravity direction, jump near a wall edge and perform a falling attack to achieve fast horizontal movement."
+    },
+    "source": {
+      "label": "BV1oDRJBHEGR",
+      "url": "https://www.bilibili.com/video/BV1oDRJBHEGR/"
+    },
+    "tags": ["角色机制", "跑图"]
+  },
+  {
+    "id": "water-splash-anywhere",
+    "title": {
+      "zh": "任意滋水",
+      "en": "Water Splash Anywhere"
+    },
+    "status": {
+      "zh": "未确认",
+      "en": "Unconfirmed"
+    },
+    "summary": {
+      "zh": "通过让角色溶于水，将本为角色互动动作的渍水变为可在任意地点进行的动作。",
+      "en": "By making the character dissolve into water, turn the water-splash interaction action into an action that can be performed anywhere."
+    },
+    "source": {
+      "label": "BV1zwRhB9EbZ",
+      "url": "https://www.bilibili.com/video/BV1zwRhB9EbZ/"
+    },
+    "tags": ["角色互动", "动作异常"]
+  },
+  {
     "id": "toy-store-free-shopping",
     "title": {
       "zh": "潮玩店零元购",
