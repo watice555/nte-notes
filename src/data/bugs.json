@@ -50,14 +50,34 @@
       "en": "Unconfirmed"
     },
     "summary": {
-      "zh": "娜娜莉开 E 改变重力方向后，在墙面边缘跳跃并下落攻击，达成快速横向移动。",
-      "en": "After Nanali uses Skill E to change gravity direction, jump near a wall edge and perform a falling attack to achieve fast horizontal movement."
+      "zh": "娜娜莉开 E 改变重力方向后，在墙面边缘跳跃并下落攻击，达成快速横向移动。（成功率较低）",
+      "en": "After Nanali uses Skill E to change gravity direction, jump near a wall edge and perform a falling attack to achieve fast horizontal movement. (Low success rate.)"
     },
     "source": {
       "label": "BV1oDRJBHEGR",
       "url": "https://www.bilibili.com/video/BV1oDRJBHEGR/"
     },
     "tags": ["角色机制", "跑图"]
+  },
+  {
+    "id": "xun-time-stop-persistent-monochrome",
+    "title": {
+      "zh": "浔时停造成画面黑白常驻效果",
+      "en": "Xun Time Stop Causes Persistent Monochrome Screen"
+    },
+    "status": {
+      "zh": "未确认",
+      "en": "Unconfirmed"
+    },
+    "summary": {
+      "zh": "在与异象“波普”战斗时，使用浔开大时停状态下将其击杀，并传送走，可使画面黑白效果常驻。",
+      "en": "When fighting the Anomaly \"Pop\", defeat it during Xun's ultimate time-stop state and teleport away to make the black-and-white screen effect persist."
+    },
+    "source": {
+      "label": "BV19bd3BtEBQ",
+      "url": "https://www.bilibili.com/video/BV19bd3BtEBQ/"
+    },
+    "tags": ["角色机制", "显示异常"]
   },
   {
     "id": "water-splash-anywhere",
