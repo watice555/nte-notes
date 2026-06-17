@@ -688,66 +688,12 @@ h3 {
   font-size: 13px;
 }
 
-.page-meta-corner {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: -18px;
-  margin-bottom: 16px;
-  color: var(--muted);
-  font-size: 14px;
-  font-weight: 800;
-}
-
-.bug-card {
-  position: relative;
-  padding-right: 92px;
-}
-
-.fix-badge {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  display: inline-flex;
-  min-height: 28px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 999px;
-  background: #ff5f6f;
-  color: #ffffff;
-  font-size: 12px;
-  font-weight: 900;
-  padding: 2px 10px;
-  box-shadow: 0 8px 18px rgba(255, 95, 111, 0.22);
-}
-
-.fix-badge.partial {
-  background: var(--gold);
-  box-shadow: 0 8px 18px rgba(214, 168, 79, 0.24);
-}
-
-.bug-source {
-  margin-top: 14px;
-}
-
-.bug-source a {
-  color: var(--primary-dark);
-  font-weight: 850;
-}
-
-.bug-source a:hover {
-  color: var(--accent);
-}
-
 .notice {
   margin: 28px 0;
   padding: 16px 18px;
   border-color: rgba(255, 95, 168, 0.28);
   background: linear-gradient(135deg, rgba(255, 225, 240, 0.72), rgba(255, 255, 255, 0.88));
   color: var(--muted);
-}
-
-.small-note {
-  font-size: 14px;
 }
 
 .contact-list {

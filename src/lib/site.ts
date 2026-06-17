@@ -5,7 +5,6 @@ export const site = {
   nav: [
     { href: "/", label: "首页" },
     { href: "/tasks/", label: "海市事务" },
-    { href: "/bugs/", label: "Bug 收集" },
     { href: "/characters/", label: "角色信息" },
     { href: "/affinity/", label: "好感度" },
     { href: "/terms/", label: "名词解释" },
