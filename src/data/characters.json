@@ -1,100 +1,133 @@
 [
   {
-    "id": "esper-zero",
-    "name": {
-      "zh": "零",
-      "en": "Esper Zero"
-    },
+    "id": "shinku",
+    "name": "真红",
     "rarity": "S",
-    "gender": {
-      "zh": "可选",
-      "en": "Player's Choice"
-    },
-    "attribute": {
-      "zh": "光",
-      "en": "Cosmos"
-    },
-    "arcType": {
-      "zh": "固态",
-      "en": "Solid"
-    },
-    "role": {
-      "zh": "输出",
-      "en": "Damage"
-    },
-    "summary": {
-      "zh": "主角，可选择男 / 女版本。",
-      "en": "The protagonist, with male and female versions chosen by the player."
+    "gender": "女",
+    "attribute": "光",
+    "arcType": "聚合",
+    "role": "输出",
+    "summary": "异象管理局收容二组成员，习惯与人保持距离的冷面行动派。",
+    "pool": {
+      "version": "1.2",
+      "phase": "上半",
+      "name": "破晓前",
+      "start": "2026/07/02",
+      "end": "2026/07/23"
     },
     "links": [
       {
-        "label": "Fandom",
-        "url": "https://neverness-to-everness.fandom.com/wiki/Esper_Zero"
+        "label": "国服公告",
+        "url": "https://yh.wanmei.com/m/news/gamebroad/20260701/262944.html"
+      },
+      {
+        "label": "角色资料",
+        "url": "https://nte.hq1.pro/zh-CN/characters/shinku-1076"
       }
     ]
   },
   {
-    "id": "mint",
-    "name": {
-      "zh": "薄荷",
-      "en": "Mint"
-    },
-    "rarity": "A",
-    "gender": {
-      "zh": "女",
-      "en": "Female"
-    },
-    "attribute": {
-      "zh": "灵",
-      "en": "Anima"
-    },
-    "arcType": {
-      "zh": "液态",
-      "en": "Liquid"
-    },
-    "role": {
-      "zh": "输出",
-      "en": "Damage"
-    },
-    "summary": {
-      "zh": "异象管理局收容二组成员。",
-      "en": "A member of the Bureau of Anomaly Control's Containment Unit 2."
+    "id": "iroi",
+    "name": "伊洛伊",
+    "rarity": "S",
+    "gender": "女",
+    "attribute": "灵",
+    "arcType": "液态",
+    "role": "生存",
+    "summary": "异象管理局收容二组成员，能为全队提供治疗与输出增益。",
+    "pool": {
+      "version": "1.2",
+      "phase": "下半",
+      "name": "生命线",
+      "start": "2026/07/23",
+      "end": "2026/08/13"
     },
     "links": [
       {
-        "label": "Fandom",
-        "url": "https://neverness-to-everness.fandom.com/wiki/Mint"
+        "label": "国服公告",
+        "url": "https://yh.wanmei.com/m/news/gamebroad/20260722/263235.html"
+      },
+      {
+        "label": "角色资料",
+        "url": "https://nte.hq1.pro/zh-CN/characters/iroi-1075"
+      }
+    ]
+  },
+  {
+    "id": "lacrimosa",
+    "name": "安魂曲",
+    "rarity": "S",
+    "gender": "女",
+    "attribute": "暗",
+    "arcType": "液态",
+    "role": "输出",
+    "summary": "异象管理局禁制机动队四队成员，后勤报修次数最多记录保持者。",
+    "pool": {
+      "version": "1.1",
+      "phase": "上半",
+      "name": "久梦初醒时",
+      "start": "2026/05/28",
+      "end": "2026/06/18"
+    },
+    "links": [
+      {
+        "label": "国服公告",
+        "url": "https://yh.wanmei.com/m/news/gamebroad/20260527/262372.html"
+      },
+      {
+        "label": "角色资料",
+        "url": "https://nte.hq1.pro/zh-CN/characters/lacrimosa-1004"
+      }
+    ]
+  },
+  {
+    "id": "chaos",
+    "name": "卡厄斯",
+    "rarity": "S",
+    "gender": "男",
+    "attribute": "相",
+    "arcType": "聚合",
+    "role": "输出",
+    "summary": "异象管理局禁制机动队六队成员，正直可靠的行动派。",
+    "pool": {
+      "version": "1.1",
+      "phase": "下半",
+      "name": "无归路",
+      "start": "2026/06/18",
+      "end": "2026/07/02"
+    },
+    "links": [
+      {
+        "label": "国服公告",
+        "url": "https://yh.wanmei.com/m/news/gamebroad/20260617/262718.html"
+      },
+      {
+        "label": "角色资料",
+        "url": "https://nte.hq1.pro/zh-CN/characters/chaos-1071"
       }
     ]
   },
   {
     "id": "nanally",
-    "name": {
-      "zh": "娜娜莉",
-      "en": "Nanally"
-    },
+    "name": "娜娜莉",
     "rarity": "S",
-    "gender": {
-      "zh": "女",
-      "en": "Female"
-    },
-    "attribute": {
-      "zh": "灵",
-      "en": "Anima"
-    },
-    "arcType": {
-      "zh": "等离子",
-      "en": "Plasma"
-    },
-    "role": {
-      "zh": "输出",
-      "en": "Damage"
-    },
-    "summary": {
-      "zh": "伊波恩古董店成员。首个限定角色。",
-      "en": "A member of Eibon Antique Shop. The first limited character."
+    "gender": "女",
+    "attribute": "灵",
+    "arcType": "等离子",
+    "role": "输出",
+    "summary": "伊波恩古董店成员，猫族格斗家，也是首位限定角色。",
+    "pool": {
+      "version": "1.0",
+      "phase": "上半",
+      "name": "王牌一代目",
+      "start": "2026/04/23",
+      "end": "2026/05/07"
     },
     "links": [
+      {
+        "label": "国服公告",
+        "url": "https://www.sina.cn/news/detail/5290487604578071.html"
+      },
       {
         "label": "Fandom",
         "url": "https://neverness-to-everness.fandom.com/wiki/Nanally"
@@ -106,32 +139,57 @@
     ]
   },
   {
-    "id": "baicang",
-    "name": {
-      "zh": "白藏",
-      "en": "Baicang"
-    },
+    "id": "hotori",
+    "name": "浔",
     "rarity": "S",
-    "gender": {
-      "zh": "男",
-      "en": "Male"
+    "gender": "女",
+    "attribute": "光",
+    "arcType": "固态",
+    "role": "辅助",
+    "summary": "伊波恩古董店店主，能提供输出增益并拥有一定的爆发能力。",
+    "pool": {
+      "version": "1.0",
+      "phase": "下半",
+      "name": "独酌胧月流",
+      "start": "2026/05/07",
+      "end": "2026/05/28"
     },
-    "attribute": {
-      "zh": "咒",
-      "en": "Incantation"
-    },
-    "arcType": {
-      "zh": "聚合",
-      "en": "Synthesis"
-    },
-    "role": {
-      "zh": "输出",
-      "en": "Damage"
-    },
-    "summary": {
-      "zh": "异象管理局 ETD-4 队长。",
-      "en": "Captain of the Bureau of Anomaly Control's ETD-4."
-    },
+    "links": [
+      {
+        "label": "国服公告",
+        "url": "https://yh.wanmei.com/m/news/gamebroad/20260506/262090.html"
+      },
+      {
+        "label": "角色资料",
+        "url": "https://nte.hq1.pro/zh-CN/characters/hotori-1052"
+      }
+    ]
+  },
+  {
+    "id": "esper-zero",
+    "name": "零",
+    "rarity": "S",
+    "gender": "可选",
+    "attribute": "光",
+    "arcType": "固态",
+    "role": "输出",
+    "summary": "伊波恩古董店成员，迄今唯一无法检测出维特海默值的异能者。",
+    "links": [
+      {
+        "label": "Fandom",
+        "url": "https://neverness-to-everness.fandom.com/wiki/Esper_Zero"
+      }
+    ]
+  },
+  {
+    "id": "baicang",
+    "name": "白藏",
+    "rarity": "S",
+    "gender": "男",
+    "attribute": "咒",
+    "arcType": "聚合",
+    "role": "输出",
+    "summary": "异象管理局禁制机动队四队队长，在「最不像队长」票选中名列前茅。",
     "links": [
       {
         "label": "Fandom",
@@ -145,31 +203,13 @@
   },
   {
     "id": "fadia",
-    "name": {
-      "zh": "法帝娅",
-      "en": "Fadia"
-    },
+    "name": "法帝娅",
     "rarity": "S",
-    "gender": {
-      "zh": "女",
-      "en": "Female"
-    },
-    "attribute": {
-      "zh": "魂",
-      "en": "Psyche"
-    },
-    "arcType": {
-      "zh": "聚合",
-      "en": "Synthesis"
-    },
-    "role": {
-      "zh": "生存",
-      "en": "Survival"
-    },
-    "summary": {
-      "zh": "异象管理局 ETD-4 成员。",
-      "en": "A member of the Bureau of Anomaly Control's ETD-4."
-    },
+    "gender": "女",
+    "attribute": "魂",
+    "arcType": "聚合",
+    "role": "生存",
+    "summary": "异象管理局禁制机动队四队成员，危险又迷人，代表局长令人捉摸不定的择人标准。",
     "links": [
       {
         "label": "Fandom",
@@ -178,66 +218,14 @@
     ]
   },
   {
-    "id": "adler",
-    "name": {
-      "zh": "阿德勒",
-      "en": "Adler"
-    },
-    "rarity": "A",
-    "gender": {
-      "zh": "男",
-      "en": "Male"
-    },
-    "attribute": {
-      "zh": "咒",
-      "en": "Incantation"
-    },
-    "arcType": {
-      "zh": "聚合",
-      "en": "Synthesis"
-    },
-    "role": {
-      "zh": "生存",
-      "en": "Survival"
-    },
-    "summary": {
-      "zh": "伊波恩古董店成员。",
-      "en": "A member of Eibon Antique Shop."
-    },
-    "links": [
-      {
-        "label": "Fandom",
-        "url": "https://neverness-to-everness.fandom.com/wiki/Adler"
-      }
-    ]
-  },
-  {
     "id": "sakiri",
-    "name": {
-      "zh": "早雾",
-      "en": "Sakiri"
-    },
+    "name": "早雾",
     "rarity": "S",
-    "gender": {
-      "zh": "女",
-      "en": "Female"
-    },
-    "attribute": {
-      "zh": "咒",
-      "en": "Incantation"
-    },
-    "arcType": {
-      "zh": "气态",
-      "en": "Gas"
-    },
-    "role": {
-      "zh": "辅助",
-      "en": "Buff"
-    },
-    "summary": {
-      "zh": "伊波恩古董店成员。",
-      "en": "A member of Eibon Antique Shop."
-    },
+    "gender": "女",
+    "attribute": "咒",
+    "arcType": "气态",
+    "role": "辅助",
+    "summary": "伊波恩古董店成员，看起来不太好惹，实际也不太好惹的「伊波恩一霸」。",
     "links": [
       {
         "label": "Fandom",
@@ -247,31 +235,13 @@
   },
   {
     "id": "chiz",
-    "name": {
-      "zh": "小吱",
-      "en": "Chiz"
-    },
+    "name": "小吱",
     "rarity": "S",
-    "gender": {
-      "zh": "女",
-      "en": "Female"
-    },
-    "attribute": {
-      "zh": "光",
-      "en": "Cosmos"
-    },
-    "arcType": {
-      "zh": "气态",
-      "en": "Gas"
-    },
-    "role": {
-      "zh": "输出",
-      "en": "Damage"
-    },
-    "summary": {
-      "zh": "德沃夏克家族成员。",
-      "en": "A member of the Dvorak family."
-    },
+    "gender": "女",
+    "attribute": "光",
+    "arcType": "气态",
+    "role": "输出",
+    "summary": "德沃夏克家族成员，看似有些胆小，却是粉爪银行最靠谱的经理。",
     "links": [
       {
         "label": "Fandom",
@@ -281,31 +251,13 @@
   },
   {
     "id": "jiuyuan",
-    "name": {
-      "zh": "九原",
-      "en": "Jiuyuan"
-    },
+    "name": "九原",
     "rarity": "S",
-    "gender": {
-      "zh": "女",
-      "en": "Female"
-    },
-    "attribute": {
-      "zh": "灵",
-      "en": "Anima"
-    },
-    "arcType": {
-      "zh": "固态",
-      "en": "Solid"
-    },
-    "role": {
-      "zh": "输出",
-      "en": "Damage"
-    },
-    "summary": {
-      "zh": "斯特利速递成员。",
-      "en": "A member of Sterry Express."
-    },
+    "gender": "女",
+    "attribute": "灵",
+    "arcType": "固态",
+    "role": "输出",
+    "summary": "斯特利速递精英快递员兼「代理店长」，八面玲珑又不可捉摸。",
     "links": [
       {
         "label": "Fandom",
@@ -314,66 +266,14 @@
     ]
   },
   {
-    "id": "skia",
-    "name": {
-      "zh": "翳",
-      "en": "Skia"
-    },
-    "rarity": "A",
-    "gender": {
-      "zh": "男",
-      "en": "Male"
-    },
-    "attribute": {
-      "zh": "相",
-      "en": "Lakshana"
-    },
-    "arcType": {
-      "zh": "气态",
-      "en": "Gas"
-    },
-    "role": {
-      "zh": "输出",
-      "en": "Damage"
-    },
-    "summary": {
-      "zh": "异象管理局 ETD-4 副官。",
-      "en": "Lieutenant of the Bureau of Anomaly Control's ETD-4."
-    },
-    "links": [
-      {
-        "label": "Fandom",
-        "url": "https://neverness-to-everness.fandom.com/wiki/Skia"
-      }
-    ]
-  },
-  {
     "id": "daffodil",
-    "name": {
-      "zh": "达芙蒂尔",
-      "en": "Daffodil"
-    },
+    "name": "达芙蒂尔",
     "rarity": "S",
-    "gender": {
-      "zh": "女",
-      "en": "Female"
-    },
-    "attribute": {
-      "zh": "暗",
-      "en": "Chaos"
-    },
-    "arcType": {
-      "zh": "液态",
-      "en": "Liquid"
-    },
-    "role": {
-      "zh": "输出",
-      "en": "Damage"
-    },
-    "summary": {
-      "zh": "伊波恩古董店成员。",
-      "en": "A member of Eibon Antique Shop."
-    },
+    "gender": "女",
+    "attribute": "暗",
+    "arcType": "液态",
+    "role": "输出",
+    "summary": "伊波恩古董店专职保镖，人狠话不多的冷峻行动派。",
     "links": [
       {
         "label": "Fandom",
@@ -383,31 +283,13 @@
   },
   {
     "id": "hathor",
-    "name": {
-      "zh": "哈索尔",
-      "en": "Hathor"
-    },
+    "name": "哈索尔",
     "rarity": "S",
-    "gender": {
-      "zh": "女",
-      "en": "Female"
-    },
-    "attribute": {
-      "zh": "相",
-      "en": "Lakshana"
-    },
-    "arcType": {
-      "zh": "等离子",
-      "en": "Plasma"
-    },
-    "role": {
-      "zh": "输出",
-      "en": "Damage"
-    },
-    "summary": {
-      "zh": "斯特利速递成员。",
-      "en": "A member of Sterry Express."
-    },
+    "gender": "女",
+    "attribute": "相",
+    "arcType": "等离子",
+    "role": "输出",
+    "summary": "斯特利速递成员，爱好制作任务全时间表并严格执行的高效快递员。",
     "links": [
       {
         "label": "Fandom",
@@ -416,32 +298,62 @@
     ]
   },
   {
-    "id": "haniel",
-    "name": {
-      "zh": "哈尼娅",
-      "en": "Haniel"
-    },
+    "id": "mint",
+    "name": "薄荷",
     "rarity": "A",
-    "gender": {
-      "zh": "女",
-      "en": "Female"
-    },
-    "attribute": {
-      "zh": "魂",
-      "en": "Psyche"
-    },
-    "arcType": {
-      "zh": "固态",
-      "en": "Solid"
-    },
-    "role": {
-      "zh": "辅助",
-      "en": "Buff"
-    },
-    "summary": {
-      "zh": "斯特利速递成员。",
-      "en": "A member of Sterry Express."
-    },
+    "gender": "女",
+    "attribute": "灵",
+    "arcType": "液态",
+    "role": "输出",
+    "summary": "异象管理局收容二组成员，可能是组内「被异象骗最多次」的人。",
+    "links": [
+      {
+        "label": "Fandom",
+        "url": "https://neverness-to-everness.fandom.com/wiki/Mint"
+      }
+    ]
+  },
+  {
+    "id": "adler",
+    "name": "阿德勒",
+    "rarity": "A",
+    "gender": "男",
+    "attribute": "咒",
+    "arcType": "聚合",
+    "role": "生存",
+    "summary": "伊波恩古董店成员，令店内众人和街坊邻居安心的完美管家。",
+    "links": [
+      {
+        "label": "Fandom",
+        "url": "https://neverness-to-everness.fandom.com/wiki/Adler"
+      }
+    ]
+  },
+  {
+    "id": "skia",
+    "name": "翳",
+    "rarity": "A",
+    "gender": "男",
+    "attribute": "相",
+    "arcType": "气态",
+    "role": "输出",
+    "summary": "异象管理局禁制机动队四队副队长，却常被误认为是队长。",
+    "links": [
+      {
+        "label": "Fandom",
+        "url": "https://neverness-to-everness.fandom.com/wiki/Skia"
+      }
+    ]
+  },
+  {
+    "id": "haniel",
+    "name": "哈尼娅",
+    "rarity": "A",
+    "gender": "女",
+    "attribute": "魂",
+    "arcType": "固态",
+    "role": "辅助",
+    "summary": "斯特利速递成员，梦想成为拯救世界的美少女高中生。",
     "links": [
       {
         "label": "Fandom",
@@ -451,31 +363,13 @@
   },
   {
     "id": "edgar",
-    "name": {
-      "zh": "埃德嘉",
-      "en": "Edgar"
-    },
+    "name": "埃德嘉",
     "rarity": "A",
-    "gender": {
-      "zh": "男",
-      "en": "Male"
-    },
-    "attribute": {
-      "zh": "光",
-      "en": "Cosmos"
-    },
-    "arcType": {
-      "zh": "液态",
-      "en": "Liquid"
-    },
-    "role": {
-      "zh": "生存",
-      "en": "Survival"
-    },
-    "summary": {
-      "zh": "伊波恩古董店成员。",
-      "en": "A member of Eibon Antique Shop."
-    },
+    "gender": "男",
+    "attribute": "光",
+    "arcType": "液态",
+    "role": "生存",
+    "summary": "伊波恩古董店成员，头脑灵活，看似是个小孩——实际也确实是。",
     "links": [
       {
         "label": "Fandom",

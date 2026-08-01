@@ -1,161 +1,107 @@
 ---
 import BaseLayout from "@/components/BaseLayout.astro";
+import CharacterPoolCard from "@/components/CharacterPoolCard.astro";
 import PageHero from "@/components/PageHero.astro";
-import SectionHeader from "@/components/SectionHeader.astro";
 import characters from "@/data/characters.json";
 
-const uniqueByZh = (values: Array<{ zh: string; en: string }>) =>
-  Array.from(new Map(values.map((value) => [value.zh, value])).values());
+interface PoolInfo {
+  version: string;
+  phase: string;
+  name: string;
+  start: string;
+  end: string;
+}
 
-const filterGroups = [
-  {
-    key: "rarity",
-    label: { zh: "稀有度", en: "Rarity" },
-    options: Array.from(new Set(characters.map((character) => character.rarity))).map((rarity) => ({
-      zh: rarity,
-      en: rarity,
-    })),
-  },
-  {
-    key: "role",
-    label: { zh: "定位", en: "Role" },
-    options: uniqueByZh(characters.map((character) => character.role)),
-  },
-  {
-    key: "gender",
-    label: { zh: "性别", en: "Gender" },
-    options: uniqueByZh(characters.map((character) => character.gender)),
-  },
-  {
-    key: "attribute",
-    label: { zh: "属性", en: "Attribute" },
-    options: uniqueByZh(characters.map((character) => character.attribute)),
-  },
-  {
-    key: "arcType",
-    label: { zh: "弧盘类型", en: "Arc Type" },
-    options: uniqueByZh(characters.map((character) => character.arcType)),
-  },
+interface Character {
+  id: string;
+  name: string;
+  rarity: string;
+  gender: string;
+  attribute: string;
+  arcType: string;
+  role: string;
+  summary: string;
+  pool?: PoolInfo;
+}
+
+const allCharacters = characters as Character[];
+const versionMeta = [
+  { version: "1.2", title: "九百九十九夜" },
+  { version: "1.1", title: "游梦洄廊" },
+  { version: "1.0", title: "公测" },
 ];
+const versionPools = versionMeta.map((meta) => ({
+  ...meta,
+  characters: allCharacters
+    .filter((character) => character.pool?.version === meta.version)
+    .sort((a, b) => (a.pool?.phase === "上半" ? -1 : 1) - (b.pool?.phase === "上半" ? -1 : 1)),
+}));
+const permanentCharacters = allCharacters
+  .filter((character) => !character.pool)
+  .sort((a, b) => (a.rarity === b.rarity ? 0 : a.rarity === "S" ? -1 : 1));
+const permanentTiers = ["S", "A"].map((rarity) => ({
+  rarity,
+  characters: permanentCharacters.filter((character) => character.rarity === rarity),
+}));
 ---
 
-<BaseLayout title="角色信息" active="/characters/">
+<BaseLayout
+  title="卡池信息"
+  description="《异环》国服限定卡池时间线与常驻角色资料，按版本从新到旧排列。"
+  active="/characters/"
+>
   <PageHero
-    eyebrow="Characters"
-    title="角色信息"
-    titleEn="Characters"
-    description="角色基础信息。持续建设中~"
-    descriptionEn="Basic character information. Work in progress."
+    eyebrow="国服卡池"
+    title="卡池信息"
+    description="限定卡池按版本从新到旧排列；常驻角色按 S、A 稀有度依次收录。"
   />
 
-  <SectionHeader title="角色索引" titleEn="Character Index" />
-  <div class="filter-panel" data-character-filters>
+  <div class="pool-timeline">
     {
-      filterGroups.map((group) => (
-        <label class="filter-control">
-          <span data-i18n-zh={group.label.zh} data-i18n-en={group.label.en}>{group.label.zh}</span>
-          <select data-character-filter={group.key}>
-            <option value="" data-i18n-zh="全部" data-i18n-en="All">全部</option>
-            {group.options.map((option) => (
-              <option value={option.zh} data-i18n-zh={option.zh} data-i18n-en={option.en}>
-                {option.zh}
-              </option>
+      versionPools.map((pool) => (
+        <section class="pool-version" aria-labelledby={`pool-version-${pool.version.replace(".", "-")}`}>
+          <header class="pool-version-header">
+            <div>
+              <p class="pool-version-kicker">VERSION</p>
+              <h2 id={`pool-version-${pool.version.replace(".", "-")}`}>{pool.version}</h2>
+            </div>
+            <p>{pool.title}</p>
+          </header>
+          <div class="pool-pair">
+            {pool.characters.map((character) => (
+              <CharacterPoolCard character={character} />
             ))}
-          </select>
-        </label>
-      ))
-    }
-  </div>
-  <p
-    class="filter-count"
-    data-character-count
-    data-i18n-zh={`显示 ${characters.length} 位角色`}
-    data-i18n-en={`Showing ${characters.length} characters`}
-  >
-    显示 {characters.length} 位角色
-  </p>
-  <div class="grid">
-    {
-      characters.map((character) => (
-        <article
-          class="data-card"
-          data-character-card
-          data-rarity={character.rarity}
-          data-role={character.role.zh}
-          data-gender={character.gender.zh}
-          data-attribute={character.attribute.zh}
-          data-arc-type={character.arcType.zh}
-        >
-          <div class="character-card-head">
-            <h3 data-i18n-zh={character.name.zh} data-i18n-en={character.name.en}>{character.name.zh}</h3>
-            <div class="character-badges">
-              <span class="rarity-pill" data-rarity-tier={character.rarity}>
-                {character.rarity}
-              </span>
-              <span class="tag" data-i18n-zh={character.role.zh} data-i18n-en={character.role.en}>
-                {character.role.zh}
-              </span>
-            </div>
           </div>
-          <dl class="character-facts">
-            <div>
-              <dt data-i18n-zh="性别" data-i18n-en="Gender">性别</dt>
-              <dd data-i18n-zh={character.gender.zh} data-i18n-en={character.gender.en}>{character.gender.zh}</dd>
-            </div>
-            <div>
-              <dt data-i18n-zh="属性" data-i18n-en="Attribute">属性</dt>
-              <dd data-i18n-zh={character.attribute.zh} data-i18n-en={character.attribute.en}>{character.attribute.zh}</dd>
-            </div>
-            <div>
-              <dt data-i18n-zh="弧盘类型" data-i18n-en="Arc Type">弧盘类型</dt>
-              <dd data-i18n-zh={character.arcType.zh} data-i18n-en={character.arcType.en}>{character.arcType.zh}</dd>
-            </div>
-          </dl>
-          <p data-i18n-zh={character.summary.zh} data-i18n-en={character.summary.en}>{character.summary.zh}</p>
-        </article>
+        </section>
       ))
     }
   </div>
+
+  <section class="permanent-pool" aria-labelledby="permanent-pool-title">
+    <header class="permanent-pool-header">
+      <div>
+        <p class="pool-version-kicker">STANDARD</p>
+        <h2 id="permanent-pool-title">常驻</h2>
+      </div>
+      <p>常驻角色不标注卡池时间，S 级在前，A 级在后。</p>
+    </header>
+
+    {
+      permanentTiers.map((tier) => (
+        <section class="permanent-tier" aria-labelledby={`permanent-tier-${tier.rarity}`}>
+          <div class="permanent-tier-heading">
+            <h3 id={`permanent-tier-${tier.rarity}`}>{tier.rarity} 级</h3>
+            <span>{tier.characters.length} 位角色</span>
+          </div>
+          <div class="permanent-grid">
+            {tier.characters.map((character) => (
+              <CharacterPoolCard character={character} permanent />
+            ))}
+          </div>
+        </section>
+      ))
+    }
+  </section>
+
+  <p class="pool-note">卡池时间采用中国服务器时间，开始时间以对应版本维护完成为准。</p>
 </BaseLayout>
-
-<script>
-  // @ts-nocheck
-  const filterSelects = Array.from(document.querySelectorAll("[data-character-filter]"));
-  const characterCards = Array.from(document.querySelectorAll("[data-character-card]"));
-  const characterCount = document.querySelector("[data-character-count]");
-  const filterKeyToAttribute = {
-    rarity: "data-rarity",
-    role: "data-role",
-    gender: "data-gender",
-    attribute: "data-attribute",
-    arcType: "data-arc-type",
-  };
-
-  const setCountText = (visibleCount) => {
-    if (!characterCount) return;
-    const zh = `显示 ${visibleCount} 位角色`;
-    const en = `Showing ${visibleCount} characters`;
-    characterCount.setAttribute("data-i18n-zh", zh);
-    characterCount.setAttribute("data-i18n-en", en);
-    characterCount.textContent = document.body.dataset.lang === "en" ? en : zh;
-  };
-
-  const updateCharacterFilters = () => {
-    let visibleCount = 0;
-    characterCards.forEach((card) => {
-      const isVisible = filterSelects.every((select) => {
-        const value = select.value;
-        if (!value) return true;
-        const attribute = filterKeyToAttribute[select.dataset.characterFilter];
-        return card.getAttribute(attribute) === value;
-      });
-      card.hidden = !isVisible;
-      if (isVisible) visibleCount += 1;
-    });
-    setCountText(visibleCount);
-  };
-
-  filterSelects.forEach((select) => {
-    select.addEventListener("change", updateCharacterFilters);
-  });
-</script>

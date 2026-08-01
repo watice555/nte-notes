@@ -9,32 +9,23 @@ const formatter = new Intl.NumberFormat("zh-CN");
 
 <BaseLayout title="好感度" active="/affinity/">
   <PageHero
-    eyebrow="Affinity"
+    eyebrow="好感度"
     title="好感度"
-    titleEn="Affinity"
     description="整理角色好感提升方式、赠礼性价比与升级需求。"
-    descriptionEn="Affinity sources, gift value references, and level requirements."
     quips={["投其所好，少走弯路"]}
-    quipsEn={["Give wisely, level smoothly"]}
   />
 
   <section>
     <SectionHeader
       title="提升方式"
-      titleEn="Affinity Sources"
-      description="可通过赠礼、互动或地图内容提升好感度。"
-      descriptionEn="Raise affinity through gifts, interactions, and map activities."
+      description="可通过赠礼、剧情、互动等方式提升好感度。"
     />
     <div class="grid">
       {
         affinity.methods.map((method) => (
           <article class="data-card">
-            <h3 data-i18n-zh={method.title.zh} data-i18n-en={method.title.en}>
-              {method.title.zh}
-            </h3>
-            <p data-i18n-zh={method.summary.zh} data-i18n-en={method.summary.en}>
-              {method.summary.zh}
-            </p>
+            <h3>{method.title}</h3>
+            <p>{method.summary}</p>
           </article>
         ))
       }
@@ -44,27 +35,16 @@ const formatter = new Intl.NumberFormat("zh-CN");
   <section>
     <SectionHeader
       title="赠礼性价比"
-      titleEn="Gift Value"
-      description="各角色在 400、200、100 好感度档位中性价比较高的赠礼。"
-      descriptionEn="Best-value gifts for each character across the 400, 200, and 100 affinity tiers."
+      description="各角色在 400、200、100 好感度档位中价格最低的赠礼，同价礼物并列展示。"
     />
-    <p class="source-row">
-      <span data-i18n-zh="来源" data-i18n-en="Source">来源</span>
-      <a class="external-link" href={affinity.giftSource.url} target="_blank" rel="noreferrer">
-        {affinity.giftSource.label}
-      </a>
-    </p>
-
     <div class="table-scroll">
       <table class="data-table affinity-table">
         <thead>
           <tr>
-            <th data-i18n-zh="角色" data-i18n-en="Character">角色</th>
+            <th>角色</th>
             {
               affinity.giftTiers.map((tier) => (
-                <th data-i18n-zh={`${tier} 好感度`} data-i18n-en={`${tier} Affinity`}>
-                  {tier} 好感度
-                </th>
+                <th>{tier} 好感度</th>
               ))
             }
           </tr>
@@ -97,16 +77,14 @@ const formatter = new Intl.NumberFormat("zh-CN");
   <section>
     <SectionHeader
       title="升级需求"
-      titleEn="Level Requirements"
       description="好感度等级提升所需数值。"
-      descriptionEn="Affinity required for each level-up."
     />
     <div class="table-scroll level-table-wrap">
       <table class="data-table level-table">
         <thead>
           <tr>
-            <th data-i18n-zh="等级" data-i18n-en="Level">等级</th>
-            <th data-i18n-zh="所需好感度" data-i18n-en="Required Affinity">所需好感度</th>
+            <th>等级</th>
+            <th>所需好感度</th>
           </tr>
         </thead>
         <tbody>
@@ -119,7 +97,7 @@ const formatter = new Intl.NumberFormat("zh-CN");
             ))
           }
           <tr class="total-row">
-            <td data-i18n-zh="合计" data-i18n-en="Total">合计</td>
+            <td>合计</td>
             <td>{formatter.format(affinity.totalRequired)}</td>
           </tr>
         </tbody>

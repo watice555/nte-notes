@@ -10,7 +10,10 @@ const categoryLabels: Record<string, string> = {
   角色: "Character",
   属性: "Attribute",
   弧盘类别: "Arc Type",
+  武器: "Weapon",
+  怪物: "Monster",
 };
+const categories = Array.from(new Set(translations.map((item) => item.category)));
 ---
 
 <BaseLayout title="中英对照" active="/translations/">
@@ -28,32 +31,43 @@ const categoryLabels: Record<string, string> = {
       class="filter-input"
       type="search"
       data-table-filter
-      placeholder="搜索中文、英文、别名、分类..."
-      data-i18n-placeholder-zh="搜索中文、英文、别名、分类..."
-      data-i18n-placeholder-en="Search Chinese, English, aliases, or categories..."
+      placeholder="搜索中文、英文或分类..."
+      data-i18n-placeholder-zh="搜索中文、英文或分类..."
+      data-i18n-placeholder-en="Search Chinese, English, or category..."
     />
   </div>
+  <fieldset class="category-filter" data-category-filters>
+    <legend data-i18n-zh="按分类筛选" data-i18n-en="Filter by category">按分类筛选</legend>
+    <div class="category-filter-options">
+      {
+        categories.map((category) => (
+          <label class="category-filter-option">
+            <input type="checkbox" value={category} data-category-filter checked />
+            <span data-i18n-zh={category} data-i18n-en={categoryLabels[category] ?? category}>
+              {category}
+            </span>
+          </label>
+        ))
+      }
+    </div>
+  </fieldset>
   <table class="data-table" data-filter-table>
     <thead>
       <tr>
         <th data-i18n-zh="中文" data-i18n-en="Chinese">中文</th>
         <th>English</th>
         <th data-i18n-zh="分类" data-i18n-en="Category">分类</th>
-        <th data-i18n-zh="别名" data-i18n-en="Aliases">别名</th>
-        <th data-i18n-zh="备注" data-i18n-en="Notes">备注</th>
       </tr>
     </thead>
     <tbody>
       {
         translations.map((item) => (
-          <tr data-filter-text={`${item.zh} ${item.en} ${item.category} ${item.aliases.join(" ")} ${item.note.zh} ${item.note.en}`}>
+          <tr data-filter-text={`${item.zh} ${item.en} ${item.category}`} data-category={item.category}>
             <td>{item.zh}</td>
             <td lang="en">{item.en}</td>
             <td data-i18n-zh={item.category} data-i18n-en={categoryLabels[item.category] ?? item.category}>
               {item.category}
             </td>
-            <td>{item.aliases.join(" / ")}</td>
-            <td data-i18n-zh={item.note.zh} data-i18n-en={item.note.en}>{item.note.zh}</td>
           </tr>
         ))
       }
@@ -64,13 +78,24 @@ const categoryLabels: Record<string, string> = {
 <script>
   // @ts-nocheck
   const tableFilter = document.querySelector("[data-table-filter]");
+  const categoryFilters = Array.from(document.querySelectorAll("[data-category-filter]"));
   const rows = Array.from(document.querySelectorAll("[data-filter-text]"));
 
-  tableFilter?.addEventListener("input", () => {
-    const query = tableFilter.value.trim().toLowerCase();
+  const updateTable = () => {
+    const query = tableFilter?.value.trim().toLowerCase() || "";
+    const selectedCategories = new Set(
+      categoryFilters.filter((filter) => filter.checked).map((filter) => filter.value),
+    );
+
     rows.forEach((row) => {
       const text = row.getAttribute("data-filter-text")?.toLowerCase() || "";
-      row.hidden = query.length > 0 && !text.includes(query);
+      const category = row.getAttribute("data-category") || "";
+      const matchesQuery = query.length === 0 || text.includes(query);
+      const matchesCategory = selectedCategories.has(category);
+      row.hidden = !matchesQuery || !matchesCategory;
     });
-  });
+  };
+
+  tableFilter?.addEventListener("input", updateTable);
+  categoryFilters.forEach((filter) => filter.addEventListener("change", updateTable));
 </script>

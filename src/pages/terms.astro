@@ -7,38 +7,25 @@ import terms from "@/data/terms.json";
 
 <BaseLayout title="名词解释" active="/terms/">
   <PageHero
-    eyebrow="Glossary"
+    eyebrow="术语"
     title="名词解释"
-    titleEn="Glossary"
     description="整理养成系统和玩法系统中的专有名词，并提供与原神中游戏概念的对应参考。"
-    descriptionEn="NTE terms with compact explanations and Genshin reference points."
     quips={["万物起原"]}
-    quipsEn={["Everything starts somewhere"]}
   />
 
   <SectionHeader
     title="术语"
-    titleEn="Terms"
     description="原神概念仅用于帮助理解，不代表系统机制完全等同。"
-    descriptionEn="Genshin terms are reference points only; mechanics may differ."
   />
   <div class="grid two">
     {
       terms.map((term) => (
         <article class="data-card">
           <div class="term-pair">
-            <h3 data-i18n-zh={term.term.zh} data-i18n-en={term.term.en}>{term.term.zh}</h3>
-            <span
-              class="term-equivalent"
-              data-i18n-zh={term.genshinEquivalent.zh}
-              data-i18n-en={term.genshinEquivalent.en}
-            >
-              {term.genshinEquivalent.zh}
-            </span>
+            <h3>{term.term}</h3>
+            <span class="term-equivalent">{term.genshinEquivalent}</span>
           </div>
-          <p data-i18n-zh={term.explanation.zh} data-i18n-en={term.explanation.en}>
-            {term.explanation.zh}
-          </p>
+          <p>{term.explanation}</p>
         </article>
       ))
     }

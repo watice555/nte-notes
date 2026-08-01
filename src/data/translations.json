@@ -4,10 +4,10 @@
     "zh": "异环",
     "en": "Neverness to Everness",
     "category": "游戏名",
-    "aliases": ["NTE"],
+    "aliases": [],
     "note": {
-      "zh": "官方英文名常缩写为 NTE。",
-      "en": "Official English title; commonly abbreviated as NTE."
+      "zh": "",
+      "en": ""
     }
   },
   {
@@ -15,219 +15,230 @@
     "zh": "海特洛市",
     "en": "Hethereau",
     "category": "世界观",
-    "aliases": [""],
+    "aliases": [],
     "note": {
       "zh": "",
-      "en": "World and setting term."
+      "en": ""
     }
   },
   {
-    "id": "esper-zero",
-    "zh": "零",
-    "en": "Esper Zero",
+    "id": "character-1046",
+    "zh": "「零」",
+    "en": "Zero",
     "category": "角色",
     "aliases": [],
     "note": {
       "zh": "",
-      "en": "Character name."
+      "en": ""
     }
   },
   {
-    "id": "mint",
-    "zh": "薄荷",
-    "en": "Mint",
-    "category": "角色",
-    "aliases": [],
-    "note": {
-      "zh": "",
-      "en": "Character name."
-    }
-  },
-  {
-    "id": "nanally",
-    "zh": "娜娜莉",
-    "en": "Nanally",
-    "category": "角色",
-    "aliases": [],
-    "note": {
-      "zh": "",
-      "en": "Character name."
-    }
-  },
-  {
-    "id": "baicang",
-    "zh": "白藏",
-    "en": "Baicang",
-    "category": "角色",
-    "aliases": [],
-    "note": {
-      "zh": "",
-      "en": "Character name."
-    }
-  },
-  {
-    "id": "fadia",
-    "zh": "法帝娅",
-    "en": "Fadia",
-    "category": "角色",
-    "aliases": [],
-    "note": {
-      "zh": "",
-      "en": "Character name."
-    }
-  },
-  {
-    "id": "adler",
+    "id": "character-1033",
     "zh": "阿德勒",
     "en": "Adler",
     "category": "角色",
     "aliases": [],
     "note": {
       "zh": "",
-      "en": "Character name."
+      "en": ""
     }
   },
   {
-    "id": "sakiri",
-    "zh": "早雾",
-    "en": "Sakiri",
-    "category": "角色",
-    "aliases": [],
-    "note": {
-      "zh": "",
-      "en": "Character name."
-    }
-  },
-  {
-    "id": "chiz",
-    "zh": "小吱",
-    "en": "Chiz",
-    "category": "角色",
-    "aliases": [],
-    "note": {
-      "zh": "",
-      "en": "Character name."
-    }
-  },
-  {
-    "id": "jiuyuan",
-    "zh": "九原",
-    "en": "Jiuyuan",
-    "category": "角色",
-    "aliases": [],
-    "note": {
-      "zh": "",
-      "en": "Character name."
-    }
-  },
-  {
-    "id": "skia",
-    "zh": "翳",
-    "en": "Skia",
-    "category": "角色",
-    "aliases": [],
-    "note": {
-      "zh": "",
-      "en": "Character name."
-    }
-  },
-  {
-    "id": "daffodil",
-    "zh": "达芙蒂尔",
-    "en": "Daffodil",
-    "category": "角色",
-    "aliases": [],
-    "note": {
-      "zh": "",
-      "en": "Character name."
-    }
-  },
-  {
-    "id": "hathor",
-    "zh": "哈索尔",
-    "en": "Hathor",
-    "category": "角色",
-    "aliases": [],
-    "note": {
-      "zh": "",
-      "en": "Character name."
-    }
-  },
-  {
-    "id": "haniel",
-    "zh": "哈尼娅",
-    "en": "Haniel",
-    "category": "角色",
-    "aliases": [],
-    "note": {
-      "zh": "",
-      "en": "Character name."
-    }
-  },
-  {
-    "id": "hotori",
-    "zh": "浔",
-    "en": "Hotori",
-    "category": "角色",
-    "aliases": [],
-    "note": {
-      "zh": "",
-      "en": "Character name."
-    }
-  },
-  {
-    "id": "lacrimosa",
-    "zh": "安魂曲",
-    "en": "Lacrimosa",
-    "category": "角色",
-    "aliases": [],
-    "note": {
-      "zh": "",
-      "en": "Character name."
-    }
-  },
-  {
-    "id": "edgar",
+    "id": "character-1021",
     "zh": "埃德嘉",
     "en": "Edgar",
     "category": "角色",
     "aliases": [],
     "note": {
       "zh": "",
-      "en": "Character name."
+      "en": ""
     }
   },
   {
-    "id": "cosmos",
-    "zh": "光",
-    "en": "Cosmos",
-    "category": "属性",
+    "id": "character-1004",
+    "zh": "安魂曲",
+    "en": "Lacrimosa",
+    "category": "角色",
     "aliases": [],
     "note": {
       "zh": "",
-      "en": "Attribute name."
+      "en": ""
     }
   },
   {
-    "id": "anima",
-    "zh": "灵",
-    "en": "Anima",
-    "category": "属性",
+    "id": "character-1023",
+    "zh": "白藏",
+    "en": "Baicang",
+    "category": "角色",
     "aliases": [],
     "note": {
       "zh": "",
-      "en": "Attribute name."
+      "en": ""
     }
   },
   {
-    "id": "incantation",
-    "zh": "咒",
-    "en": "Incantation",
-    "category": "属性",
+    "id": "character-1019",
+    "zh": "薄荷",
+    "en": "Mint",
+    "category": "角色",
     "aliases": [],
     "note": {
       "zh": "",
-      "en": "Attribute name."
+      "en": ""
+    }
+  },
+  {
+    "id": "character-1054",
+    "zh": "达芙蒂尔",
+    "en": "Daffodill",
+    "category": "角色",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "character-1039",
+    "zh": "法帝娅",
+    "en": "Fadia",
+    "category": "角色",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "character-1020",
+    "zh": "哈尼娅",
+    "en": "Haniel",
+    "category": "角色",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "character-1025",
+    "zh": "哈索尔",
+    "en": "Hathor",
+    "category": "角色",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "character-1070",
+    "zh": "海月",
+    "en": "Aurelia",
+    "category": "角色",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "character-1055",
+    "zh": "九原",
+    "en": "Jiuyuan",
+    "category": "角色",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "character-1071",
+    "zh": "卡厄斯",
+    "en": "Chaos",
+    "category": "角色",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "character-1010",
+    "zh": "娜娜莉",
+    "en": "Nanally",
+    "category": "角色",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "character-1073",
+    "zh": "小吱",
+    "en": "Chiz",
+    "category": "角色",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "character-1052",
+    "zh": "浔",
+    "en": "Hotori",
+    "category": "角色",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "character-1075",
+    "zh": "伊洛伊",
+    "en": "Iroi",
+    "category": "角色",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "character-1008",
+    "zh": "翳",
+    "en": "Skia",
+    "category": "角色",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "character-1003",
+    "zh": "早雾",
+    "en": "Sakiri",
+    "category": "角色",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "character-1076",
+    "zh": "真红",
+    "en": "Shinku",
+    "category": "角色",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
     }
   },
   {
@@ -238,7 +249,18 @@
     "aliases": [],
     "note": {
       "zh": "",
-      "en": "Attribute name."
+      "en": ""
+    }
+  },
+  {
+    "id": "cosmos",
+    "zh": "光",
+    "en": "Cosmos",
+    "category": "属性",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
     }
   },
   {
@@ -249,7 +271,18 @@
     "aliases": [],
     "note": {
       "zh": "",
-      "en": "Attribute name."
+      "en": ""
+    }
+  },
+  {
+    "id": "anima",
+    "zh": "灵",
+    "en": "Anima",
+    "category": "属性",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
     }
   },
   {
@@ -260,40 +293,18 @@
     "aliases": [],
     "note": {
       "zh": "",
-      "en": "Attribute name."
+      "en": ""
     }
   },
   {
-    "id": "gas",
-    "zh": "气态",
-    "en": "Gas",
-    "category": "弧盘类别",
+    "id": "incantation",
+    "zh": "咒",
+    "en": "Incantation",
+    "category": "属性",
     "aliases": [],
     "note": {
       "zh": "",
-      "en": "Arc type."
-    }
-  },
-  {
-    "id": "liquid",
-    "zh": "液态",
-    "en": "Liquid",
-    "category": "弧盘类别",
-    "aliases": [],
-    "note": {
-      "zh": "",
-      "en": "Arc type."
-    }
-  },
-  {
-    "id": "solid",
-    "zh": "固态",
-    "en": "Solid",
-    "category": "弧盘类别",
-    "aliases": [],
-    "note": {
-      "zh": "",
-      "en": "Arc type."
+      "en": ""
     }
   },
   {
@@ -304,7 +315,18 @@
     "aliases": [],
     "note": {
       "zh": "",
-      "en": "Arc type."
+      "en": ""
+    }
+  },
+  {
+    "id": "solid",
+    "zh": "固态",
+    "en": "Solid",
+    "category": "弧盘类别",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
     }
   },
   {
@@ -315,7 +337,1184 @@
     "aliases": [],
     "note": {
       "zh": "",
-      "en": "Arc type."
+      "en": ""
+    }
+  },
+  {
+    "id": "gas",
+    "zh": "气态",
+    "en": "Gas",
+    "category": "弧盘类别",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "liquid",
+    "zh": "液态",
+    "en": "Liquid",
+    "category": "弧盘类别",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-appliance",
+    "zh": "「电音」狂欢",
+    "en": "\"Real Music\"",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-worldrain",
+    "zh": "「倾世之雨」",
+    "en": "The Rain That Shook the World",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-prokaryon",
+    "zh": "「我们。」",
+    "en": "Us.",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-moon",
+    "zh": "「银河暂留」",
+    "en": "Stellar Veil",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-rose",
+    "zh": "「最后一朵玫瑰」",
+    "en": "The Last Rose",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-yaodao",
+    "zh": "拔刀",
+    "en": "Drawn Blade",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-wuhuakuang",
+    "zh": "被遗忘者",
+    "en": "The Forgotten",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-boxingcandy",
+    "zh": "不屈之绵",
+    "en": "Fluff of Fortitude",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-jingmotingyuan",
+    "zh": "茶花会",
+    "en": "Camellia Society",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-nonos",
+    "zh": "成功的第一步",
+    "en": "First Step to Success",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-lunarphase",
+    "zh": "穿过胭红蜃景",
+    "en": "Blushing Mirage",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-door",
+    "zh": "错误的门",
+    "en": "The Wrong Gate",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-kite",
+    "zh": "当心头顶",
+    "en": "Watch Your Heads!",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-tuansanlang",
+    "zh": "该死的邂逅",
+    "en": "The Great Thief",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-spider",
+    "zh": "挂你在心口难开",
+    "en": "Failing You, Heavy in My Heart",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-bopu",
+    "zh": "光波眩晕，迷走狂欢",
+    "en": "Cosmos Daze, Wild Reverie",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-policerat",
+    "zh": "海特洛的安宁",
+    "en": "Hethereau's Keeper",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-mofeikesi",
+    "zh": "好狗狗走四方",
+    "en": "Good Boy's Grand Adventure",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-motorcandy",
+    "zh": "极速之绵",
+    "en": "Fluff of Fleetness",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-whale",
+    "zh": "鲸之歌",
+    "en": "Song of the Whale",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-paperplane",
+    "zh": "开始净空",
+    "en": "Clear Skies",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-bittercake",
+    "zh": "良药苦口",
+    "en": "The Good, The Bad, The Bitter",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-lingganzhongjiezhe",
+    "zh": "灵感大逃杀",
+    "en": "Mind Royale",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-thiefcandy",
+    "zh": "灵敏之绵",
+    "en": "Fluff of Finesse",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-nestbird",
+    "zh": "面具下的泪",
+    "en": "Tears Beneath the Mask",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-castle",
+    "zh": "扭曲之城的呼唤",
+    "en": "Call of the Twisted City",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-oulaquantao",
+    "zh": "欧拉欧拉！",
+    "en": "Oraora!",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-blackbook",
+    "zh": "漆黑青春妄想",
+    "en": "Youthful Fantasy",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-nakupeda",
+    "zh": "千金难买你开心",
+    "en": "Your Happiness is Priceless",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-jiaojuan",
+    "zh": "闪耀的每一天",
+    "en": "Shiny Days",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-crowbar",
+    "zh": "时间大盗",
+    "en": "Time Bandit",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-mamen",
+    "zh": "思考喵",
+    "en": "Contemplative Cat",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-dustbin",
+    "zh": "危险游戏",
+    "en": "Dangerous Game",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-blastcandy",
+    "zh": "无畏之绵",
+    "en": "Fluff of Fearlessness",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-yuren",
+    "zh": "勿忘伞",
+    "en": "Umbrella",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-butterfly",
+    "zh": "现实避难所",
+    "en": "Reality Refuge",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-vine",
+    "zh": "笑口常开",
+    "en": "Be Happy",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-time",
+    "zh": "行进于时间之外",
+    "en": "Marching Beyond Time",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-knightcandy",
+    "zh": "凶猛之绵",
+    "en": "Fluff of Ferocity",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-rishi",
+    "zh": "休息日",
+    "en": "Day Off",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-wushoutieyu",
+    "zh": "焰魂狂飙",
+    "en": "Raging Flames",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-bitgame",
+    "zh": "引爆全场",
+    "en": "Blow up the Crowd",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-arachne",
+    "zh": "永恒圆舞曲",
+    "en": "Eternal Waltz",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-snowman",
+    "zh": "愚者种春",
+    "en": "The Fools' Spring",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-tigertally",
+    "zh": "预备备",
+    "en": "Ready-Ready",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-koinobori",
+    "zh": "终有时",
+    "en": "A Time Will Come",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "weapon-fork-goldwool",
+    "zh": "众人追寻之物",
+    "en": "What's Desired",
+    "category": "武器",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-mon-15-bp-vision-02",
+    "zh": "白尾树环山公路之影",
+    "en": "Shadow of Whitetail Tree Circle Mountain Highway",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-boss-08-bp",
+    "zh": "斑蝶",
+    "en": "Swallowtail",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-mon-011-bp",
+    "zh": "抱抱藤",
+    "en": "Huggy Vines",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-mon-012-bp",
+    "zh": "波普",
+    "en": "Bopp",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-mon-029-bp",
+    "zh": "唱片机附电灵",
+    "en": "Haunted Record Player",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-advvision-tuyaguai-01",
+    "zh": "超音速涂鸦",
+    "en": "Lightspeed Tagger",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-mon-01-bp",
+    "zh": "低语种",
+    "en": "Whisper Spawn",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-mon-016-bp",
+    "zh": "贩售机附电灵",
+    "en": "Haunted Vending Machine",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-mon-014-bp",
+    "zh": "分解者",
+    "en": "Decomposer",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-mon-02-bp",
+    "zh": "风洞种",
+    "en": "Wind Spawn",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-mon-024-bp",
+    "zh": "诡面筝",
+    "en": "Ghostly Kite",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-boss-19-bp",
+    "zh": "海囚",
+    "en": "Sea Prisoner",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-advvision-yaodao-01",
+    "zh": "何处是归乡",
+    "en": "Where Is Home",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-boss-09-bp",
+    "zh": "黑之书",
+    "en": "Black Tome",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-mon-21-bp-vision-boxing-backstreet",
+    "zh": "后街拳王",
+    "en": "Backstreet Boxer",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-advvision-blackbook",
+    "zh": "后青春期的书",
+    "en": "The Book of Post-Adolescence",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-advvision-boss33",
+    "zh": "唤孤归",
+    "en": "Call of the Lost",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-mon-025-bp",
+    "zh": "洄天鱼幡",
+    "en": "Skyfish Banner",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-boss-06-bp-worldfilm",
+    "zh": "胶卷-MANISH",
+    "en": "Film - MANISH",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-advvision-flowerboss",
+    "zh": "静默庭园",
+    "en": "Silent Garden",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-mon-020-bp",
+    "zh": "空铠甲",
+    "en": "Empty Shell",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-mon-033-bp",
+    "zh": "流梦种",
+    "en": "Dream Spawn",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-advvision-boombox",
+    "zh": "律动大师",
+    "en": "Rhythm Master",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-boss-017-bp-vision",
+    "zh": "玛门",
+    "en": "Mammon",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-advvision-mammon",
+    "zh": "毛线球还是方斯？",
+    "en": "Yarn Ball or Fons?",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-mon-04-bp",
+    "zh": "迷失种",
+    "en": "Lost Spawn",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-advvision-hehebear",
+    "zh": "迷雾追踪",
+    "en": "Mist Pursuit",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-mon-018-bp",
+    "zh": "棉绒绒",
+    "en": "Fluffy",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-boss-05-bp",
+    "zh": "墨菲克斯",
+    "en": "Morphix",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-mon-027-bp",
+    "zh": "诺诺斯",
+    "en": "Noros",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-mon-21-bp-vision-boxing-party",
+    "zh": "派对拳王",
+    "en": "Party Boxer",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-advvision-worldfilm",
+    "zh": "品牌纪念日",
+    "en": "Brand Anniversary",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-mon-05-bp",
+    "zh": "凭依种",
+    "en": "Leech Spawn",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-mon-15-bp-vision-01",
+    "zh": "侵略！章鱼拖车！",
+    "en": "Invasion! Octopus Trailer!",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-mon-21-bp-vision-boxing-basketball",
+    "zh": "球场拳王",
+    "en": "Court Boxer",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-advvision-boss08",
+    "zh": "去看电影吧",
+    "en": "Let's Go See a Movie",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-boss-07-bp",
+    "zh": "塞润尼缇",
+    "en": "Serenetti",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-mon-030-bp",
+    "zh": "扫晴娘",
+    "en": "Rain-sweeping Maid",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-mon-019-sadbear-bp-vision",
+    "zh": "伤心的熊不流泪",
+    "en": "A Sad Bear Cries Not",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-mon-019-sadbear-bp",
+    "zh": "伤心英熊",
+    "en": "Saddy Teddy",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-advvision-papercastle01",
+    "zh": "盛情难却",
+    "en": "Kindness Hard to Refuse",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-advvision-rainliyuuqi-01",
+    "zh": "天弃之子",
+    "en": "Heaven's Forsaken",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-mon-21-bp-vision-boxing-terrace",
+    "zh": "天台拳王",
+    "en": "Rooftop Boxer",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-advvision-motoboss-01",
+    "zh": "铁驭强袭",
+    "en": "Ride Assault",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-mon-015-bp",
+    "zh": "拖车艄",
+    "en": "Octowpus",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-mon-048-bp",
+    "zh": "瓦楞城堡",
+    "en": "Cardboard Castle",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-mon-038-bp",
+    "zh": "无明众",
+    "en": "The Vishnus",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-boss-13-bp",
+    "zh": "无首铁驭",
+    "en": "Headless Rider",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-mon-013-bp",
+    "zh": "妖刀",
+    "en": "Cursed Blade",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-boss-15-bp",
+    "zh": "音霸魔王",
+    "en": "Beat King",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-boss-10-bp",
+    "zh": "永不谢幕的阿拉克涅",
+    "en": "The Never-ending Arachne",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-mon-15-bp-vision-03",
+    "zh": "幽灵大道狂野拉力赛",
+    "en": "Ghost Boulevard Wild Rally",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-boss-33-bp",
+    "zh": "囿巢鸟",
+    "en": "Nestbound Bird",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-mon-041-bp",
+    "zh": "羽偶",
+    "en": "Feather Puppet",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-mon-017-bp",
+    "zh": "雨人",
+    "en": "Rainman",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-mon-023-bp",
+    "zh": "长明灯",
+    "en": "Eternal Lamp",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-mon-026-bp",
+    "zh": "纸翼战队",
+    "en": "Paper Squadron",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "monster-mon-037-bp",
+    "zh": "ReroRero电话亭",
+    "en": "ReroRero Phone Booth",
+    "category": "怪物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
     }
   }
 ]

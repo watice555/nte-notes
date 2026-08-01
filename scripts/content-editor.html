@@ -393,7 +393,7 @@
       const knownLabels = {
         "tasks.json": "海市事务",
         "bugs.json": "Bug 收集（已下线归档）",
-        "characters.json": "角色信息",
+        "characters.json": "卡池信息",
         "terms.json": "名词解释",
         "translations.json": "中英对照",
         "links.json": "外部链接"
@@ -758,7 +758,10 @@
       };
 
       const addItem = () => {
-        const template = state.items[state.selectedIndex] || state.items[0] || { id: "", title: { zh: "", en: "" }, summary: { zh: "", en: "" } };
+        const fallbackTemplate = state.file === "translations.json"
+          ? { id: "", zh: "", en: "", category: "", aliases: [], note: { zh: "", en: "" } }
+          : { id: "", title: "", summary: "" };
+        const template = state.items[state.selectedIndex] || state.items[0] || fallbackTemplate;
         const item = blankFrom(template);
         item.id = makeUniqueId("new-item");
         state.items.push(item);

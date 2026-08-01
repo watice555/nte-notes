@@ -1,135 +1,58 @@
 [
   {
     "id": "everness-info",
-    "title": {
-      "zh": "Everness.info",
-      "en": "Everness.info"
-    },
+    "title": "Everness.info",
     "url": "https://everness.info/",
     "category": "Wiki",
-    "summary": {
-      "zh": "NTE 资料与攻略站。",
-      "en": "An NTE reference site."
-    }
+    "summary": "NTE 资料与攻略站。"
   },
   {
-    "id": "neverness-gg",
-    "title": {
-      "zh": "Neverness.gg",
-      "en": "Neverness.gg"
-    },
-    "url": "https://neverness.gg/",
+    "id": "nanoka-nte",
+    "title": "Nanoka 异环资料站",
+    "url": "https://nte.nanoka.cc/",
     "category": "Wiki",
-    "summary": {
-      "zh": "NTE 资料与攻略站。",
-      "en": "An NTE reference and guide site."
-    }
-  },
-  {
-    "id": "prydwen",
-    "title": {
-      "zh": "Prydwen",
-      "en": "Prydwen"
-    },
-    "url": "https://www.prydwen.gg/neverness-to-everness/",
-    "category": "Wiki",
-    "summary": {
-      "zh": "Prydwen 的 NTE 分区。",
-      "en": "Prydwen's NTE section."
-    }
-  },
-  {
-    "id": "ntegame",
-    "title": {
-      "zh": "NTEGame",
-      "en": "NTEGame"
-    },
-    "url": "https://www.ntegame.com/",
-    "category": "Wiki",
-    "summary": {
-      "zh": "NTE 相关资料站。",
-      "en": "A reference site for NTE-related information."
-    }
+    "summary": "异环角色、武器、怪物等资料站。"
   },
   {
     "id": "tajiduo",
-    "title": {
-      "zh": "塔吉多",
-      "en": "Tajiduo Community"
-    },
+    "title": "塔吉多",
     "url": "https://www.tajiduo.com/bbs/index.html#/home",
     "category": "社区",
-    "summary": {
-      "zh": "官方玩家社区。",
-      "en": "The official player community."
-    }
+    "summary": "官方玩家社区。"
   },
   {
     "id": "bilibili",
-    "title": {
-      "zh": "哔哩哔哩",
-      "en": "Bilibili"
-    },
+    "title": "哔哩哔哩",
     "url": "https://www.bilibili.com/",
     "category": "社区",
-    "summary": {
-      "zh": "最活跃的二次元视频社区。",
-      "en": "A major anime and gaming video community."
-    }
+    "summary": "最活跃的二次元视频社区。"
   },
   {
     "id": "story-collection",
-    "title": {
-      "zh": "剧情合集",
-      "en": "Story Collection"
-    },
-    "url": {
-      "zh": "https://www.bilibili.com/video/BV1RPo8BnEhN",
-      "en": "https://www.youtube.com/watch?v=t_ryauO-RW8"
-    },
+    "title": "剧情合集",
+    "url": "https://www.bilibili.com/video/BV1RPo8BnEhN",
     "category": "社区",
-    "summary": {
-      "zh": "剧情合集视频。",
-      "en": "Story collection videos."
-    }
+    "summary": "剧情合集视频。"
   },
   {
     "id": "official-cn",
-    "title": {
-      "zh": "官方网站（大陆）",
-      "en": "Official Website (Mainland China)"
-    },
+    "title": "官方网站（大陆）",
     "url": "https://yh.wanmei.com/",
     "category": "官方",
-    "summary": {
-      "zh": "大陆地区官方网站。",
-      "en": "Official website for Mainland China."
-    }
+    "summary": "大陆地区官方网站。"
   },
   {
     "id": "official-tw-hk-mo",
-    "title": {
-      "zh": "官方网站（台港澳）",
-      "en": "Official Website (TW/HK/MO)"
-    },
+    "title": "官方网站（台港澳）",
     "url": "https://nte.iwplay.com.tw/",
     "category": "官方",
-    "summary": {
-      "zh": "台港澳地区官方网站。",
-      "en": "Official website for Taiwan, Hong Kong, and Macau."
-    }
+    "summary": "台港澳地区官方网站。"
   },
   {
     "id": "official-global",
-    "title": {
-      "zh": "官方网站（国际）",
-      "en": "Official Website (Global)"
-    },
+    "title": "官方网站（国际）",
     "url": "https://nte.perfectworld.com/",
     "category": "官方",
-    "summary": {
-      "zh": "国际服官方网站。",
-      "en": "Official global website."
-    }
+    "summary": "国际服官方网站。"
   }
 ]

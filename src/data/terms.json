@@ -1,422 +1,170 @@
 [
   {
     "id": "rarity",
-    "term": {
-      "zh": "S/A",
-      "en": "S/A"
-    },
-    "genshinEquivalent": {
-      "zh": "5星/4星",
-      "en": "5-Star / 4-Star"
-    },
-    "explanation": {
-      "zh": "角色稀有度。",
-      "en": "Character rarity."
-    }
+    "term": "S/A",
+    "genshinEquivalent": "5星/4星",
+    "explanation": "角色稀有度。"
   },
   {
     "id": "arc-disk",
-    "term": {
-      "zh": "弧盘",
-      "en": "Arc"
-    },
-    "genshinEquivalent": {
-      "zh": "武器",
-      "en": "Weapon"
-    },
-    "explanation": {
-      "zh": "角色装备系统之一，角色使用的主要装备。",
-      "en": "A character equipment system, roughly comparable to a main weapon."
-    }
+    "term": "弧盘",
+    "genshinEquivalent": "武器",
+    "explanation": "角色装备系统之一，角色使用的主要装备。"
   },
   {
     "id": "frequency-mixing",
-    "term": {
-      "zh": "混频",
-      "en": "Frequency Mixing"
-    },
-    "genshinEquivalent": {
-      "zh": "精炼",
-      "en": "Refinement"
-    },
-    "explanation": {
-      "zh": "弧盘相关强化概念，可近似理解为武器精炼。",
-      "en": "An arc enhancement concept, roughly comparable to weapon refinement."
-    }
+    "term": "混频",
+    "genshinEquivalent": "精炼",
+    "explanation": "弧盘相关强化概念，可近似理解为武器精炼。"
   },
   {
     "id": "attributes",
-    "term": {
-      "zh": "光灵咒暗魂相",
-      "en": "Cosmos / Anima / Incantation / Chaos / Psyche / Lakshana"
-    },
-    "genshinEquivalent": {
-      "zh": "火水雷冰风岩草",
-      "en": "Pyro / Hydro / Electro / Cryo / Anemo / Geo / Dendro"
-    },
-    "explanation": {
-      "zh": "角色属性类型。",
-      "en": "The character attribute system."
-    }
+    "term": "光灵咒暗魂相",
+    "genshinEquivalent": "火水雷冰风岩草",
+    "explanation": "角色属性类型。"
   },
   {
     "id": "arc-types",
-    "term": {
-      "zh": "气液固等聚",
-      "en": "Gas / Liquid / Solid / Plasma / Synthesis"
-    },
-    "genshinEquivalent": {
-      "zh": "单双枪弓法",
-      "en": "weapon categories"
-    },
-    "explanation": {
-      "zh": "角色装备类型。",
-      "en": "The character equipment type system."
-    }
+    "term": "气液固等聚",
+    "genshinEquivalent": "单双枪弓法",
+    "explanation": "角色装备类型。"
   },
   {
     "id": "awakening",
-    "term": {
-      "zh": "觉醒",
-      "en": "Awakening"
-    },
-    "genshinEquivalent": {
-      "zh": "命座",
-      "en": "Constellations"
-    },
-    "explanation": {
-      "zh": "不同点：异环的命座没有固定顺序，N 命可自选 N 个命座激活。",
-      "en": "Constellation-like upgrades do not follow a fixed order; N awakenings allow choosing N nodes."
-    }
+    "term": "觉醒",
+    "genshinEquivalent": "命座",
+    "explanation": "不同点：异环的命座没有固定顺序，N 命可自选 N 个命座激活。"
   },
   {
     "id": "anomaly-ability",
-    "term": {
-      "zh": "异能",
-      "en": "Ability"
-    },
-    "genshinEquivalent": {
-      "zh": "天赋",
-      "en": "Talents"
-    },
-    "explanation": {
-      "zh": "角色技能。",
-      "en": "Character skills."
-    }
+    "term": "异能",
+    "genshinEquivalent": "天赋",
+    "explanation": "角色技能。"
   },
   {
     "id": "exploration-guide",
-    "term": {
-      "zh": "探索指南",
-      "en": "Exploration Guide"
-    },
-    "genshinEquivalent": {
-      "zh": "冒险之证",
-      "en": "Adventurer Handbook"
-    },
-    "explanation": {
-      "zh": "用于查看探索、任务或周期内容的系统入口。",
-      "en": "A system entry for exploration, tasks, or recurring content."
-    }
+    "term": "探索指南",
+    "genshinEquivalent": "冒险之证",
+    "explanation": "用于查看探索、任务或周期内容的系统入口。"
   },
   {
     "id": "cycle-reward-order",
-    "term": {
-      "zh": "环期赏令",
-      "en": "Cycle Reward Order"
-    },
-    "genshinEquivalent": {
-      "zh": "纪行",
-      "en": "Battle Pass"
-    },
-    "explanation": {
-      "zh": "周期任务和奖励系统。",
-      "en": "A recurring task and reward system."
-    }
+    "term": "环期赏令",
+    "genshinEquivalent": "纪行",
+    "explanation": "周期任务和奖励系统。"
   },
   {
     "id": "market",
-    "term": {
-      "zh": "集市",
-      "en": "Market"
-    },
-    "genshinEquivalent": {
-      "zh": "祈愿",
-      "en": "Wishes"
-    },
-    "explanation": {
-      "zh": "抽卡系统。",
-      "en": "The gacha system."
-    }
+    "term": "集市",
+    "genshinEquivalent": "祈愿",
+    "explanation": "抽卡系统。"
   },
   {
     "id": "ring-stone",
-    "term": {
-      "zh": "环石",
-      "en": "Ring Stone"
-    },
-    "genshinEquivalent": {
-      "zh": "原石",
-      "en": "Primogems"
-    },
-    "explanation": {
-      "zh": "抽卡货币，可兑换各卡池的抽卡道具。",
-      "en": "A gacha currency."
-    }
+    "term": "环石",
+    "genshinEquivalent": "原石",
+    "explanation": "抽卡货币，可兑换各卡池的抽卡道具。"
   },
   {
     "id": "heterocrystal",
-    "term": {
-      "zh": "异晶",
-      "en": "Heterocrystal"
-    },
-    "genshinEquivalent": {
-      "zh": "创世结晶",
-      "en": "Genesis Crystals"
-    },
-    "explanation": {
-      "zh": "氪金获得的抽卡货币，可兑换抽卡货币，也可购买服装等。",
-      "en": "A paid currency used for gacha-related purchases."
-    }
+    "term": "异晶",
+    "genshinEquivalent": "创世结晶",
+    "explanation": "氪金获得的抽卡货币，可兑换抽卡货币，也可购买服装等。"
   },
   {
     "id": "solid-dice",
-    "term": {
-      "zh": "质实骰子",
-      "en": "Solid Dice"
-    },
-    "genshinEquivalent": {
-      "zh": "纠缠之缘",
-      "en": "Intertwined Fate"
-    },
-    "explanation": {
-      "zh": "限定池抽卡道具。",
-      "en": "A pull item for limited banners."
-    }
+    "term": "质实骰子",
+    "genshinEquivalent": "纠缠之缘",
+    "explanation": "限定池抽卡道具。"
   },
   {
     "id": "fabricated-dice",
-    "term": {
-      "zh": "捏造骰子",
-      "en": "Fabricated Dice"
-    },
-    "genshinEquivalent": {
-      "zh": "相遇之缘",
-      "en": "Acquaint Fate"
-    },
-    "explanation": {
-      "zh": "常驻池抽卡道具。",
-      "en": "A pull item for standard banners."
-    }
+    "term": "捏造骰子",
+    "genshinEquivalent": "相遇之缘",
+    "explanation": "常驻池抽卡道具。"
   },
   {
     "id": "triple-key",
-    "term": {
-      "zh": "三重钥匙",
-      "en": "Triple Key"
-    },
-    "genshinEquivalent": {
-      "zh": "无直接对应",
-      "en": "No direct equivalent yet"
-    },
-    "explanation": {
-      "zh": "异环武器池的专门抽卡道具。",
-      "en": "A dedicated pull item for NTE's weapon banner."
-    }
+    "term": "三重钥匙",
+    "genshinEquivalent": "无直接对应",
+    "explanation": "异环武器池的专门抽卡道具。"
   },
   {
     "id": "lost-latitude-piece",
-    "term": {
-      "zh": "失纬棋子",
-      "en": "Lost Latitude Piece"
-    },
-    "genshinEquivalent": {
-      "zh": "星辉",
-      "en": "Starglitter"
-    },
-    "explanation": {
-      "zh": "抽卡高级副产物。",
-      "en": "A gacha-related exchange currency."
-    }
+    "term": "失纬棋子",
+    "genshinEquivalent": "星辉",
+    "explanation": "抽卡高级副产物。"
   },
   {
     "id": "rosemary-piece",
-    "term": {
-      "zh": "迷迭棋子",
-      "en": "Rosemary Piece"
-    },
-    "genshinEquivalent": {
-      "zh": "星尘",
-      "en": "Stardust"
-    },
-    "explanation": {
-      "zh": "抽卡低级副产物。",
-      "en": "A gacha-related exchange currency."
-    }
+    "term": "迷迭棋子",
+    "genshinEquivalent": "星尘",
+    "explanation": "抽卡低级副产物。"
   },
   {
     "id": "hunter-level",
-    "term": {
-      "zh": "猎人等级",
-      "en": "Hunter Level"
-    },
-    "genshinEquivalent": {
-      "zh": "冒险等阶",
-      "en": "Adventure Rank"
-    },
-    "explanation": {
-      "zh": "主角成长等级。",
-      "en": "Account progression level."
-    }
+    "term": "猎人等级",
+    "genshinEquivalent": "冒险等阶",
+    "explanation": "主角成长等级。"
   },
   {
     "id": "identification-level",
-    "term": {
-      "zh": "鉴定等级",
-      "en": "Identification Level"
-    },
-    "genshinEquivalent": {
-      "zh": "世界等级",
-      "en": "World Level"
-    },
-    "explanation": {
-      "zh": "影响世界难度和奖励档位的等级。",
-      "en": "A level that affects world difficulty and reward tiers."
-    }
+    "term": "鉴定等级",
+    "genshinEquivalent": "世界等级",
+    "explanation": "影响世界难度和奖励档位的等级。"
   },
   {
     "id": "hunter-reward",
-    "term": {
-      "zh": "猎人奖励",
-      "en": "Hunter Reward"
-    },
-    "genshinEquivalent": {
-      "zh": "冒险等阶奖励",
-      "en": "Adventure Rank Rewards"
-    },
-    "explanation": {
-      "zh": "猎人等级相关奖励。",
-      "en": "Rewards tied to Hunter Level progression."
-    }
+    "term": "猎人奖励",
+    "genshinEquivalent": "冒险等阶奖励",
+    "explanation": "猎人等级相关奖励。"
   },
   {
     "id": "hunter-guide",
-    "term": {
-      "zh": "XX猎人攻略",
-      "en": "XX Hunter Guide"
-    },
-    "genshinEquivalent": {
-      "zh": "经验书",
-      "en": "EXP Books"
-    },
-    "explanation": {
-      "zh": "用于角色升级。",
-      "en": "Character EXP materials."
-    }
+    "term": "XX猎人攻略",
+    "genshinEquivalent": "经验书",
+    "explanation": "用于角色升级。"
   },
   {
     "id": "dye",
-    "term": {
-      "zh": "XX染剂",
-      "en": "XX Dye"
-    },
-    "genshinEquivalent": {
-      "zh": "矿石",
-      "en": "Ores"
-    },
-    "explanation": {
-      "zh": "用于武器升级。",
-      "en": "Progression materials."
-    }
+    "term": "XX染剂",
+    "genshinEquivalent": "矿石",
+    "explanation": "用于武器升级。"
   },
   {
     "id": "jia-coin",
-    "term": {
-      "zh": "甲硬币",
-      "en": "Jia Coin"
-    },
-    "genshinEquivalent": {
-      "zh": "摩拉",
-      "en": "Mora"
-    },
-    "explanation": {
-      "zh": "养成系统通用消耗货币。",
-      "en": "A general-purpose currency."
-    }
+    "term": "甲硬币",
+    "genshinEquivalent": "摩拉",
+    "explanation": "养成系统通用消耗货币。"
   },
   {
     "id": "ability-materials",
-    "term": {
-      "zh": "异能强化材料",
-      "en": "Ability Enhancement Materials"
-    },
-    "genshinEquivalent": {
-      "zh": "角色天赋素材",
-      "en": "Talent Materials"
-    },
-    "explanation": {
-      "zh": "角色异能强化所需材料。",
-      "en": "Materials used to enhance character abilities."
-    }
+    "term": "异能强化材料",
+    "genshinEquivalent": "角色天赋素材",
+    "explanation": "角色异能强化所需材料。"
   },
   {
     "id": "arc-ascension-materials",
-    "term": {
-      "zh": "弧盘突破材料",
-      "en": "Arc Ascension Materials"
-    },
-    "genshinEquivalent": {
-      "zh": "武器突破素材",
-      "en": "Weapon Ascension Materials"
-    },
-    "explanation": {
-      "zh": "弧盘突破所需材料。",
-      "en": "Materials used to ascend arcs."
-    }
+    "term": "弧盘突破材料",
+    "genshinEquivalent": "武器突破素材",
+    "explanation": "弧盘突破所需材料。"
   },
   {
     "id": "empty-curtain",
-    "term": {
-      "zh": "空幕",
-      "en": "Empty Curtain"
-    },
-    "genshinEquivalent": {
-      "zh": "圣遗物",
-      "en": "Artifacts"
-    },
-    "explanation": {
-      "zh": "细分为卡带和驱动块，机制有所创新。",
-      "en": "Split into tapes and driver blocks, with mechanics that differ from artifacts."
-    }
+    "term": "空幕",
+    "genshinEquivalent": "圣遗物",
+    "explanation": "细分为卡带和驱动块，机制有所创新。"
   },
   {
     "id": "anomaly-pilgrimage",
-    "term": {
-      "zh": "异象巡礼",
-      "en": "Anomaly Pilgrimage"
-    },
-    "genshinEquivalent": {
-      "zh": "征讨领域",
-      "en": "Trounce Domains"
-    },
-    "explanation": {
-      "zh": "周本。",
-      "en": "Weekly boss content."
-    }
+    "term": "异象巡礼",
+    "genshinEquivalent": "征讨领域",
+    "explanation": "周本。"
   },
   {
     "id": "outer-realm-joint-loop",
-    "term": {
-      "zh": "轨外之境-节理环线",
-      "en": "Outer Realm - Joint Loop"
-    },
-    "genshinEquivalent": {
-      "zh": "马斯克礁",
-      "en": "Musk Reef"
-    },
-    "explanation": {
-      "zh": "深渊。",
-      "en": "Abyss-style challenge content."
-    }
+    "term": "轨外之境-节理环线",
+    "genshinEquivalent": "马斯克礁",
+    "explanation": "深渊。"
   }
 ]

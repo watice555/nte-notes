@@ -6,10 +6,10 @@ interface Props {
   descriptionEn?: string;
 }
 
-const { title, titleEn, description, descriptionEn } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <div class="section-header">
-  <h2 data-i18n-zh={title} data-i18n-en={titleEn}>{title}</h2>
-  {description && <p data-i18n-zh={description} data-i18n-en={descriptionEn}>{description}</p>}
+  <h2>{title}</h2>
+  {description && <p>{description}</p>}
 </div>

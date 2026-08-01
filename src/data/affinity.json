@@ -1,185 +1,402 @@
 {
-  "giftSource": {
-    "label": "BV1bs9iBnEKb",
-    "url": "https://www.bilibili.com/video/BV1bs9iBnEKb/"
-  },
-  "giftTiers": [400, 200, 100],
+  "giftTiers": [
+    400,
+    200,
+    100
+  ],
   "gifts": [
     {
       "character": "薄荷",
       "best": {
-        "400": { "name": "绯红之名", "value": 18000 },
-        "200": { "name": "圆舞曲", "value": 3000 },
-        "100": { "name": "咕比脆", "value": 300 }
+        "100": {
+          "name": "咕比脆",
+          "value": 300
+        },
+        "200": {
+          "name": "圆舞曲",
+          "value": 3000
+        },
+        "400": {
+          "name": "浅绯祈-月影流光/绯红之名",
+          "value": 18000
+        }
       }
     },
     {
       "character": "娜娜莉",
       "best": {
-        "400": { "name": "邪恶粉碎！", "value": 14400 },
-        "200": { "name": "灼眼的绯红", "value": 5400 },
-        "100": { "name": "酷辣辣辣条", "value": 300 }
+        "100": {
+          "name": "酷辣辣辣条",
+          "value": 300
+        },
+        "200": {
+          "name": "灼眼的绯红",
+          "value": 5400
+        },
+        "400": {
+          "name": "心猎铁骑L1-静待胜机/邪恶粉碎",
+          "value": 14400
+        }
       }
     },
     {
       "character": "小吱",
       "best": {
-        "400": { "name": "跳跳兔盒", "value": 20000 },
-        "200": { "name": "幻想曲", "value": 3000 },
-        "100": { "name": "猫猫猛锤荔浦芋头布丁奶茶", "value": 450 }
+        "100": {
+          "name": "猫猫猛锤荔浦芋头布丁奶茶",
+          "value": 450
+        },
+        "200": {
+          "name": "幻想曲",
+          "value": 3000
+        },
+        "400": {
+          "name": "跳跳兔盒",
+          "value": 20000
+        }
       }
     },
     {
       "character": "九原",
       "best": {
-        "400": { "name": "轨道之心", "value": 20000 },
-        "200": { "name": "月白瓷瓶", "value": 3000 },
-        "100": { "name": "魔法膨胀全麦面包", "value": 360 }
+        "100": {
+          "name": "魔法膨胀全麦面包",
+          "value": 360
+        },
+        "200": {
+          "name": "月白瓷瓶",
+          "value": 3000
+        },
+        "400": {
+          "name": "轨道之心",
+          "value": 20000
+        }
       }
     },
     {
       "character": "法帝娅",
       "best": {
-        "400": { "name": "冷冷琉光", "value": 5400 },
-        "200": { "name": "恒", "value": 7500 },
-        "100": { "name": "经典三重奏", "value": 660 }
+        "100": {
+          "name": "经典三重奏",
+          "value": 660
+        },
+        "200": {
+          "name": "恒（不推荐）",
+          "value": 7500
+        },
+        "400": {
+          "name": "冷冷琉光",
+          "value": 5400
+        }
       }
     },
     {
       "character": "早雾",
       "best": {
-        "400": { "name": "跳跳兔盒", "value": 20000 },
-        "200": { "name": "斑斓梦", "value": 5000 },
-        "100": { "name": "「牛奶味」", "value": 360 }
+        "100": {
+          "name": "再来一口！「牛奶味」",
+          "value": 360
+        },
+        "200": {
+          "name": "斑斓梦",
+          "value": 5000
+        },
+        "400": {
+          "name": "跳跳兔盒",
+          "value": 20000
+        }
       }
     },
     {
       "character": "达芙蒂尔",
       "best": {
-        "400": { "name": "约定", "value": 10000 },
-        "200": { "name": "永恒的洁白", "value": 5400 },
-        "100": { "name": "猫猫惬意鱼治摸茶", "value": 450 }
+        "100": {
+          "name": "猫猫惬意鱼治摸茶",
+          "value": 450
+        },
+        "200": {
+          "name": "永恒的洁白",
+          "value": 5400
+        },
+        "400": {
+          "name": "约定",
+          "value": 10000
+        }
       }
     },
     {
       "character": "海月",
       "best": {
-        "400": { "name": "约定", "value": 10000 },
-        "200": { "name": "幻想曲", "value": 3000 },
-        "100": { "name": "巨嘴奶黄包", "value": 300 }
+        "100": {
+          "name": "巨嘴奶黄包",
+          "value": 300
+        },
+        "200": {
+          "name": "幻想曲",
+          "value": 3000
+        },
+        "400": {
+          "name": "约定",
+          "value": 10000
+        }
       }
     },
     {
       "character": "哈索尔",
       "best": {
-        "400": { "name": "轨道之心", "value": 20000 },
-        "200": { "name": "斑斓梦", "value": 5000 },
-        "100": { "name": "缤纷轻食沙拉", "value": 450 }
+        "100": {
+          "name": "缤纷轻食沙拉",
+          "value": 450
+        },
+        "200": {
+          "name": "斑斓梦",
+          "value": 5000
+        },
+        "400": {
+          "name": "轨道之心",
+          "value": 20000
+        }
       }
     },
     {
       "character": "哈尼娅",
       "best": {
-        "400": { "name": "绯红之名", "value": 18000 },
-        "200": { "name": "幻想曲", "value": 3000 },
-        "100": { "name": "酷辣辣辣条", "value": 300 }
+        "100": {
+          "name": "酷辣辣辣条",
+          "value": 300
+        },
+        "200": {
+          "name": "幻想曲",
+          "value": 3000
+        },
+        "400": {
+          "name": "绯红之名",
+          "value": 18000
+        }
       }
     },
     {
       "character": "翳",
       "best": {
-        "400": { "name": "白玉盏", "value": 20000 },
-        "200": { "name": "放空咻", "value": 4000 },
-        "100": { "name": "鲍勃茶园", "value": 300 }
+        "100": {
+          "name": "鲍勃茶园",
+          "value": 300
+        },
+        "200": {
+          "name": "放空咻",
+          "value": 4000
+        },
+        "400": {
+          "name": "白玉盏",
+          "value": 20000
+        }
       }
     },
     {
       "character": "埃德嘉",
       "best": {
-        "400": { "name": "几何夜", "value": 10000 },
-        "200": { "name": "老大的肯定", "value": 4000 },
-        "100": { "name": "巨嘴奶黄包", "value": 300 }
+        "100": {
+          "name": "巨嘴奶黄包",
+          "value": 300
+        },
+        "200": {
+          "name": "老大的肯定",
+          "value": 4000
+        },
+        "400": {
+          "name": "几何夜",
+          "value": 10000
+        }
       }
     },
     {
       "character": "白藏",
       "best": {
-        "400": { "name": "强者之证", "value": 12000 },
-        "200": { "name": "灿烂之约", "value": 4500 },
-        "100": { "name": "元气儿童套餐", "value": 450 }
+        "100": {
+          "name": "元气儿童套餐",
+          "value": 450
+        },
+        "200": {
+          "name": "灿烂之约",
+          "value": 4500
+        },
+        "400": {
+          "name": "暴走棉绒绒-强者之证/肌肉信仰",
+          "value": 12000
+        }
       }
     },
     {
       "character": "阿德勒",
       "best": {
-        "400": { "name": "约定", "value": 10000 },
-        "200": { "name": "金环青影", "value": 3600 },
-        "100": { "name": "净化守护含片", "value": 420 }
+        "100": {
+          "name": "净化守护含片",
+          "value": 420
+        },
+        "200": {
+          "name": "金环青影",
+          "value": 3600
+        },
+        "400": {
+          "name": "约定",
+          "value": 10000
+        }
+      }
+    },
+    {
+      "character": "安魂曲",
+      "best": {
+        "100": {
+          "name": "番茄百分百",
+          "value": 300
+        },
+        "200": {
+          "name": "放空咻",
+          "value": 4000
+        },
+        "400": {
+          "name": "跳跳兔盒",
+          "value": 20000
+        }
+      }
+    },
+    {
+      "character": "浔",
+      "best": {
+        "100": {
+          "name": "千代家自酿生啤",
+          "value": 300
+        },
+        "200": {
+          "name": "黄釉雅器",
+          "value": 3600
+        },
+        "400": {
+          "name": "金月",
+          "value": 15000
+        }
+      }
+    },
+    {
+      "character": "真红",
+      "best": {
+        "100": {
+          "name": "噗卡巧克力「绘莉巡演纪念款」",
+          "value": 1050
+        },
+        "200": {
+          "name": "黄金泉",
+          "value": 7500
+        },
+        "400": {
+          "name": "暴走棉绒绒-强者之证",
+          "value": 12000
+        }
+      }
+    },
+    {
+      "character": "伊洛伊",
+      "best": {
+        "100": {
+          "name": "噗卡好梦棉花糖",
+          "value": 660
+        },
+        "200": {
+          "name": "灿烂之约",
+          "value": 4500
+        },
+        "400": {
+          "name": "几何夜 / 幽梦",
+          "value": 10000
+        }
+      }
+    },
+    {
+      "character": "卡厄斯",
+      "best": {
+        "100": {
+          "name": "巨型汉堡肉",
+          "value": 420
+        },
+        "200": {
+          "name": "罪恶断舍离",
+          "value": 6000
+        },
+        "400": {
+          "name": "心猎铁骑L1-静待胜机/邪恶粉碎",
+          "value": 14400
+        }
       }
     }
   ],
   "methods": [
     {
-      "title": {
-        "zh": "赠礼",
-        "en": "Gifts"
-      },
-      "summary": {
-        "zh": "通过赠礼提升角色好感度。每日至多送出10个礼物，其中单一角色至多送出3个。礼物除压缩嘭嘭朵通过异象家具产出外，几乎都可以通过方斯购买。",
-        "en": "Raise character affinity through gifts. You can give up to 10 gifts per day, with up to 3 gifts for a single character. Aside from Compressed Pom-Pom Bud, which comes from anomaly furniture, most gifts can be purchased with Fangs."
-      }
+      "title": "赠礼",
+      "summary": "赠送礼物可以提升角色好感度。对于普通礼物，每天至多赠送10个，每角色至多3个，除压缩嘭嘭朵通过异象家具产出外，基本可用方斯购买。特殊礼物如手写信等不受次数限制。"
     },
     {
-      "title": {
-        "zh": "回忆映厅",
-        "en": "Memory Theater"
-      },
-      "summary": {
-        "zh": "地图上的角色偶遇事件。",
-        "en": "Character encounter events found on the map."
-      }
+      "title": "回忆映厅",
+      "summary": "在地图上可以看到的一次性角色剧情任务，完成后可提升角色好感度。"
     },
     {
-      "title": {
-        "zh": "首次互动",
-        "en": "First Interaction"
-      },
-      "summary": {
-        "zh": "首次与角色互动可提升好感度。",
-        "en": "Raise affinity through a character's first interaction."
-      }
+      "title": "首次互动",
+      "summary": "首次与角色进行每种互动均可提升好感度。互动依好感度等级解锁，部分互动需要摆放特定家具才可进行。"
     },
     {
-      "title": {
-        "zh": "都市偕游",
-        "en": "City Outing"
-      },
-      "summary": {
-        "zh": "与角色共同看电影等，每日一次，需达到特定好感度等级后解锁。",
-        "en": "Watch movies and join similar activities with characters once per day. Requires reaching specific affinity levels to unlock."
-      }
+      "title": "都市偕游",
+      "summary": "每日首次与角色进行约会事件时提升其好感度，约会事件依好感度等级解锁，通常最低为4级时解锁共同观影。"
     },
     {
-      "title": {
-        "zh": "愿木坡祈愿",
-        "en": "Wishwood Slope Prayer"
-      },
-      "summary": {
-        "zh": "为随机角色提升好感度。",
-        "en": "Raises affinity for a random character."
-      }
+      "title": "愿木坡祈愿",
+      "summary": "每日一次，消耗方斯为随机已拥有角色提升好感度。性价比较低。"
     }
   ],
   "levels": [
-    { "from": 1, "to": 2, "required": 500 },
-    { "from": 2, "to": 3, "required": 1000 },
-    { "from": 3, "to": 4, "required": 2000 },
-    { "from": 4, "to": 5, "required": 3500 },
-    { "from": 5, "to": 6, "required": 5000 },
-    { "from": 6, "to": 7, "required": 7000 },
-    { "from": 7, "to": 8, "required": 9000 },
-    { "from": 8, "to": 9, "required": 12000 },
-    { "from": 9, "to": 10, "required": 16000 }
+    {
+      "from": 1,
+      "to": 2,
+      "required": 500
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "required": 1000
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "required": 2000
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "required": 3500
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "required": 5000
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "required": 7000
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "required": 9000
+    },
+    {
+      "from": 8,
+      "to": 9,
+      "required": 12000
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "required": 16000
+    }
   ],
   "totalRequired": 56000
 }

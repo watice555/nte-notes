@@ -1,402 +1,274 @@
 [
   {
     "id": "nanali-building-interior-clip",
-    "title": {
-      "zh": "使用娜娜莉进入楼体内部",
-      "en": "Entering Building Interiors with Nanali"
-    },
-    "status": {
-      "zh": "未确认",
-      "en": "Unconfirmed"
-    },
-    "summary": {
-      "zh": "使用娜娜莉改变重力的效果，在特定方式下卡进楼体内部。",
-      "en": "Use Nanali's gravity-changing effect to clip into building interiors in certain ways."
-    },
+    "title": "使用娜娜莉进入楼体内部",
+    "status": "未确认",
+    "summary": "使用娜娜莉改变重力的效果，在特定方式下卡进楼体内部。",
     "source": {
       "label": "BV1gC9xBtEC3",
       "url": "https://www.bilibili.com/video/BV1gC9xBtEC3/"
     },
-    "tags": ["角色机制", "跑图"]
+    "tags": [
+      "角色机制",
+      "跑图"
+    ]
   },
   {
     "id": "early-sunny-island-access",
-    "title": {
-      "zh": "提前进入向阳岛",
-      "en": "Early Sunny Island Access"
-    },
-    "status": {
-      "zh": "未确认",
-      "en": "Unconfirmed"
-    },
-    "summary": {
-      "zh": "通过绕过空气墙，使用海月飞天等手段绕过封锁到达当前未开放区域。",
-      "en": "Bypass invisible walls and use methods such as Haiyue flight to get past the blockade and reach currently unopened areas."
-    },
+    "title": "提前进入向阳岛",
+    "status": "未确认",
+    "summary": "通过绕过空气墙，使用海月飞天等手段绕过封锁到达当前未开放区域。",
     "source": {
       "label": "BV1fj9hBnEsh",
       "url": "https://www.bilibili.com/video/BV1fj9hBnEsh/"
     },
-    "tags": ["跑图", "未开放区域"]
+    "tags": [
+      "跑图",
+      "未开放区域"
+    ]
   },
   {
     "id": "nanali-horizontal-falling-speed",
-    "title": {
-      "zh": "娜娜莉横向下落快速移动",
-      "en": "Nanali Horizontal Falling Fast Movement"
-    },
-    "status": {
-      "zh": "未确认",
-      "en": "Unconfirmed"
-    },
-    "summary": {
-      "zh": "娜娜莉开 E 改变重力方向后，在墙面边缘跳跃并下落攻击，达成快速横向移动。（成功率较低）",
-      "en": "After Nanali uses Skill E to change gravity direction, jump near a wall edge and perform a falling attack to achieve fast horizontal movement. (Low success rate.)"
-    },
+    "title": "娜娜莉横向下落快速移动",
+    "status": "未确认",
+    "summary": "娜娜莉开 E 改变重力方向后，在墙面边缘跳跃并下落攻击，达成快速横向移动。（成功率较低）",
     "source": {
       "label": "BV1oDRJBHEGR",
       "url": "https://www.bilibili.com/video/BV1oDRJBHEGR/"
     },
-    "tags": ["角色机制", "跑图"]
+    "tags": [
+      "角色机制",
+      "跑图"
+    ]
   },
   {
     "id": "xun-time-stop-persistent-monochrome",
-    "title": {
-      "zh": "浔时停造成画面黑白常驻效果",
-      "en": "Xun Time Stop Causes Persistent Monochrome Screen"
-    },
-    "status": {
-      "zh": "未确认",
-      "en": "Unconfirmed"
-    },
-    "summary": {
-      "zh": "在与异象“波普”战斗时，使用浔开大时停状态下将其击杀，并传送走，可使画面黑白效果常驻。",
-      "en": "When fighting the Anomaly \"Pop\", defeat it during Xun's ultimate time-stop state and teleport away to make the black-and-white screen effect persist."
-    },
+    "title": "浔时停造成画面黑白常驻效果",
+    "status": "未确认",
+    "summary": "在与异象“波普”战斗时，使用浔开大时停状态下将其击杀，并传送走，可使画面黑白效果常驻。",
     "source": {
       "label": "BV19bd3BtEBQ",
       "url": "https://www.bilibili.com/video/BV19bd3BtEBQ/"
     },
-    "tags": ["角色机制", "显示异常"]
+    "tags": [
+      "角色机制",
+      "显示异常"
+    ]
   },
   {
     "id": "water-splash-anywhere",
-    "title": {
-      "zh": "任意滋水",
-      "en": "Water Splash Anywhere"
-    },
-    "status": {
-      "zh": "未确认",
-      "en": "Unconfirmed"
-    },
-    "summary": {
-      "zh": "通过让角色溶于水，将本为角色互动动作的渍水变为可在任意地点进行的动作。",
-      "en": "By making the character dissolve into water, turn the water-splash interaction action into an action that can be performed anywhere."
-    },
+    "title": "任意滋水",
+    "status": "未确认",
+    "summary": "通过让角色溶于水，将本为角色互动动作的渍水变为可在任意地点进行的动作。",
     "source": {
       "label": "BV1zwRhB9EbZ",
       "url": "https://www.bilibili.com/video/BV1zwRhB9EbZ/"
     },
-    "tags": ["角色互动", "动作异常"]
+    "tags": [
+      "角色互动",
+      "动作异常"
+    ]
   },
   {
     "id": "toy-store-free-shopping",
-    "title": {
-      "zh": "潮玩店零元购",
-      "en": "Toy Store Free Shopping"
-    },
-    "status": {
-      "zh": "未确认",
-      "en": "Unconfirmed"
-    },
-    "summary": {
-      "zh": "被抓后直接传送走，白嫖盒子/商品。",
-      "en": "After being caught, teleport away directly to keep boxes or goods for free."
-    },
+    "title": "潮玩店零元购",
+    "status": "未确认",
+    "summary": "被抓后直接传送走，白嫖盒子/商品。",
     "source": {
       "label": "BV1bDovBsEGS",
       "url": "https://www.bilibili.com/video/BV1bDovBsEGS"
     },
-    "tags": ["逃课玩法"]
+    "tags": [
+      "逃课玩法"
+    ]
   },
   {
     "id": "auto-fishing",
-    "title": {
-      "zh": "自动钓鱼",
-      "en": "Auto Fishing"
-    },
-    "status": {
-      "zh": "未确认",
-      "en": "Unconfirmed"
-    },
-    "summary": {
-      "zh": "鱼刚上钩立即开编队/聊天，钓鱼自动完成。",
-      "en": "Open the party setup or chat right after a fish bites to complete fishing automatically."
-    },
+    "title": "自动钓鱼",
+    "status": "未确认",
+    "summary": "鱼刚上钩立即开编队/聊天，钓鱼自动完成。",
     "source": {
       "label": "BV1n3oBBUEHT",
       "url": "https://www.bilibili.com/video/BV1n3oBBUEHT"
     },
-    "tags": ["逃课玩法"]
+    "tags": [
+      "逃课玩法"
+    ]
   },
   {
     "id": "solo-race-early-acceleration",
-    "title": {
-      "zh": "赛车单机提前加速",
-      "en": "Solo Race Early Acceleration"
-    },
-    "status": {
-      "zh": "未确认",
-      "en": "Unconfirmed"
-    },
-    "summary": {
-      "zh": "单机赛车加载时按 W，可提前加速。",
-      "en": "Press W during solo race loading to accelerate early."
-    },
+    "title": "赛车单机提前加速",
+    "status": "未确认",
+    "summary": "单机赛车加载时按 W，可提前加速。",
     "source": {
       "label": "BV1mQoGBsEpL",
       "url": "https://www.bilibili.com/video/BV1mQoGBsEpL"
     },
-    "tags": ["赛车"]
+    "tags": [
+      "赛车"
+    ]
   },
   {
     "id": "multiplayer-race-get-off",
-    "title": {
-      "zh": "赛车联机下车",
-      "en": "Getting Out During Multiplayer Races"
-    },
-    "status": {
-      "zh": "已修复",
-      "en": "Fixed"
-    },
-    "summary": {
-      "zh": "联机赛车加载时规律按 F 可下车，之后可攻击他人车辆、蹭车或召唤摩托。",
-      "en": "Press F rhythmically while a multiplayer race loads to leave the vehicle, then attack other vehicles, hitch a ride, or summon a motorcycle."
-    },
+    "title": "赛车联机下车",
+    "status": "已修复",
+    "summary": "联机赛车加载时规律按 F 可下车，之后可攻击他人车辆、蹭车或召唤摩托。",
     "source": {
       "label": "BV1BHoQBEETd",
       "url": "https://www.bilibili.com/video/BV1BHoQBEETd"
     },
-    "tags": ["赛车", "联机"]
+    "tags": [
+      "赛车",
+      "联机"
+    ]
   },
   {
     "id": "mint-counter-reset-skill",
-    "title": {
-      "zh": "薄荷反击重置 E 无视 CD",
-      "en": "Mint Counter Resets Skill E"
-    },
-    "status": {
-      "zh": "已修复",
-      "en": "Fixed"
-    },
-    "summary": {
-      "zh": "反击重置 E 效果的 3 秒 CD 不生效。",
-      "en": "Countering can reset Skill E and bypass the 3-second limit."
-    },
+    "title": "薄荷反击重置 E 无视 CD",
+    "status": "已修复",
+    "summary": "反击重置 E 效果的 3 秒 CD 不生效。",
     "source": {
       "label": "BV1VeokBJE84",
       "url": "https://www.bilibili.com/video/BV1VeokBJE84"
     },
-    "tags": ["角色机制"]
+    "tags": [
+      "角色机制"
+    ]
   },
   {
     "id": "vina-apartment-furniture-duplication",
-    "title": {
-      "zh": "维纳公寓家具复制",
-      "en": "Vina Apartment Furniture Duplication"
-    },
-    "status": {
-      "zh": "已修复",
-      "en": "Fixed"
-    },
-    "summary": {
-      "zh": "在维纳公寓特定点位摆放家具，会使相应家具状态异常，被收纳后重新进入游戏，这些家具仍然会出现，反复收纳可复制家具。部分家具也属于赠礼，可用于提升角色好感度。",
-      "en": "Place furniture at specific spots in Vina Apartment to make the corresponding furniture enter an abnormal state. After storing it and re-entering the game, the furniture still appears; repeatedly storing it can duplicate the furniture. Some furniture also counts as gifts and can be used to raise character bond levels."
-    },
+    "title": "维纳公寓家具复制",
+    "status": "已修复",
+    "summary": "在维纳公寓特定点位摆放家具，会使相应家具状态异常，被收纳后重新进入游戏，这些家具仍然会出现，反复收纳可复制家具。部分家具也属于赠礼，可用于提升角色好感度。",
     "source": {
       "label": "BV16J92BeEqN",
       "url": "https://www.bilibili.com/video/BV16J92BeEqN"
     },
-    "tags": ["家具", "维纳公寓"]
+    "tags": [
+      "家具",
+      "维纳公寓"
+    ]
   },
   {
     "id": "pink-paw-vault-speedrun",
-    "title": {
-      "zh": "粉爪大劫案速刷",
-      "en": "Pink Paw Heist Speedrun"
-    },
-    "status": {
-      "zh": "部分修复",
-      "en": "Partially fixed"
-    },
-    "summary": {
-      "zh": "通过多种超常规方式到达金库等以达到速刷效果，相关bug部分修复，但又有新bug产生，建议自行搜索最新动态。",
-      "en": "Use various unconventional methods to reach the vault and similar targets for faster farming. Related bugs have been partially fixed, but new bugs have also appeared; searching for the latest updates is recommended."
-    },
+    "title": "粉爪大劫案速刷",
+    "status": "部分修复",
+    "summary": "通过多种超常规方式到达金库等以达到速刷效果，相关bug部分修复，但又有新bug产生，建议自行搜索最新动态。",
     "source": {
       "label": "",
       "url": ""
     },
-    "tags": ["部分修复", "资源"]
+    "tags": [
+      "部分修复",
+      "资源"
+    ]
   },
   {
     "id": "auction-low-price-bid",
-    "title": {
-      "zh": "拍卖会底价竞拍",
-      "en": "Auction Low-Price Bidding"
-    },
-    "status": {
-      "zh": "已修复",
-      "en": "Fixed"
-    },
-    "summary": {
-      "zh": "首次加价后反复点击竞价和 Esc，使 NPC 来不及出价，以接近底价拍到。",
-      "en": "After the first bid increase, repeatedly click bid and Esc so NPCs cannot bid in time, winning at close to the starting price."
-    },
+    "title": "拍卖会底价竞拍",
+    "status": "已修复",
+    "summary": "首次加价后反复点击竞价和 Esc，使 NPC 来不及出价，以接近底价拍到。",
     "source": {
       "label": "BV1fMooBYEr8",
       "url": "https://www.bilibili.com/video/BV1fMooBYEr8"
     },
-    "tags": ["逃课玩法"]
+    "tags": [
+      "逃课玩法"
+    ]
   },
   {
     "id": "wrong-bait-fishing",
-    "title": {
-      "zh": "错饵钓鱼法",
-      "en": "Wrong-Bait Fishing"
-    },
-    "status": {
-      "zh": "已修复",
-      "en": "Fixed"
-    },
-    "summary": {
-      "zh": "淡水用海水饵、海水用淡水饵，错饵钓鱼保底出 6 体力鱼。",
-      "en": "Use saltwater bait in freshwater, or freshwater bait in saltwater, to guarantee 6-stamina fish."
-    },
+    "title": "错饵钓鱼法",
+    "status": "已修复",
+    "summary": "淡水用海水饵、海水用淡水饵，错饵钓鱼保底出 6 体力鱼。",
     "source": {
       "label": "BV1e6oZB8E4D",
       "url": "https://www.bilibili.com/video/BV1e6oZB8E4D"
     },
-    "tags": ["已修复"]
+    "tags": [
+      "已修复"
+    ]
   },
   {
     "id": "rabbit-hole-double-exp",
-    "title": {
-      "zh": "兔子洞双倍经验",
-      "en": "Rabbit Hole Double EXP"
-    },
-    "status": {
-      "zh": "已修复",
-      "en": "Fixed"
-    },
-    "summary": {
-      "zh": "刷取特定副本获得双倍经验。",
-      "en": "Farm a specific stage to obtain double EXP."
-    },
+    "title": "兔子洞双倍经验",
+    "status": "已修复",
+    "summary": "刷取特定副本获得双倍经验。",
     "source": {
       "label": "BV1fMooBYEr8",
       "url": "https://www.bilibili.com/video/BV1fMooBYEr8"
     },
-    "tags": ["已修复"]
+    "tags": [
+      "已修复"
+    ]
   },
   {
     "id": "block-fans-speedrun",
-    "title": {
-      "zh": "泯除方块速刷方斯",
-      "en": "Block-Clearing Faens Speedrun"
-    },
-    "status": {
-      "zh": "已修复",
-      "en": "Fixed"
-    },
-    "summary": {
-      "zh": "快速进入、退出或反复按 F，消耗体力并直接获得方斯。",
-      "en": "Enter and exit quickly, or press F repeatedly, to consume stamina and receive Faens directly."
-    },
+    "title": "泯除方块速刷方斯",
+    "status": "已修复",
+    "summary": "快速进入、退出或反复按 F，消耗体力并直接获得方斯。",
     "source": {
       "label": "BV1n3oBBUEHT",
       "url": "https://www.bilibili.com/video/BV1n3oBBUEHT"
     },
-    "tags": ["已修复", "方斯"]
+    "tags": [
+      "已修复",
+      "方斯"
+    ]
   },
   {
     "id": "mint-pajama-reflection",
-    "title": {
-      "zh": "薄荷睡衣显示异常",
-      "en": "Mint Pajama Reflection Display Issue"
-    },
-    "status": {
-      "zh": "已修复",
-      "en": "Fixed"
-    },
-    "summary": {
-      "zh": "薄荷的睡衣在窗户倒映中显示异常。",
-      "en": "Mint's pajamas display incorrectly in window reflections."
-    },
+    "title": "薄荷睡衣显示异常",
+    "status": "已修复",
+    "summary": "薄荷的睡衣在窗户倒映中显示异常。",
     "source": {
       "label": "BV1sgogB1ELv",
       "url": "https://www.bilibili.com/video/BV1sgogB1ELv"
     },
-    "tags": ["已修复", "显示异常"]
+    "tags": [
+      "已修复",
+      "显示异常"
+    ]
   },
   {
     "id": "xiaozi-infinite-damage",
-    "title": {
-      "zh": "小吱无限伤害",
-      "en": "Chiz Infinite Damage"
-    },
-    "status": {
-      "zh": "已修复",
-      "en": "Fixed"
-    },
-    "summary": {
-      "zh": "小吱普通攻击时切出界面，造成巨额伤害/秒怪。",
-      "en": "Switch interfaces during Chiz's normal attacks to deal extremely high damage or instantly defeat enemies."
-    },
+    "title": "小吱无限伤害",
+    "status": "已修复",
+    "summary": "小吱普通攻击时切出界面，造成巨额伤害/秒怪。",
     "source": {
       "label": "BV1n3oBBUEHT",
       "url": "https://www.bilibili.com/video/BV1n3oBBUEHT"
     },
-    "tags": ["已修复", "角色机制"]
+    "tags": [
+      "已修复",
+      "角色机制"
+    ]
   },
   {
     "id": "haiyue-flying-jellyfish",
-    "title": {
-      "zh": "海月飞天水母",
-      "en": "Haiyue Flying Jellyfish"
-    },
-    "status": {
-      "zh": "已修复",
-      "en": "Fixed"
-    },
-    "summary": {
-      "zh": "使用海月相关机制触发飞天，可用于高空跑图、开图、看风景。",
-      "en": "Trigger flight through Haiyue-related mechanics, useful for high-altitude traversal, map reveal, or sightseeing."
-    },
+    "title": "海月飞天水母",
+    "status": "已修复",
+    "summary": "使用海月相关机制触发飞天，可用于高空跑图、开图、看风景。",
     "source": {
       "label": "BV1uYoBBeErn",
       "url": "https://www.bilibili.com/video/BV1uYoBBeErn"
     },
-    "tags": ["跑图", "观景"]
+    "tags": [
+      "跑图",
+      "观景"
+    ]
   },
   {
     "id": "ten-times-item-buff",
-    "title": {
-      "zh": "10 倍道具 buff",
-      "en": "10x Item Buff"
-    },
-    "status": {
-      "zh": "已修复",
-      "en": "Fixed"
-    },
-    "summary": {
-      "zh": "道具 buff 数值异常叠加/放大到约 10 倍。",
-      "en": "Item buff values stack or amplify abnormally to roughly 10 times their intended value."
-    },
+    "title": "10 倍道具 buff",
+    "status": "已修复",
+    "summary": "道具 buff 数值异常叠加/放大到约 10 倍。",
     "source": {
       "label": "BV1PJo2BLEQ3",
       "url": "https://www.bilibili.com/video/BV1PJo2BLEQ3"
     },
-    "tags": ["数值异常"]
+    "tags": [
+      "数值异常"
+    ]
   }
 ]

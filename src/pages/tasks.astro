@@ -4,60 +4,47 @@ import PageHero from "@/components/PageHero.astro";
 import SectionHeader from "@/components/SectionHeader.astro";
 import tasks from "@/data/tasks.json";
 
-const categoryLabels: Record<string, { zh: string; en: string }> = {
-  daily: { zh: "每日", en: "Daily" },
-  weekly: { zh: "每周", en: "Weekly" },
-  biweekly: { zh: "双周", en: "Biweekly" },
-  monthly: { zh: "每月", en: "Monthly" },
-  version: { zh: "版本", en: "Version" },
+const categoryLabels: Record<string, string> = {
+  daily: "每日",
+  weekly: "每周",
+  biweekly: "双周",
+  monthly: "每月",
+  version: "版本",
 };
 
 const groups = [
   {
     key: "daily",
     title: "日常",
-    titleEn: "Daily",
     description: "每日刷新或适合每天顺手检查的事项。",
-    descriptionEn: "Daily resets and quick checks worth doing each day.",
   },
   {
     key: "weekly",
     title: "周常",
-    titleEn: "Weekly",
     description: "每周刷新、结算或限次领取的事项。",
-    descriptionEn: "Weekly resets, settlements, and limited weekly claims.",
   },
   {
     key: "biweekly",
     title: "双周常",
-    titleEn: "Biweekly",
     description: "双周轮换或阶段性周期内容。",
-    descriptionEn: "Biweekly rotations and staged recurring content.",
   },
   {
     key: "monthly",
     title: "月常",
-    titleEn: "Monthly",
     description: "每月刷新或适合按月检查的兑换内容。",
-    descriptionEn: "Monthly resets and exchange items to check once per month.",
   },
   {
     key: "version",
     title: "版本任务",
-    titleEn: "Version Tasks",
     description: "随版本活动、卡池和商店周期变化的事项。",
-    descriptionEn: "Tasks that change with version events, banners, and shops.",
   },
 ];
 
-const buildTaskMarkdown = (lang: "zh" | "en") => {
-  const isEn = lang === "en";
+const buildTaskMarkdown = () => {
   const lines = [
-    `# ${isEn ? "Hethereau Affairs" : "海市事务"}`,
+    "# 海市事务",
     "",
-    isEn
-      ? "A compact checklist for daily, weekly, biweekly, and rotating tasks."
-      : "用于整理日常、周常等周期刷新事项。条目会保留刷新周期和简短说明。",
+    "用于整理日常、周常等周期刷新事项。条目会保留刷新周期和简短说明。",
     "",
   ];
 
@@ -65,10 +52,10 @@ const buildTaskMarkdown = (lang: "zh" | "en") => {
     const items = tasks.filter((task) => task.category === group.key);
     if (items.length === 0) return;
 
-    lines.push(`## ${isEn ? group.titleEn : group.title}`, "");
+    lines.push(`## ${group.title}`, "");
     items.forEach((task) => {
-      const title = isEn ? task.title.en : task.title.zh;
-      const summary = (isEn ? task.summary.en : task.summary.zh).replace(/\n/g, "\n  ");
+      const title = task.title;
+      const summary = task.summary.replace(/\n/g, "\n  ");
       lines.push(`- **${title}**: ${summary}`);
     });
     lines.push("");
@@ -77,19 +64,13 @@ const buildTaskMarkdown = (lang: "zh" | "en") => {
   return lines.join("\n").trim();
 };
 
-const taskMarkdown = {
-  zh: buildTaskMarkdown("zh"),
-  en: buildTaskMarkdown("en"),
-};
+const taskMarkdown = buildTaskMarkdown();
 
-const buildTaskText = (lang: "zh" | "en") => {
-  const isEn = lang === "en";
+const buildTaskText = () => {
   const lines = [
-    isEn ? "Hethereau Affairs" : "海市事务",
+    "海市事务",
     "",
-    isEn
-      ? "A compact checklist for daily, weekly, biweekly, and rotating tasks."
-      : "用于整理日常、周常等周期刷新事项。条目会保留刷新周期和简短说明。",
+    "用于整理日常、周常等周期刷新事项。条目会保留刷新周期和简短说明。",
     "",
   ];
 
@@ -97,11 +78,9 @@ const buildTaskText = (lang: "zh" | "en") => {
     const items = tasks.filter((task) => task.category === group.key);
     if (items.length === 0) return;
 
-    lines.push(isEn ? group.titleEn : group.title, "");
+    lines.push(group.title, "");
     items.forEach((task) => {
-      const title = isEn ? task.title.en : task.title.zh;
-      const summary = isEn ? task.summary.en : task.summary.zh;
-      lines.push(`${title}: ${summary}`);
+      lines.push(`${task.title}: ${task.summary}`);
     });
     lines.push("");
   });
@@ -109,21 +88,15 @@ const buildTaskText = (lang: "zh" | "en") => {
   return lines.join("\n").trim();
 };
 
-const taskText = {
-  zh: buildTaskText("zh"),
-  en: buildTaskText("en"),
-};
+const taskText = buildTaskText();
 ---
 
 <BaseLayout title="海市事务" active="/tasks/">
   <PageHero
-    eyebrow="Hethereau Affairs"
+    eyebrow="事务清单"
     title="海市事务"
-    titleEn="Hethereau Affairs"
     description="用于整理日常、周常等周期刷新事项。条目会保留刷新周期和简短说明。"
-    descriptionEn="A compact checklist for daily, weekly, biweekly, and rotating tasks."
     quips={["打工人，打工魂"]}
-    quipsEn={["Work mode, fully charged"]}
   />
 
   <div class="page-action-row">
@@ -131,10 +104,7 @@ const taskText = {
       class="copy-button"
       type="button"
       data-copy-content
-      data-copy-zh={taskMarkdown.zh}
-      data-copy-en={taskMarkdown.en}
-      data-i18n-zh="复制为 Markdown"
-      data-i18n-en="Copy as Markdown"
+      data-copy-text={taskMarkdown}
     >
       复制为 Markdown
     </button>
@@ -142,20 +112,11 @@ const taskText = {
       class="copy-button"
       type="button"
       data-copy-content
-      data-copy-zh={taskText.zh}
-      data-copy-en={taskText.en}
-      data-i18n-zh="复制为文本"
-      data-i18n-en="Copy as Text"
+      data-copy-text={taskText}
     >
       复制为文本
     </button>
-    <span
-      class="copy-status"
-      data-copy-status
-      data-i18n-zh="已复制"
-      data-i18n-en="Copied"
-      hidden
-    >
+    <span class="copy-status" data-copy-status hidden>
       已复制
     </span>
   </div>
@@ -169,24 +130,16 @@ const taskText = {
         <section>
           <SectionHeader
             title={group.title}
-            titleEn={group.titleEn}
             description={group.description}
-            descriptionEn={group.descriptionEn}
           />
           <div class="grid">
             {items.map((task) => (
               <article class="data-card">
                 <div class="meta-row">
-                  <span
-                    class="pill"
-                    data-i18n-zh={categoryLabels[task.category]?.zh ?? task.category}
-                    data-i18n-en={categoryLabels[task.category]?.en ?? task.category}
-                  >
-                    {categoryLabels[task.category]?.zh ?? task.category}
-                  </span>
+                  <span class="pill">{categoryLabels[task.category] ?? task.category}</span>
                 </div>
-                <h3 data-i18n-zh={task.title.zh} data-i18n-en={task.title.en}>{task.title.zh}</h3>
-                <p data-i18n-zh={task.summary.zh} data-i18n-en={task.summary.en}>{task.summary.zh}</p>
+                <h3>{task.title}</h3>
+                <p>{task.summary}</p>
               </article>
             ))}
           </div>
@@ -215,8 +168,7 @@ const taskText = {
 
   copyButtons.forEach((copyButton) => {
     copyButton.addEventListener("click", async () => {
-      const lang = document.body.dataset.lang === "en" ? "en" : "zh";
-      const text = copyButton.getAttribute(lang === "en" ? "data-copy-en" : "data-copy-zh") || "";
+      const text = copyButton.getAttribute("data-copy-text") || "";
 
       try {
         if (navigator.clipboard?.writeText) {

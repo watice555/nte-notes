@@ -9,16 +9,6 @@ const { active } = Astro.props;
 const assetBase = import.meta.env.BASE_URL.endsWith("/")
   ? import.meta.env.BASE_URL
   : `${import.meta.env.BASE_URL}/`;
-const navEn: Record<string, string> = {
-  "/": "Home",
-  "/tasks/": "Hethereau Affairs",
-  "/characters/": "Character Info",
-  "/affinity/": "Affinity",
-  "/terms/": "Glossary",
-  "/translations/": "CN/EN Reference",
-  "/links/": "External Links",
-  "/about/": "About",
-};
 ---
 
 <header class="site-header">
@@ -27,7 +17,7 @@ const navEn: Record<string, string> = {
       <img src={`${assetBase}site-icon.png`} alt="" />
     </span>
     <span>
-      <strong data-i18n-zh={site.zhName} data-i18n-en={site.enName}>{site.zhName}</strong>
+      <strong>{site.zhName}</strong>
       <small>NTE Notes</small>
     </span>
   </a>
@@ -37,8 +27,6 @@ const navEn: Record<string, string> = {
         <a
           href={withBase(item.href)}
           aria-current={active === item.href ? "page" : undefined}
-          data-i18n-zh={item.label}
-          data-i18n-en={navEn[item.href]}
         >
           {item.label}
         </a>
@@ -51,24 +39,8 @@ const navEn: Record<string, string> = {
       type="button"
       data-search-open
       aria-label="打开搜索"
-      data-i18n-aria-label-zh="打开搜索"
-      data-i18n-aria-label-en="Open search"
-      data-i18n-zh="搜索"
-      data-i18n-en="Search"
     >
       搜索
     </button>
-    <div class="language-control">
-      <button class="lang-toggle" type="button" data-lang-toggle aria-pressed="false">
-        中 / EN
-      </button>
-      <small
-        class="translation-note"
-        data-i18n-zh="英文翻译还有待完善"
-        data-i18n-en="English content is still being refined."
-      >
-        英文翻译还有待完善
-      </small>
-    </div>
   </div>
 </header>

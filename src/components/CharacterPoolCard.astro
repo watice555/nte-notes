@@ -1,0 +1,78 @@
+---
+interface PoolInfo {
+  version: string;
+  phase: string;
+  name: string;
+  start: string;
+  end: string;
+}
+
+interface Character {
+  id: string;
+  name: string;
+  rarity: string;
+  gender: string;
+  attribute: string;
+  arcType: string;
+  role: string;
+  summary: string;
+  pool?: PoolInfo;
+}
+
+interface Props {
+  character: Character;
+  permanent?: boolean;
+}
+
+const { character, permanent = false } = Astro.props;
+---
+
+<article
+  class:list={["character-pool-card", { "is-limited": character.pool, "is-permanent": permanent }]}
+  data-rarity={character.rarity}
+>
+  <div class="character-pool-card-topline">
+    {
+      character.pool ? (
+        <span class="pool-phase">{character.pool.phase}</span>
+      ) : (
+        <span class="pool-phase">常驻</span>
+      )
+    }
+    {character.pool && <span class="pool-name">「{character.pool.name}」</span>}
+  </div>
+
+  <div class:list={["character-card-head", { "has-pool-time": character.pool }]}>
+    <h3>{character.name}</h3>
+    {
+      character.pool && (
+        <p class="pool-time">
+          <time>{character.pool.start}</time>
+          <span aria-hidden="true">→</span>
+          <time>{character.pool.end}</time>
+        </p>
+      )
+    }
+    <div class="character-badges">
+      <span class="rarity-pill" data-rarity-tier={character.rarity}>{character.rarity}</span>
+      <span class="tag">{character.role}</span>
+    </div>
+  </div>
+
+  <dl class="character-facts">
+    <div>
+      <dt>性别</dt>
+      <dd>{character.gender}</dd>
+    </div>
+    <div>
+      <dt>属性</dt>
+      <dd>{character.attribute}</dd>
+    </div>
+    <div>
+      <dt>弧盘类型</dt>
+      <dd>{character.arcType}</dd>
+    </div>
+  </dl>
+
+  <p class="character-summary">{character.summary}</p>
+</article>
