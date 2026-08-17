@@ -88,6 +88,17 @@
     }
   },
   {
+    "id": "character-zankou",
+    "zh": "残虹",
+    "en": "Zankou",
+    "category": "角色",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
     "id": "character-1054",
     "zh": "达芙蒂尔",
     "en": "Daffodill",
@@ -157,6 +168,17 @@
     "id": "character-1071",
     "zh": "卡厄斯",
     "en": "Chaos",
+    "category": "角色",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "character-linko",
+    "zh": "灵可",
+    "en": "Linko",
     "category": "角色",
     "aliases": [],
     "note": {

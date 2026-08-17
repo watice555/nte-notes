@@ -1,5 +1,55 @@
 [
   {
+    "id": "zankou",
+    "name": "残虹",
+    "rarity": "S",
+    "gender": "女",
+    "attribute": "咒",
+    "arcType": "气态",
+    "role": "输出",
+    "summary": "「红字」成员，擅长持续伤害与连续攻击的主力输出角色。",
+    "pool": {
+      "version": "1.3",
+      "phase": "上半",
+      "name": "惑心谲影",
+      "start": "2026/08/13",
+      "end": "2026/09/03"
+    },
+    "links": [
+      {
+        "label": "国服公告",
+        "url": "https://yh.wanmei.com/news/gamebroad/20260812/263538.html"
+      },
+      {
+        "label": "1.3 前瞻",
+        "url": "https://yh.wanmei.com/news/gamenews/20260808/263494.html"
+      }
+    ]
+  },
+  {
+    "id": "linko",
+    "name": "灵可",
+    "rarity": "S",
+    "gender": "女",
+    "attribute": "灵",
+    "arcType": "等离子",
+    "role": "输出",
+    "summary": "异象管理局禁制机动队六队成员，擅长爆发输出与追加攻击。",
+    "pool": {
+      "version": "1.3",
+      "phase": "下半",
+      "name": "全频带漫游中！",
+      "start": "2026/09/03",
+      "end": "2026/09/24"
+    },
+    "links": [
+      {
+        "label": "1.3 前瞻",
+        "url": "https://yh.wanmei.com/news/gamenews/20260808/263494.html"
+      }
+    ]
+  },
+  {
     "id": "shinku",
     "name": "真红",
     "rarity": "S",

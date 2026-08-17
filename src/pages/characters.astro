@@ -24,14 +24,35 @@ interface Character {
   pool?: PoolInfo;
 }
 
+interface Rerun {
+  phase: string;
+  characterId: string;
+  characterName: string;
+}
+
+interface VersionMeta {
+  version: string;
+  title: string;
+  reruns?: Rerun[];
+}
+
 const allCharacters = characters as Character[];
-const versionMeta = [
+const versionMeta: VersionMeta[] = [
+  {
+    version: "1.3",
+    title: "雾中朔望星回",
+    reruns: [
+      { phase: "上半", characterId: "nanally", characterName: "娜娜莉" },
+      { phase: "下半", characterId: "hotori", characterName: "浔" },
+    ],
+  },
   { version: "1.2", title: "九百九十九夜" },
   { version: "1.1", title: "游梦洄廊" },
   { version: "1.0", title: "公测" },
 ];
 const versionPools = versionMeta.map((meta) => ({
   ...meta,
+  reruns: meta.reruns ?? [],
   characters: allCharacters
     .filter((character) => character.pool?.version === meta.version)
     .sort((a, b) => (a.pool?.phase === "上半" ? -1 : 1) - (b.pool?.phase === "上半" ? -1 : 1)),
@@ -72,6 +93,20 @@ const permanentTiers = ["S", "A"].map((rarity) => ({
               <CharacterPoolCard character={character} />
             ))}
           </div>
+          {
+            pool.reruns.length > 0 && (
+              <p class="pool-reruns">
+                <strong>复刻：</strong>
+                {pool.reruns.map((rerun, index) => (
+                  <>
+                    {index > 0 && "；"}
+                    <span>{rerun.phase} </span>
+                    <a href={`#character-${rerun.characterId}-first-pool`}>{rerun.characterName}</a>
+                  </>
+                ))}
+              </p>
+            )
+          }
         </section>
       ))
     }
@@ -103,5 +138,5 @@ const permanentTiers = ["S", "A"].map((rarity) => ({
     }
   </section>
 
-  <p class="pool-note">卡池时间采用中国服务器时间，开始时间以对应版本维护完成为准。</p>
+  <p class="pool-note">卡池日期采用中国服务器日期，开始日以对应版本维护完成为准。</p>
 </BaseLayout>
