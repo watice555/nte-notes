@@ -3,8 +3,28 @@ import BaseLayout from "@/components/BaseLayout.astro";
 import PageHero from "@/components/PageHero.astro";
 import SectionHeader from "@/components/SectionHeader.astro";
 import affinity from "@/data/affinity.json";
+import characters from "@/data/characters.json";
 
 const formatter = new Intl.NumberFormat("zh-CN");
+const characterPools = characters as Array<{ name: string; pool?: { start: string } }>;
+const poolStartByCharacter = new Map(
+  characterPools
+    .filter((character) => character.pool)
+    .map((character) => [character.name, character.pool!.start]),
+);
+const giftRows = affinity.gifts
+  .map((row, index) => ({
+    row,
+    index,
+    poolStart: poolStartByCharacter.get(row.character),
+  }))
+  .sort((a, b) => {
+    if (a.poolStart && b.poolStart) return b.poolStart.localeCompare(a.poolStart);
+    if (a.poolStart) return -1;
+    if (b.poolStart) return 1;
+    return a.index - b.index;
+  })
+  .map(({ row }) => row);
 ---
 
 <BaseLayout title="好感度" active="/affinity/">
@@ -35,7 +55,7 @@ const formatter = new Intl.NumberFormat("zh-CN");
   <section>
     <SectionHeader
       title="赠礼性价比"
-      description="各角色在 400、200、100 好感度档位中价格最低的赠礼，同价礼物并列展示。"
+      description="各角色在 400、200、100 好感度档位中价格最低的赠礼，同价礼物并列展示。限定角色按首次卡池日期从新到旧排列。"
     />
     <div class="table-scroll">
       <table class="data-table affinity-table">
@@ -51,7 +71,7 @@ const formatter = new Intl.NumberFormat("zh-CN");
         </thead>
         <tbody>
           {
-            affinity.gifts.map((row) => (
+            giftRows.map((row) => (
               <tr>
                 <th scope="row">{row.character}</th>
                 {
