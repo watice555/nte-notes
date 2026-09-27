@@ -1,5 +1,55 @@
 [
   {
+    "id": "blackbird",
+    "name": "黑羽",
+    "rarity": "S",
+    "gender": "女",
+    "attribute": "魂",
+    "arcType": "气态",
+    "role": "输出",
+    "summary": "魔女之家的主人，擅长即瞬环合、协同攻击与全队输出增益。",
+    "pool": {
+      "version": "1.4",
+      "phase": "上半",
+      "name": "预言终幕时",
+      "start": "2026/09/24",
+      "end": "2026/10/15"
+    },
+    "links": [
+      {
+        "label": "国服公告",
+        "url": "https://yh.wanmei.com/news/gamebroad/20260923/264278.html"
+      },
+      {
+        "label": "角色资料",
+        "url": "https://www.ntestation.com/黑羽"
+      }
+    ]
+  },
+  {
+    "id": "akane-rin",
+    "name": "明音凛",
+    "rarity": "S",
+    "gender": "女",
+    "attribute": "相",
+    "arcType": "液态",
+    "role": "输出",
+    "summary": "「猫头音!!!!」乐队成员，使用吉他与音刃战斗的主力输出角色。",
+    "pool": {
+      "version": "1.4",
+      "phase": "下半",
+      "name": "灿烂的星",
+      "start": "2026/10/15",
+      "end": "2026/11/05"
+    },
+    "links": [
+      {
+        "label": "1.4 前瞻",
+        "url": "https://yh.wanmei.com/news/gamebroad/20260916/264201.html"
+      }
+    ]
+  },
+  {
     "id": "zankou",
     "name": "残虹",
     "rarity": "S",

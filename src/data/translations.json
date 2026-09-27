@@ -154,6 +154,17 @@
     }
   },
   {
+    "id": "character-1042",
+    "zh": "黑羽",
+    "en": "Blackbird",
+    "category": "角色",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
     "id": "character-1055",
     "zh": "九原",
     "en": "Jiuyuan",
@@ -179,6 +190,17 @@
     "id": "character-linko",
     "zh": "灵可",
     "en": "Linko",
+    "category": "角色",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "character-1057",
+    "zh": "明音凛",
+    "en": "Akane Rin",
     "category": "角色",
     "aliases": [],
     "note": {
