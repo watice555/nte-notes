@@ -11,6 +11,7 @@ const CATEGORY_ORDER = new Map([
   ["弧盘类别", 4],
   ["武器", 5],
   ["怪物", 6],
+  ["礼物", 7],
 ]);
 
 async function fetchJson(url) {

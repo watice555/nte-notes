@@ -34,7 +34,7 @@
     "attribute": "相",
     "arcType": "液态",
     "role": "输出",
-    "summary": "「猫头音!!!!」乐队成员，使用吉他与音刃战斗的主力输出角色。",
+    "summary": "「猫头音!!!!」乐队主唱兼吉他手，使用电吉他与音刃战斗的主力输出角色。",
     "pool": {
       "version": "1.4",
       "phase": "下半",
@@ -43,6 +43,14 @@
       "end": "2026/11/05"
     },
     "links": [
+      {
+        "label": "国服公告",
+        "url": "https://yh.wanmei.com/news/gamebroad/20261014/264537.html"
+      },
+      {
+        "label": "角色资料",
+        "url": "https://www.ntestation.com/明音凛"
+      },
       {
         "label": "1.4 前瞻",
         "url": "https://yh.wanmei.com/news/gamebroad/20260916/264201.html"

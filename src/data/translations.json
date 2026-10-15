@@ -1560,5 +1560,38 @@
       "zh": "",
       "en": ""
     }
+  },
+  {
+    "id": "gift-flower0004",
+    "zh": "灿烂之约",
+    "en": "Refulgent Agreement",
+    "category": "礼物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "gift-specialgift-cd",
+    "zh": "此声未刻录",
+    "en": "Unrecorded Sound",
+    "category": "礼物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "gift-puka-lucky-star",
+    "zh": "噗卡幸运星",
+    "en": "Puka Lucky Star",
+    "category": "礼物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
   }
 ]
