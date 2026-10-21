@@ -1,5 +1,12 @@
 # 实施记录
 
+## 2026-10-21 13:58 Asia/Shanghai — 忽略 .DS_Store
+
+- 阶段总结：`.gitignore` 新增 `.DS_Store` 规则，macOS Finder 浏览产生的 `.DS_Store` 不再出现在未跟踪变更中。
+- 已执行的验证：`git check-ignore -v .DS_Store` 命中新规则；`git status --porcelain` 干净。
+- 设备：MacBook-Pro（macOS 27.0.1，arm64）。
+- 写入者模型：Hermes。
+
 ## 2026-10-16 03:01 Asia/Shanghai — 补齐明音凛上线资料、好感度赠礼与礼物中英对照
 
 - 阶段总结：沿用历期卡池格式，核对 1.4 下半明音凛「灿烂的星」国服开放日期（2026/10/15–2026/11/05，公告结束时间为 05:59），补充正式国服公告和角色资料链接，明确其为「猫头音!!!!」主唱兼吉他手。新增明音凛最低价赠礼：400 档此声未刻录（15000 方斯）、200 档灿烂之约（4500）、100 档噗卡幸运星（450），按首次卡池日期显示在赠礼表首行。核对并保留已有「明音凛 / Akane Rin」角色对照，新增「此声未刻录 / Unrecorded Sound」「灿烂之约 / Refulgent Agreement」「噗卡幸运星 / Puka Lucky Star」三条对照及「礼物 / Gift」分类，补充同步脚本的分类排序。
