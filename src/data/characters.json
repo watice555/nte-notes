@@ -1,5 +1,55 @@
 [
   {
+    "id": "elyms",
+    "name": "曳尔沐",
+    "rarity": "S",
+    "gender": "女",
+    "attribute": "光",
+    "arcType": "固态",
+    "role": "增益",
+    "summary": "异象管理局禁制机动队六队副队长，能在电子世界穿行，擅长即瞬环合与全队输出增益。",
+    "pool": {
+      "version": "1.5",
+      "phase": "上半",
+      "name": "电子人之梦",
+      "start": "2026/11/05",
+      "end": "2026/11/26"
+    },
+    "links": [
+      {
+        "label": "国服公告",
+        "url": "https://yh.wanmei.com/news/gamebroad/20261104/264869.html"
+      },
+      {
+        "label": "角色资料",
+        "url": "https://www.ntestation.com/曳尔沐"
+      }
+    ]
+  },
+  {
+    "id": "exe",
+    "name": "Exe",
+    "rarity": "S",
+    "gender": "男",
+    "attribute": "暗",
+    "arcType": "等离子",
+    "role": "输出",
+    "summary": "异象管理局禁制机动队六队队长，通过积累帧数召唤数字残像协同输出。",
+    "pool": {
+      "version": "1.5",
+      "phase": "下半",
+      "name": "离线的算式",
+      "start": "2026/11/26",
+      "end": "2026/12/17"
+    },
+    "links": [
+      {
+        "label": "1.5 前瞻",
+        "url": "https://yh.wanmei.com/news/gamebroad/20261028/264788.html"
+      }
+    ]
+  },
+  {
     "id": "blackbird",
     "name": "黑羽",
     "rarity": "S",

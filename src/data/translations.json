@@ -242,6 +242,17 @@
     }
   },
   {
+    "id": "character-1090",
+    "zh": "曳尔沐",
+    "en": "Elyms",
+    "category": "角色",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
     "id": "character-1075",
     "zh": "伊洛伊",
     "en": "Iroi",
@@ -278,6 +289,17 @@
     "id": "character-1076",
     "zh": "真红",
     "en": "Shinku",
+    "category": "角色",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "character-1074",
+    "zh": "Exe",
+    "en": "Exe",
     "category": "角色",
     "aliases": [],
     "note": {
@@ -1584,9 +1606,53 @@
     }
   },
   {
+    "id": "gift-flower0024",
+    "zh": "阑雨",
+    "en": "Waning Rain",
+    "category": "礼物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "gift-furniture-flower-pot-005",
+    "zh": "泠泠琉光",
+    "en": "Glimmering Ice",
+    "category": "礼物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "gift-blink-wink-battle",
+    "zh": "明亮~wink大作战！",
+    "en": "Blink! Wink Battle!",
+    "category": "礼物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
     "id": "gift-puka-lucky-star",
     "zh": "噗卡幸运星",
     "en": "Puka Lucky Star",
+    "category": "礼物",
+    "aliases": [],
+    "note": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "gift-furniture-draw-008",
+    "zh": "幽梦",
+    "en": "Solitude",
     "category": "礼物",
     "aliases": [],
     "note": {

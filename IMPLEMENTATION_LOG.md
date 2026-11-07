@@ -1,5 +1,15 @@
 # 实施记录
 
+## 2026-11-07 17:22 Asia/Shanghai — 补充 1.5 国服卡池、好感度赠礼与中英对照
+
+- **阶段总结** 新增 1.5「致电，空想迷数」。上半为曳尔沐「电子人之梦」（2026/11/05–2026/11/26）及真红复刻，下半为 Exe「离线的算式」（2026/11/26–2026/12/17）及卡厄斯复刻。复刻链接指向角色首次卡池。
+- **赠礼及对照** 依据用户提供的价格图，新增曳尔沐 400 档幽梦（10,000 方斯）、200 档阑雨（7,500 方斯）、100 档明亮~wink大作战！（600 方斯），并按道具表校准名称。将真红 200 档更新为泠泠琉光（5,400 方斯）。补充两位新角色与四件礼物的中英对照。
+- **来源核对** 上半以国服维护公告为准，下半棋盘名和日期以国服前瞻原图为准。角色资料用于核对属性、弧盘类型和定位，赠礼攻略和道具表用于核对档位、售价及中英名称。[国服 1.5 更新公告](https://yh.wanmei.com/news/gamebroad/20261104/264869.html) · [国服 1.5 前瞻](https://yh.wanmei.com/news/gamebroad/20261028/264788.html) · [国服前瞻棋盘原图](https://yh.wanmei.com/resources/jpg/20261028/11437c8aecb94fb54326b02d9d412a021822.jpg) · [曳尔沐角色资料](https://www.ntestation.com/曳尔沐) · [曳尔沐角色数据](https://static.nanoka.cc/nte/1.5.4/zh/character/1090.json) · [Exe 角色数据](https://static.nanoka.cc/nte/1.5.4/zh/character/1074.json) · [曳尔沐赠礼攻略](https://www.taptap.cn/moment/867375254727560163) · [真红复刻赠礼攻略](https://www.taptap.cn/moment/868121114201556195) · [中文道具表](https://gamewith.ai/nte/zh-CN/item) · [英文道具表](https://gamewith.ai/nte/en/item)
+- **待核对资料** Exe 将在下半上线，目前缺少可核实的完整三档赠礼售价与好感度资料，本次先收录卡池及姓名对照。
+- **已执行的验证** `npm run check` 通过（0 错误、0 警告、0 提示）。`npm run build` 通过并生成 9 个页面和搜索索引。构建 HTML 断言覆盖版本与卡池顺序、日期、复刻链接、赠礼首行与各档价格、中英检索字段、分类和翻译 ID 唯一性。`git diff --check` 通过。
+- **写入者模型** GPT-6。
+- **设备** TianhaodeMacBook-Pro（macOS 27.0.1，arm64）。
+
 ## 2026-10-21 13:58 Asia/Shanghai — 忽略 .DS_Store
 
 - 阶段总结：`.gitignore` 新增 `.DS_Store` 规则，macOS Finder 浏览产生的 `.DS_Store` 不再出现在未跟踪变更中。
