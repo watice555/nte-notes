@@ -54,5 +54,12 @@
     "url": "https://nte.perfectworld.com/",
     "category": "官方",
     "summary": "国际服官方网站。"
+  },
+  {
+    "id": "official-cloud",
+    "title": "异环云游戏",
+    "url": "https://yh.wanmei.com/cloud/",
+    "category": "官方",
+    "summary": "国服官方云游戏入口，无需下载客户端。"
   }
 ]
